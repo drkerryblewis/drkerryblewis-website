@@ -473,6 +473,23 @@
       .lat-item a:hover{text-decoration:underline}
       .lat-item span{font-size:13.5px;color:#5a6a80}
       @media (max-width:760px){.lat-grid{grid-template-columns:1fr}}
+      .watch-layout{display:grid;grid-template-columns:1.5fr .95fr;gap:48px;align-items:start}
+      @media (max-width:920px){.watch-layout{grid-template-columns:1fr}}
+      .watch-rail{background:var(--navy-950);color:#e7edf6;border-radius:var(--radius);padding:26px 24px;position:sticky;top:96px}
+      .watch-rail .w-kicker{font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 6px}
+      .watch-rail h2{color:#fff;font-size:24px;margin:0 0 6px}
+      .watch-rail .w-sub{font-size:13.5px;color:#aebdd2;margin:0 0 8px}
+      .watch-agency{margin-top:20px}
+      .watch-agency h3{font-size:13px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff;border-bottom:1px solid rgba(255,255,255,.18);padding-bottom:6px;margin:0 0 4px}
+      .watch-item{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+      .watch-item:last-of-type{border-bottom:none}
+      .watch-item a{color:#e7edf6;text-decoration:none;font-size:14.5px;font-weight:600;line-height:1.4;display:block}
+      .watch-item a:hover{text-decoration:underline}
+      .watch-item span{display:block;font-size:12px;color:var(--gold);font-weight:700;letter-spacing:.06em;margin-top:2px}
+      .watch-all{font-size:13px;font-weight:700;color:var(--gold);text-decoration:none}
+      .watch-all:hover{text-decoration:underline}
+      .watch-911{margin-top:22px;padding-top:16px;border-top:1px solid rgba(255,255,255,.18);font-size:13px;color:#aebdd2}
+      .watch-911 b{color:#fff}
       .gaymail-banner{background:#ffffff;border-bottom:1px solid #e3e8f0;text-align:center;padding:20px 24px 22px;position:relative}
       .gaymail-banner::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#e40303,#ff8c00,#ffed00,#008026,#244ee0,#732de0)}
       .gaymail-banner .gm-kicker{font-size:12px;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:#b8860b}
@@ -656,6 +673,8 @@
 
         <section class="block">
           <div class="wrap">
+            <div class="watch-layout">
+              <div class="watch-main">
             <div class="sec-head reveal">
               <p class="sec-kicker">Press</p>
               <h2>All things new for Dr. Kerry B. Lewis</h2>
@@ -710,6 +729,50 @@
                   <p>Books, businesses, socials, and what&rsquo;s next — the full Lewis index, kept current.</p>
                 </div>
               </article>
+              </div>
+              <aside class="watch-rail reveal">
+                <p class="w-kicker">&#128680; Police &amp; Sheriff Watch</p>
+                <h2>Police &amp; Sheriff Watch</h2>
+                <p class="w-sub">Official press releases from Los Angeles law enforcement — newest first. Snapshot: October 23, 2026.</p>
+
+                <div class="watch-agency">
+                  <h3>LAPD — Los Angeles Police</h3>
+                <div class="watch-item"><a href="https://www.lapdonline.org/newsroom/" target="_blank" rel="noopener">Critical Missing 14-Year-Old Male (NR26222jl)</a><span>October 21, 2026</span></div>
+                <div class="watch-item"><a href="https://www.lapdonline.org/newsroom/" target="_blank" rel="noopener">Tractor Trailer Hit-and-Run Leaves Pedestrian Dead (NR26221al)</a><span>October 21, 2026</span></div>
+                <div class="watch-item"><a href="https://www.lapdonline.org/newsroom/" target="_blank" rel="noopener">Fatal Hit and Run Traffic Collision Involving Pedestrian (NR26219ne)</a><span>October 21, 2026</span></div>
+                <div class="watch-item"><a href="https://www.lapdonline.org/newsroom/" target="_blank" rel="noopener">Five Serial Burglars Arrested (NR26220ag)</a><span>October 20, 2026</span></div>
+                  <p style="margin:8px 0 0"><a class="watch-all" href="https://www.lapdonline.org/newsroom/" target="_blank" rel="noopener">All LAPD releases &#8599;</a> &middot; Tips: 1-877-LAPD-24-7</p>
+                </div>
+
+                <div class="watch-agency">
+                  <h3>LA County Sheriff</h3>
+                <div class="watch-item"><a href="https://nixle.us/HRFFZ" target="_blank" rel="noopener">Public's Help Locating Critical Missing Juvenile, Aiden Romero Ochoa — Maywood</a><span>October 23, 2026</span></div>
+                <div class="watch-item"><a href="https://nixle.us/HRE5H" target="_blank" rel="noopener">Homicide Bureau Assisting Arcadia PD with Shooting Death Investigation, Huntington Dr.</a><span>October 22, 2026</span></div>
+                <div class="watch-item"><a href="https://nixle.us/HRCNH" target="_blank" rel="noopener">Public's Help Locating Missing Person, David Isai Flores Barrientos — Los Angeles</a><span>October 22, 2026</span></div>
+                <div class="watch-item"><a href="https://nixle.us/HQZD9" target="_blank" rel="noopener">Special Victims Bureau — Attempt to Locate Additional Victims, Valinda</a><span>October 19, 2026</span></div>
+                  <p style="margin:8px 0 0"><a class="watch-all" href="https://local.nixle.com/lasd---los-angeles-county-sheriffs-dept-information-bureau-sib/" target="_blank" rel="noopener">All Sheriff releases (Nixle) &#8599;</a></p>
+                </div>
+
+                <div class="watch-agency">
+                  <h3>California Highway Patrol</h3>
+                <div class="watch-item"><a href="https://www.chp.ca.gov/news-alerts/news-list/chp-increases-patrol-during-statewide-maximum-enforcement-period/" target="_blank" rel="noopener">CHP Increases Patrol During Statewide Maximum Enforcement Period</a><span>October 1, 2026</span></div>
+                <div class="watch-item"><a href="https://www.chp.ca.gov/news-alerts/news-list/chp-targets-impaired-drivers-during-labor-day-weekend/" target="_blank" rel="noopener">CHP Targets Impaired Drivers During Labor Day Weekend</a><span>September 1, 2026</span></div>
+                <div class="watch-item"><a href="https://www.chp.ca.gov/news-alerts/news-list/orc-news-release/" target="_blank" rel="noopener">CHP Recovers $1.05 Million in Stolen Goods During Retail Crime Blitz</a><span>August 18, 2026</span></div>
+                <div class="watch-item"><a href="https://www.chp.ca.gov/news-alerts/news-list/california-sees-second-straight-year-of-vehicle-theft-declines/" target="_blank" rel="noopener">California Sees Second Straight Year of Vehicle Theft Declines</a><span>July 28, 2026</span></div>
+                  <p style="margin:8px 0 0"><a class="watch-all" href="https://www.chp.ca.gov/news-alerts/news-list/" target="_blank" rel="noopener">All CHP releases &#8599;</a></p>
+                </div>
+
+                <div class="watch-agency">
+                  <h3>LA County District Attorney</h3>
+                <div class="watch-item"><a href="https://da.lacounty.gov/media/news/ladwp-employee-three-others-charged-graffiti-vandalism-spree-across-los-angeles" target="_blank" rel="noopener">LADWP Employee, Three Others Charged in Graffiti Vandalism Spree Across Los Angeles</a><span>October 15, 2026</span></div>
+                <div class="watch-item"><a href="https://da.lacounty.gov/media/news/notorious-pimp-convicted-sex-trafficking-nine-victims-including-minors-da-s-office" target="_blank" rel="noopener">Notorious Pimp Convicted of Sex Trafficking Nine Victims Including Minors</a><span>October 15, 2026</span></div>
+                <div class="watch-item"><a href="https://da.lacounty.gov/media/news/gang-member-sentenced-life-prison-without-possibility-parole-2001-slaying-father-2-year" target="_blank" rel="noopener">Gang Member Sentenced to Life Without Parole for 2001 Slaying of Father, 2-Year-Old Daughter</a><span>October 14, 2026</span></div>
+                <div class="watch-item"><a href="https://da.lacounty.gov/media/news/macarthur-park-street-vendor-and-domestic-violence-survivor-honored-courage-awards" target="_blank" rel="noopener">MacArthur Park Street Vendor and Domestic Violence Survivor Honored at Courage Awards</a><span>October 9, 2026</span></div>
+                  <p style="margin:8px 0 0"><a class="watch-all" href="https://da.lacounty.gov/media/news" target="_blank" rel="noopener">All DA releases &#8599;</a></p>
+                </div>
+
+                <p class="watch-911"><b>Emergencies: call 911.</b> This sidebar is a public-information index of official releases — it is not a way to report a crime. Releases are published by the agencies; headlines link to the official source.</p>
+              </aside>
             </div>
           </div>
         </section>
@@ -1103,8 +1166,7 @@
               <details class="chapter">
                 <summary><span class="ch-title">Chapter 2 — The Price of Survival</span><span class="ch-meta">Published October 16, 2026 · Read</span></summary>
                 <div class="chapter-body">
-                  <p>**CHAPTER 2 - THE PRICE OF SURVIVAL**</p>
-                  <p>The shot didn&#x27;t hit anyone. That was the first lie the darkness told.</p>
+                                    <p>The shot didn&#x27;t hit anyone. That was the first lie the darkness told.</p>
                   <p>It hit the rusted metal drum behind Mara — *PING* — and the warehouse ate the sound and spat it back as a chorus. Mara didn&#x27;t scream a second time. She went silent, which was worse. She collapsed to her knees in the scattered papers, hands over that folder like a mother over a child.</p>
                   <p>Rylan was already moving.</p>
                   <p>He didn&#x27;t draw. Drawing gets you killed when you don&#x27;t know how many guns are in the room. He rolled behind a concrete pylon, shoulder slamming into cold, wet concrete, and killed his flashlight.</p>
@@ -1143,7 +1205,7 @@
                   <p>Mara grabbed his wrist. Her nails dug in.</p>
                   <p>“They wrote down a date,” she whispered. “In the back. In red. Three days from now. At the Port. That&#x27;s the big thing. Whatever they&#x27;re bringing in — it&#x27;s not money. It&#x27;s something they need a judge, a senator, and half the port authority to look away from.”</p>
                   <p>Rylan picked up the one dry page in the middle of the puddle. At the bottom, circled in red ink just like she said:</p>
-                  <p>**11/19 - CANAVERAL - M.V. LUMEN - HOLD**</p>
+                  <p><strong>11/19 - CANAVERAL - M.V. LUMEN - HOLD</strong></p>
                   <p>Three days.</p>
                   <p>He helped Mara to her feet. She was light, like she&#x27;d been forgetting to eat for months.</p>
                   <p>“Can you walk?”</p>
