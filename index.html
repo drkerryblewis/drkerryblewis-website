@@ -418,6 +418,13 @@
         .watch-card{padding:28px 22px}
         .comment-form{padding:26px 20px}
       }
+      .gaymail-banner{background:#ffffff;border-bottom:1px solid #e3e8f0;text-align:center;padding:20px 24px 22px;position:relative}
+      .gaymail-banner::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#e40303,#ff8c00,#ffed00,#008026,#244ee0,#732de0)}
+      .gaymail-banner .gm-kicker{font-size:12px;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:#b8860b}
+      .gaymail-banner .gm-title{font-size:clamp(24px,3.4vw,34px);font-weight:800;color:var(--navy-950);margin:4px 0 2px}
+      .gaymail-banner .gm-title .gm-rainbow{background:linear-gradient(90deg,#e40303,#ff8c00,#d9b400,#008026,#244ee0,#732de0);-webkit-background-clip:text;background-clip:text;color:transparent}
+      .gaymail-banner .gm-sub{font-size:16px;color:#3c4a5e;margin:2px 0 0}
+      .gaymail-banner .gm-sub strong{color:var(--navy-950)}
     </style>
   </head>
   <body>
@@ -460,6 +467,12 @@
         </nav>
       </div>
     </header>
+
+    <div class="gaymail-banner" role="region" aria-label="GayMail coming soon">
+      <div class="gm-kicker">Coming Soon</div>
+      <div class="gm-title">🌈 <span class="gm-rainbow">GayMail</span></div>
+      <p class="gm-sub">My own email service is on its way — your name <strong>@gaymail.eu.org</strong>. Email for everyone. Be you.</p>
+    </div>
 
     <main>
       <!-- ================= HOME ================= -->
