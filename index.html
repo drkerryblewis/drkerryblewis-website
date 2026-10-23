@@ -439,6 +439,40 @@
       .chapter summary .ch-meta{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
       .chapter .chapter-body{padding:4px 24px 26px;border-top:1px solid var(--line)}
       .chapter .chapter-body p{font-size:16.5px;line-height:1.75;margin:0 0 14px;color:#26303e}
+      .press-list{margin-top:8px}
+      .press-item{display:grid;grid-template-columns:118px 1fr;gap:8px 22px;padding:18px 4px;border-bottom:1px solid var(--line)}
+      .press-item:last-child{border-bottom:none}
+      .press-item .p-date{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#5a6a80;padding-top:3px}
+      .press-item .p-src{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+      .press-item h3{font-size:19px;margin:0 0 4px}
+      .press-item h3 a{color:var(--navy-950);text-decoration:none}
+      .press-item h3 a:hover{text-decoration:underline}
+      .press-item p{font-size:15.5px;margin:0;color:#3c4a5e}
+      @media (max-width:640px){.press-item{grid-template-columns:1fr}}
+      .tv-wrap2{max-width:860px;margin:0 auto}
+      .tv-frame{background:linear-gradient(180deg,#111c33,#0a1120);border:1px solid #2a3a58;border-radius:24px;padding:16px 16px 10px;box-shadow:0 30px 60px rgba(6,17,38,.35)}
+      .tv-screen{position:relative;padding-top:56.25%;background:#000;border-radius:10px;overflow:hidden}
+      .tv-screen iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+      .tv-brand{display:flex;justify-content:space-between;align-items:center;padding:10px 6px 4px;color:#dbe4f2}
+      .tv-brand .tv-logo{font-weight:900;letter-spacing:.28em;font-size:15px}
+      .tv-brand .tv-logo b{color:var(--gold)}
+      .tv-live{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:800;letter-spacing:.18em;color:#ffb3ab}
+      .tv-live i{width:9px;height:9px;border-radius:50%;background:#ff4b3e;display:inline-block;box-shadow:0 0 10px #ff4b3e}
+      .tv-stand{width:150px;height:16px;background:#0a1120;margin:0 auto;border-radius:0 0 12px 12px}
+      .tv-channels{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+      .tv-ch{font:inherit;font-size:14.5px;font-weight:700;padding:10px 18px;border-radius:999px;border:1.5px solid var(--navy-900);background:var(--navy-900);color:#fff;cursor:pointer}
+      .tv-ch:hover{background:var(--navy-950)}
+      .tv-ch.active{background:var(--gold);border-color:var(--gold);color:var(--navy-950)}
+      .tv-ch.linkout{background:#fff;color:var(--navy-900);text-decoration:none}
+      .tv-ch.linkout:hover{background:#eef2f8}
+      .tv-note{text-align:center;color:#5a6a80;font-size:14px;margin-top:16px}
+      .lat-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 44px}
+      .lat-sec h3{font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:30px 0 6px}
+      .lat-item{padding:12px 2px;border-bottom:1px solid var(--line)}
+      .lat-item a{font-family:var(--serif);font-size:19px;font-weight:700;color:var(--navy-950);text-decoration:none;line-height:1.3;display:block}
+      .lat-item a:hover{text-decoration:underline}
+      .lat-item span{font-size:13.5px;color:#5a6a80}
+      @media (max-width:760px){.lat-grid{grid-template-columns:1fr}}
       .gaymail-banner{background:#ffffff;border-bottom:1px solid #e3e8f0;text-align:center;padding:20px 24px 22px;position:relative}
       .gaymail-banner::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#e40303,#ff8c00,#ffed00,#008026,#244ee0,#732de0)}
       .gaymail-banner .gm-kicker{font-size:12px;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:#b8860b}
@@ -485,7 +519,8 @@
           <a href="#issues" data-nav="issues">The Issues</a>
           <a href="#books" data-nav="books">Books</a>
           <a href="#council" data-nav="council">City Council Meetings</a>
-          <a href="#voice" data-nav="voice">Your Voice</a>
+          <a href="#latimes" data-nav="latimes">LA Times</a>
+          <a href="#soon" data-nav="soon">Stay Tuned</a>
         </nav>
       </div>
     </header>
@@ -532,6 +567,35 @@
                 <li>Koreatown</li>
                 <li>Van Nuys</li>
               </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" id="lewis-tv" style="padding-top:56px">
+          <div class="wrap">
+            <div class="sec-head reveal">
+              <p class="sec-kicker">Lewis TV</p>
+              <h2>Lewis TV — Los Angeles, live</h2>
+              <p>Local California news and breaking news, one tap away. Pick a channel — the stations&rsquo; own free live streams play right here.</p>
+            </div>
+            <div class="tv-wrap2 reveal">
+              <div class="tv-frame">
+                <div class="tv-screen">
+                  <iframe id="lewisTvScreen" src="https://www.youtube-nocookie.com/embed/live_stream?channel=UCinjnmQEwCddOudyCC1v7qA" title="Lewis TV — live local news" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <div class="tv-brand"><span class="tv-logo">LEWIS <b>TV</b></span><span class="tv-live"><i></i>LIVE &middot; LOS ANGELES</span></div>
+              </div>
+              <div class="tv-stand"></div>
+              <div class="tv-channels">
+                <button type="button" class="tv-ch active" onclick="lewisChannel(this,'https://www.youtube-nocookie.com/embed/live_stream?channel=UCinjnmQEwCddOudyCC1v7qA','https://ktla.com','KTLA 5')">KTLA 5</button>
+                <button type="button" class="tv-ch" onclick="lewisChannel(this,'https://www.youtube-nocookie.com/embed/live_stream?channel=UCkH1uDkyuO9sVjSqdqBygOg','https://www.cbsnews.com/losangeles/','KCAL News')">KCAL News</button>
+                <button type="button" class="tv-ch" onclick="lewisChannel(this,'https://www.youtube-nocookie.com/embed/live_stream?channel=UCSWoppsVL0TLxFQ2qP_DLqQ','https://www.nbcla.com','NBC4')">NBC4</button>
+                <button type="button" class="tv-ch" onclick="lewisChannel(this,'https://www.youtube-nocookie.com/embed/live_stream?channel=UCHfF8wFnipMeDpJf8OmMxDg','https://www.foxla.com','FOX 11')">FOX 11</button>
+                <a class="tv-ch linkout" href="https://www.youtube.com/@abc7/live" target="_blank" rel="noopener">ABC7 &#8599;</a>
+                <a class="tv-ch linkout" href="https://www.pbssocal.org/live" target="_blank" rel="noopener">PBS SoCal &#8599;</a>
+                <a class="tv-ch linkout" href="https://www.lacity.gov/tv" target="_blank" rel="noopener">CityView 35 &#8599;</a>
+              </div>
+              <p class="tv-note">Streams are each station&rsquo;s own free public broadcast. If a channel is off-air or won&rsquo;t play here, watch on the station&rsquo;s site: <a id="lewisTvFallback" href="https://ktla.com" target="_blank" rel="noopener">KTLA 5 official live page</a>.</p>
             </div>
           </div>
         </section>
@@ -585,6 +649,66 @@
                 <a href="#issues" data-nav="issues" data-anchor="issue-streets">See the plan
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                 </a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="block">
+          <div class="wrap">
+            <div class="sec-head reveal">
+              <p class="sec-kicker">Press</p>
+              <h2>All things new for Dr. Kerry B. Lewis</h2>
+              <p>Every announcement, publication, and public record — followed here, newest first. Press inquiries: <a href="mailto:info@drkerryblewis.org">info@drkerryblewis.org</a></p>
+            </div>
+            <div class="press-list reveal">
+              <article class="press-item">
+                <span class="p-date">Oct 23, 2026</span>
+                <div>
+                  <span class="p-src">Announcement</span>
+                  <h3>GayMail is coming — January 1, 2027</h3>
+                  <p>Dr. Lewis announces his own email service: GayMail, at gaymail.eu.org. Your name, your address, your mail — free accounts open at launch.</p>
+                </div>
+              </article>
+              <article class="press-item">
+                <span class="p-date">Oct 23, 2026</span>
+                <div>
+                  <span class="p-src">Facebook</span>
+                  <h3><a href="https://www.facebook.com/permalink.php?story_fbid=pfbid02XB5KbpoPNit6xeGBUrzsaC2HFGxNaq51cQgPP8viKXZKn78joExXCUJNBKAiFGu9l&amp;id=61594785846498">&ldquo;IT&rsquo;S LIVE.&rdquo; — the new website launches</a></h3>
+                  <p>Dr. Lewis announces drkerryblewis.org: The Issues in full, the Books shelf, City Council meeting coverage, and this press page.</p>
+                </div>
+              </article>
+              <article class="press-item">
+                <span class="p-date">Oct 17, 2026</span>
+                <div>
+                  <span class="p-src">Books</span>
+                  <h3><a href="#books" data-nav="books">Make It or Break It — the opening trilogy completes</a></h3>
+                  <p>Chapter 3, &ldquo;The Ledger and the Light&rdquo; (Extended Cut), joins Parts One and Two. All three chapters of the Rylan Cross noir series read free on the Books page.</p>
+                </div>
+              </article>
+              <article class="press-item">
+                <span class="p-date">Oct 14, 2026</span>
+                <div>
+                  <span class="p-src">Opinion</span>
+                  <h3><a href="https://www.facebook.com/profile.php?id=61594785846498">&ldquo;A Gay Republican — and how the LGBTIA+ community fails him&rdquo;</a></h3>
+                  <p>His most-shared essay: politically homeless — too gay for one side, too Republican for the other — and done apologizing for either.</p>
+                </div>
+              </article>
+              <article class="press-item">
+                <span class="p-date">Public Record</span>
+                <div>
+                  <span class="p-src">FEC</span>
+                  <h3><a href="https://www.fec.gov/data/candidate/H4CA28093/">Federal Election Commission — candidate record</a></h3>
+                  <p>The official FEC record for LEWIS, KERRY B: federal filing history, including the Lewis for Congress committee (C00829176).</p>
+                </div>
+              </article>
+              <article class="press-item">
+                <span class="p-date">Follow</span>
+                <div>
+                  <span class="p-src">Linktree</span>
+                  <h3><a href="https://linktr.ee/drkerrylewis">Every link, one place — linktr.ee/drkerrylewis</a></h3>
+                  <p>Books, businesses, socials, and what&rsquo;s next — the full Lewis index, kept current.</p>
+                </div>
               </article>
             </div>
           </div>
@@ -1249,61 +1373,103 @@
         </section>
       </div>
 
-      <!-- ================= YOUR VOICE ================= -->
-      <div class="view" id="view-voice">
+      <!-- ================= LA TIMES ================= -->
+      <div class="view" id="view-latimes">
         <section class="page-head">
           <div class="wrap">
-            <p class="sec-kicker">Public Comments</p>
-            <h1>Your Voice</h1>
-            <p>Los Angeles is hundreds of neighborhoods and thousands of kitchen-table conversations. This board is one of them: say what your street needs, in your name, from your neighborhood — and read what your neighbors are saying.</p>
+            <p class="sec-kicker">The Paper of Record</p>
+            <h1>All Things LA Times</h1>
+            <p>The Los Angeles Times — today&rsquo;s top stories by section, plus the full directory. Headlines link straight to the story on latimes.com; full articles may need a Times subscription. Snapshot: Friday, October 23, 2026.</p>
           </div>
         </section>
 
-        <section class="block tight">
+        <section class="block">
           <div class="wrap">
-            <div class="voice-grid">
-              <form class="comment-form reveal" id="commentForm" novalidate>
-                <h2>Post a comment</h2>
-                <p class="cf-sub">Your name and neighborhood appear with your comment on the public board.</p>
-                <div class="field">
-                  <label for="cfName">Your name</label>
-                  <input id="cfName" name="name" type="text" maxlength="60" autocomplete="name" placeholder="e.g., Jordan M." required />
-                </div>
-                <div class="field">
-                  <label for="cfHood">Neighborhood</label>
-                  <select id="cfHood" name="neighborhood" required>
-                    <option value="">Choose your neighborhood&hellip;</option>
-                    <option>Los Feliz</option>
-                    <option>Silver Lake</option>
-                    <option>Griffith Park</option>
-                    <option>Hollywood Hills</option>
-                    <option>Sherman Oaks</option>
-                    <option>Studio City</option>
-                    <option>Encino</option>
-                    <option>Koreatown (D4)</option>
-                    <option>Van Nuys (D4)</option>
-                    <option>Other Los Angeles</option>
-                  </select>
-                </div>
-                <div class="field">
-                  <label for="cfText">Your comment</label>
-                  <textarea id="cfText" name="comment" maxlength="1000" placeholder="What does your street need most?" required></textarea>
-                </div>
-                <p class="mod-note">Comments are public. Keep it civil — no personal attacks, no spam. Comments may be removed.</p>
-                <button class="btn btn-navy" type="submit">Post to the board</button>
-                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-              </form>
-
-              <div class="reveal">
-                <h2 class="board-title">The Board <span class="b-count" id="commentCount"></span></h2>
-                <div id="commentBoard">
-                  <p class="board-empty" id="boardEmpty">No comments yet. Be the first voice from your neighborhood.</p>
-                </div>
+            <div class="sec-head reveal">
+              <p class="sec-kicker">Today&rsquo;s Headlines</p>
+              <h2>From the Los Angeles Times — October 23, 2026</h2>
+            </div>
+            <div class="lat-grid reveal">
+              <div class="lat-sec">
+                <h3>California</h3>
+                <div class="lat-item"><a href="https://www.latimes.com/politics/story/2026-10-23/santa-maria-high-school-student-u-s-citizen-is-injured-as-ice-detains-him" target="_blank" rel="noopener">ICE agents tackle and injure U.S. citizen student with disabilities, local officials say</a> <span>— Andrea Castillo</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/california/story/2026-10-23/this-modern-family-writer-will-be-l-a-s-first-gentleman-if-raman-is-elected-mayor" target="_blank" rel="noopener">This 'Modern Family' writer will be L.A.'s 'first gentleman' if Raman is elected mayor</a> <span>— Noah Goldberg</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/california/story/2026-10-23/marissa-roy-los-angeles-city-attorneys-candidate" target="_blank" rel="noopener">Inside Marissa Roy's Bollywood-bumping, group-project bid to become L.A.'s city attorney</a> <span>— Sonja Sharp</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/california/story/2026-10-23/time-bomb-for-renters-la-countys-cheapest-apartments-are-getting-old-fast" target="_blank" rel="noopener">A time bomb for renters: L.A. County's cheapest apartments are getting old, fast</a> <span>— Jack Flemming</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/california/story/2026-10-23/animals-charities-executor" target="_blank" rel="noopener">He left millions to animals. His executor gave it to her friends' charities, which have done little</a> <span>— Alene Tchekmedyian</span></div>
+              </div>
+              <div class="lat-sec">
+                <h3>Politics</h3>
+                <div class="lat-item"><a href="https://www.latimes.com/california/story/2026-10-23/billionaire-tax-backers-plan-to-attack-newsom-in-early-presidential-primary-states" target="_blank" rel="noopener">Backers of billionaire tax plan to attack Newsom in early presidential primary states</a> <span>— Seema Mehta</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/politics/story/2026-10-23/these-californians-spent-0-07-of-their-billions-to-oppose-prop-40" target="_blank" rel="noopener">The millions spent by California billionaires against Prop. 40 is about 0.07% of their wealth</a> <span>— Sandhya Kambhampati &amp; Gabrielle LaMarr LeMee</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/politics/story/2026-10-23/many-latinos-are-over-trump-shift-is-especially-striking-in-texas" target="_blank" rel="noopener">Many Latinos are done with Trump. The shift is especially striking in Texas</a> <span>— Ana Ceballos</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/politics/story/2026-10-23/trump-ramps-up-fraud-investigations-of-immigrants-as-election-approaches" target="_blank" rel="noopener">Trump ramps up fraud investigations of immigrants as election approaches</a> <span>— Andrea Castillo</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/politics/story/2026-10-23/muslims-americanness-abdul-el-sayed" target="_blank" rel="noopener">Muslims have always had to prove our Americanness. Enter Abdul El-Sayed</a> <span>— Lorraine Ali</span></div>
+              </div>
+              <div class="lat-sec">
+                <h3>Business</h3>
+                <div class="lat-item"><a href="https://www.latimes.com/business/story/2026-10-23/vallarta-supermarkets-opens-new-store" target="_blank" rel="noopener">Vallarta Supermarkets opens a new store</a> <span>— Caroline Petrow-Cohen</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/business/story/2026-10-23/a-judge-just-gave-us-25-billion-reasons-why-metas-privacy-promises-about-its-muse-ai-bot-shouldnt-be-trusted" target="_blank" rel="noopener">A judge just gave us 25 billion reasons why Meta's privacy promises about its Muse AI bot shouldn't be trusted</a> <span>— Michael Hiltzik</span></div>
+              </div>
+              <div class="lat-sec">
+                <h3>Sports</h3>
+                <div class="lat-item"><a href="https://www.latimes.com/sports/story/2026-10-23/nfl-great-marshall-faulk-shares-parkinsons-diagnosis-rams-colts-southern-university" target="_blank" rel="noopener">Former Rams great Marshall Faulk shares Parkinson's diagnosis, hopes to help others</a> <span>— Steve Henson</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/sports/lakers/story/2026-10-23/how-lakers-luka-doncic-went-from-wonder-boy-to-the-man" target="_blank" rel="noopener">How the Lakers' Luka Doncic went from 'Wonder Boy' to 'The Man'</a> <span>— Thuc Nhi Nguyen</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/sports/dodgers/story/2026-10-23/dodgers-fans-cheering-for-brewers-world-series" target="_blank" rel="noopener">Why Dodgers fans need to be cheering for the Brewers in this World Series</a> <span>— Bill Shaikin</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/sports/story/2026-10-23/clash-between-inglewood-sofi-stadium-operators-hits-ballot" target="_blank" rel="noopener">How a clash between Inglewood leaders and SoFi Stadium operators hit the ballot</a> <span>— Sam Farmer</span></div>
+              </div>
+              <div class="lat-sec">
+                <h3>Entertainment</h3>
+                <div class="lat-item"><a href="https://www.latimes.com/entertainment-arts/movies/story/2026-10-23/wildwood-review-laika-stop-motion-animation-travis-knight-chris-butler" target="_blank" rel="noopener">'Wildwood' is an exquisite handmade adventure set in a forest of warring factions</a> <span>— Gary Goldstein</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/entertainment-arts/story/2026-10-23/catapult-books-sold-los-angeles-authors-are-mourning" target="_blank" rel="noopener">Catapult Books is being sold; authors mourn a major loss to L.A.'s literary scene</a> <span>— Emily St. Martin</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/entertainment-arts/tv/story/2026-10-23/nobody-wants-this-esther-sasha-morgan-season-3-finale" target="_blank" rel="noopener">'Nobody Wants This' turns a complicated triangle into a 'situation' in Season 3</a> <span>— Yvonne Villarreal</span></div>
+              </div>
+              <div class="lat-sec">
+                <h3>Opinion</h3>
+                <div class="lat-item"><a href="https://www.latimes.com/opinion/story/2026-10-23/nolan-wells-kohen-wiley-black-youth-deaths-south" target="_blank" rel="noopener">No magic words will cure the racism that festers in America</a> <span>— LZ Granderson</span></div>
+                <div class="lat-item"><a href="https://www.latimes.com/opinion/letters-to-the-editor/story/2026-10-23/dead-tree-management-wildfires" target="_blank" rel="noopener">Letters to the Editor: Dead tree management is key to reversing California's wildfire trends</a></div>
               </div>
             </div>
+
+            <div class="sec-head reveal" style="margin-top:64px">
+              <p class="sec-kicker">The Directory</p>
+              <h2>Every section, one tap</h2>
+            </div>
+            <div class="mtg-grid reveal">
+              <article class="mtg-card"><h3>Front Page</h3><p>The Times homepage — top stories as the editors stack them.</p><p><a href="https://www.latimes.com" target="_blank" rel="noopener">latimes.com &#8599;</a></p></article>
+              <article class="mtg-card"><h3>California</h3><p>L.A., the state, and the stories shaping both.</p><p><a href="https://www.latimes.com/california" target="_blank" rel="noopener">latimes.com/california &#8599;</a></p></article>
+              <article class="mtg-card"><h3>Politics</h3><p>City Hall to Sacramento to Washington.</p><p><a href="https://www.latimes.com/politics" target="_blank" rel="noopener">latimes.com/politics &#8599;</a></p></article>
+              <article class="mtg-card"><h3>Business</h3><p>Money, media, real estate, and the economy.</p><p><a href="https://www.latimes.com/business" target="_blank" rel="noopener">latimes.com/business &#8599;</a></p></article>
+              <article class="mtg-card"><h3>Sports</h3><p>Dodgers, Lakers, Rams, and the whole L.A. slate.</p><p><a href="https://www.latimes.com/sports" target="_blank" rel="noopener">latimes.com/sports &#8599;</a></p></article>
+              <article class="mtg-card"><h3>Entertainment</h3><p>Film, TV, music, and the industry that runs this town.</p><p><a href="https://www.latimes.com/entertainment-arts" target="_blank" rel="noopener">latimes.com/entertainment-arts &#8599;</a></p></article>
+              <article class="mtg-card"><h3>Opinion</h3><p>Editorials, columns, and letters to the editor.</p><p><a href="https://www.latimes.com/opinion" target="_blank" rel="noopener">latimes.com/opinion &#8599;</a></p></article>
+              <article class="mtg-card"><h3>eNewspaper</h3><p>The print paper, page for page. Enter the eNewspaper from the Times homepage.</p><p><a href="https://www.latimes.com" target="_blank" rel="noopener">Open via latimes.com &#8599;</a></p></article>
+              <article class="mtg-card"><h3>Subscribe</h3><p>Full access to every story, the archive, and the eNewspaper.</p><p><a href="https://www.latimes.com/subscription" target="_blank" rel="noopener">latimes.com/subscription &#8599;</a></p></article>
+            </div>
+            <p style="color:#5a6a80;font-size:14.5px;margin-top:22px">Headlines are the property of the Los Angeles Times and are shown here as links for readers&rsquo; convenience. This page is a reader&rsquo;s index, not an official LA Times product.</p>
           </div>
         </section>
       </div>
+
+      <!-- ================= STAY TUNED ================= -->
+      <div class="view" id="view-soon">
+        <section class="page-head">
+          <div class="wrap">
+            <p class="sec-kicker">Stay Tuned</p>
+            <h1>Something New Is Coming</h1>
+            <p>This page is being rebuilt for something new. No announcements today — just this:</p>
+          </div>
+        </section>
+
+        <section class="block">
+          <div class="wrap" style="text-align:center;padding:26px 0 10px">
+            <p class="serif-i" style="font-size:clamp(26px,4vw,40px);color:var(--navy-950);max-width:22ch;margin:0 auto;line-height:1.3">&ldquo;Something new is coming.&rdquo;</p>
+            <p style="font-size:15px;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-top:22px">Stay Tuned</p>
+            <p style="color:#5a6a80;max-width:52ch;margin:18px auto 0">When it&rsquo;s ready, it lands here first. Until then — watch this page.</p>
+          </div>
+        </section>
+      </div>
+
     </main>
 
     <footer>
@@ -1322,7 +1488,8 @@
               <li><a href="#issues" data-nav="issues">The Issues</a></li>
               <li><a href="#books" data-nav="books">Books</a></li>
               <li><a href="#council" data-nav="council">City Council Meetings</a></li>
-              <li><a href="#voice" data-nav="voice">Your Voice — Public Comments</a></li>
+              <li><a href="#latimes" data-nav="latimes">LA Times</a></li>
+              <li><a href="#soon" data-nav="soon">Stay Tuned — Something New</a></li>
             </ul>
           </div>
           <div>
@@ -1344,7 +1511,16 @@
 
     <script>
       (function () {
-        var views = { home: document.getElementById('view-home'), about: document.getElementById('view-about'), issues: document.getElementById('view-issues'), books: document.getElementById('view-books'), council: document.getElementById('view-council'), voice: document.getElementById('view-voice') };
+        function lewisChannel(btn, src, fb, name) {
+          var f = document.getElementById('lewisTvScreen');
+          if (f) f.src = src;
+          var chs = document.querySelectorAll('.tv-ch');
+          for (var i = 0; i < chs.length; i++) chs[i].classList.remove('active');
+          if (btn) btn.classList.add('active');
+          var a = document.getElementById('lewisTvFallback');
+          if (a) { a.href = fb; a.textContent = name + ' official live page'; }
+        }
+        var views = { home: document.getElementById('view-home'), about: document.getElementById('view-about'), issues: document.getElementById('view-issues'), books: document.getElementById('view-books'), council: document.getElementById('view-council'), latimes: document.getElementById('view-latimes'), soon: document.getElementById('view-soon') };
         var mainNav = document.getElementById('mainNav');
         var toggle = document.getElementById('navToggle');
         var pendingAnchor = null;
