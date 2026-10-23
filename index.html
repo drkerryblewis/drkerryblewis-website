@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="description" content="The personal website of Dr. Kerry B. Lewis of Los Angeles — his story, and his plan for the neighborhoods of District 4: Los Feliz, Silver Lake, Griffith Park, the Hollywood Hills, Sherman Oaks, Studio City, and Encino." />
+    <meta name="description" content="The personal website of Dr. Kerry B. Lewis of Los Angeles — his story, his books, his plan for Los Angeles, and what City Hall is working on." />
     <link rel="icon" href="data:," />
     <title>Dr. Kerry B. Lewis — Los Angeles</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -418,6 +418,20 @@
         .watch-card{padding:28px 22px}
         .comment-form{padding:26px 20px}
       }
+      .mtg-next{background:var(--navy-950);color:var(--on-navy);border-radius:var(--radius);padding:30px 32px;border-bottom:3px solid var(--gold)}
+      .mtg-next .mtg-when{font-size:clamp(24px,3vw,32px);font-weight:800;color:#fff;margin:2px 0 4px}
+      .mtg-next p{color:var(--on-navy-2);margin:0;font-size:16.5px}
+      .mtg-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+      .mtg-card{border:1px solid var(--line);border-left:3px solid var(--gold);background:var(--surface-2);border-radius:0 var(--radius) var(--radius) 0;padding:22px 24px}
+      .mtg-card h3{font-size:19px;margin-bottom:6px}
+      .mtg-card p{font-size:15.5px;margin:0}
+      .mtg-card .cf{font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:6px}
+      .mtg-list{list-style:none;margin:0;padding:0}
+      .mtg-list li{display:flex;justify-content:space-between;gap:16px;padding:13px 4px;border-bottom:1px solid var(--line);font-size:16.5px}
+      .mtg-list li:last-child{border-bottom:none}
+      .mtg-list .mtg-d{font-weight:700;color:var(--navy-950)}
+      .mtg-list .mtg-t{color:#5a6a80;white-space:nowrap}
+      @media (max-width:760px){.mtg-grid{grid-template-columns:1fr}}
       .gaymail-banner{background:#ffffff;border-bottom:1px solid #e3e8f0;text-align:center;padding:20px 24px 22px;position:relative}
       .gaymail-banner::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#e40303,#ff8c00,#ffed00,#008026,#244ee0,#732de0)}
       .gaymail-banner .gm-kicker{font-size:12px;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:#b8860b}
@@ -462,7 +476,8 @@
           <a href="#home" data-nav="home">Home</a>
           <a href="#about" data-nav="about">About</a>
           <a href="#issues" data-nav="issues">The Issues</a>
-          <a href="#tracker" data-nav="tracker">Election Tracker</a>
+          <a href="#books" data-nav="books">Books</a>
+          <a href="#council" data-nav="council">City Council Meetings</a>
           <a href="#voice" data-nav="voice">Your Voice</a>
         </nav>
       </div>
@@ -471,7 +486,7 @@
     <div class="gaymail-banner" role="region" aria-label="GayMail coming soon">
       <div class="gm-kicker">Coming Soon</div>
       <div class="gm-title">🌈 <span class="gm-rainbow">GayMail</span></div>
-      <p class="gm-sub">My own email service is on its way — your name <strong>@gaymail.eu.org</strong>. Email for everyone. Be you.</p>
+      <p class="gm-sub">My own email service launches <strong>January 1, 2027</strong> — your name <strong>@gaymail.eu.org</strong>. Email for everyone. Be you.</p>
     </div>
 
     <main>
@@ -480,12 +495,12 @@
         <section class="hero">
           <div class="hero-grid">
             <div class="hero-copy">
-              <p class="hero-loc">Los Angeles &middot; District 4</p>
+              <p class="hero-loc">Los Angeles, California</p>
               <h1>Dr. Kerry B.<br /><span class="goldline">Lewis</span></h1>
               <p class="hero-tag">&ldquo;End failed leadership. Fix homelessness. Lower the cost of living.&rdquo;</p>
               <p class="hero-lede">Business owner. Author. Publisher. A Los Angeles resident who has lived the city&rsquo;s hardest problems — and has a plan to clean them up, neighborhood by neighborhood.</p>
               <div class="hero-cta">
-                <a class="btn btn-gold" href="#issues" data-nav="issues">The Plan for District 4
+                <a class="btn btn-gold" href="#issues" data-nav="issues">The Plan for Los Angeles
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                 </a>
                 <a class="btn btn-ghost" href="#about" data-nav="about">Meet Kerry</a>
@@ -498,7 +513,7 @@
           </div>
           <div class="district-strip">
             <div class="wrap">
-              <span class="ds-label">District 4</span>
+              <span class="ds-label">Los Angeles</span>
               <ul>
                 <li>Los Feliz</li>
                 <li>Silver Lake</li>
@@ -530,7 +545,7 @@
           <div class="wrap">
             <div class="sec-head reveal">
               <p class="sec-kicker">Three Priorities</p>
-              <h2>What District 4 needs first</h2>
+              <h2>What Los Angeles needs first</h2>
               <p>From Los Feliz to Sherman Oaks, residents are asking for the same three things: real help for people on the street, a cost of living a working family can carry, and streets and parks that feel clean and safe again.</p>
             </div>
             <div class="pillars">
@@ -549,7 +564,7 @@
                   <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V9.5L12 4l8 5.5V20"/><path d="M2.5 20h19"/><path d="M9.5 20v-4.5h5V20"/><path d="M12 8v.01"/></svg>
                 </div>
                 <h3>Lower the Cost of Living</h3>
-                <p>Cut the permitting red tape that strangles new housing and small business, protect the small landlords who keep rents human, and get homes built faster — so living in District 4 stops being a luxury good.</p>
+                <p>Cut the permitting red tape that strangles new housing and small business, protect the small landlords who keep rents human, and get homes built faster — so living in Los Angeles stops being a luxury good.</p>
                 <a href="#issues" data-nav="issues" data-anchor="issue-housing">See the plan
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                 </a>
@@ -573,8 +588,8 @@
           <span class="band-cap">The Hollywood Sign, Griffith Park</span>
           <div class="band-inner">
             <div class="wrap">
-              <h2>The crown of District 4 deserves better care</h2>
-              <p>Griffith Park is one of the largest urban parks in America — and it sits in District 4. Its trails, roads, and overlooks should be the pride of Los Angeles, kept clean, lit, and safe for the millions who visit and the neighborhoods that surround it.</p>
+              <h2>The crown of Los Angeles deserves better care</h2>
+              <p>Griffith Park is one of the largest urban parks in America — and it belongs to all of Los Angeles. Its trails, roads, and overlooks should be the pride of Los Angeles, kept clean, lit, and safe for the millions who visit and the neighborhoods that surround it.</p>
             </div>
           </div>
         </section>
@@ -589,7 +604,7 @@
                 <p class="sec-kicker">Meet Kerry</p>
                 <h2>Lived it. Built from it. Ready to fix it.</h2>
                 <p>Kerry Lewis came up the hard way — born in Griffin, Georgia, raised in Daytona Beach, Florida, and at one point homeless himself. He went on to earn a master&rsquo;s degree and build businesses from nothing.</p>
-                <p>That combination — <strong>lived experience and a builder&rsquo;s record</strong> — is what he brings to the problems District 4 talks about every day.</p>
+                <p>That combination — <strong>lived experience and a builder&rsquo;s record</strong> — is what he brings to the problems Los Angeles talks about every day.</p>
                 <ul class="fact-list">
                   <li><span><b>Owner,</b> Rover Pet Stores Inc. and Rover Exotic Rescue LLC</span></li>
                   <li><span><b>Publisher &amp; founder,</b> Edgewater Gazette Inc. and Griffin News 5 LLC</span></li>
@@ -726,7 +741,7 @@
         <section class="block closing">
           <div class="wrap reveal">
             <h2>&ldquo;I answer to voters, not party bosses.&rdquo;</h2>
-            <p>See the problems District 4 is living with — and the step-by-step plan Kerry Lewis lays out to clean them up.</p>
+            <p>See the problems Los Angeles is living with — and the step-by-step plan Kerry Lewis lays out to clean them up.</p>
             <a class="btn btn-gold" href="#issues" data-nav="issues">Read the Issues
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
@@ -738,9 +753,9 @@
       <div class="view" id="view-issues">
         <section class="page-head">
           <div class="wrap">
-            <p class="sec-kicker">The Issues &middot; Council District 4</p>
-            <h1>What&rsquo;s wrong in District 4 — and the cleanup plan</h1>
-            <p>District 4 runs from Los Feliz and Silver Lake through Griffith Park and the Hollywood Hills, and across the Valley to Sherman Oaks, Studio City, Encino, and parts of Koreatown and Van Nuys. Five problems come up on every block. Here is each one, stated plainly — and the steps to fix it.</p>
+            <p class="sec-kicker">The Issues &middot; Los Angeles</p>
+            <h1>What&rsquo;s wrong in Los Angeles — and the cleanup plan</h1>
+            <p>From Los Feliz and Silver Lake through Griffith Park and the Hollywood Hills, and across the Valley to Sherman Oaks, Studio City, Encino, Koreatown, and Van Nuys — five problems come up on every block. Here is each one, stated plainly — and the steps to fix it.</p>
           </div>
         </section>
 
@@ -889,7 +904,7 @@
 
             <aside aria-label="Notice" style="margin-top:2.5rem;border:2px dashed #b08d3e;background:rgba(176,141,62,0.07);padding:1.4rem 1.6rem;text-align:center;">
               <p style="margin:0 0 0.4rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;font-size:0.8rem;">Notice</p>
-              <p style="margin:0;"><b>More issues will be added.</b> This page grows as District 4 speaks — Kerry is still listening across the district, and new issues, each with a full plan, will be added here as they&rsquo;re ready.</p>
+              <p style="margin:0;"><b>More issues will be added.</b> This page grows as Los Angeles speaks — Kerry is still listening across the city, and new issues, each with a full plan, will be added here as they&rsquo;re ready.</p>
             </aside>
           </div>
         </section>
@@ -906,84 +921,159 @@
         </section>
       </div>
 
-      <!-- ================= ELECTION TRACKER ================= -->
-      <div class="view" id="view-tracker">
+      <!-- ================= BOOKS ================= -->
+      <div class="view" id="view-books">
         <section class="page-head">
           <div class="wrap">
-            <p class="sec-kicker">Election Tracker</p>
-            <h1>Election Tracker: The Road to District 4</h1>
-            <p>One seat, two possible roads. This page tracks the dates that decide when District 4 next chooses its council member — and the November result everything else hangs on.</p>
+            <p class="sec-kicker">The Books</p>
+            <h1>Stories by Kerry Lewis</h1>
+            <p>Crime, survival, and horror — the series Kerry writes off the clock. The stories the headlines leave out.</p>
           </div>
         </section>
 
-        <section class="block tight">
+        <section class="block">
           <div class="wrap">
-            <div class="count-card reveal">
-              <p class="count-label">Countdown to Election Day</p>
-              <p class="count-date">Tuesday, November 3, 2026</p>
-              <div class="count-grid" role="timer" aria-label="Time remaining until Election Day, November 3, 2026">
-                <div class="count-cell"><span class="count-num" id="cdDays">&ndash;</span><span class="count-unit">Days</span></div>
-                <div class="count-cell"><span class="count-num" id="cdHours">&ndash;</span><span class="count-unit">Hours</span></div>
-                <div class="count-cell"><span class="count-num" id="cdMins">&ndash;</span><span class="count-unit">Minutes</span></div>
-                <div class="count-cell"><span class="count-num" id="cdSecs">&ndash;</span><span class="count-unit">Seconds</span></div>
+            <div class="reveal">
+              <p class="sec-kicker">Noir Crime Thriller &middot; Series</p>
+              <h2>Make It or Break It</h2>
+              <p><i>The Adventures into Crime &amp; Law</i> — a noir crime-thriller series following detective Rylan Cross through the underbelly of Orlando, where every case has a price and the truth costs the most.</p>
+              <div class="book-row" style="margin-top:20px">
+                <div class="book">
+                  <h3>Part One — The Price of Truth</h3>
+                  <p>The case that starts it all. Published October 15, 2026.</p>
+                </div>
+                <div class="book">
+                  <h3>Chapter 2 — The Price of Survival</h3>
+                  <p>Cross learns what staying alive costs. Published October 16, 2026.</p>
+                </div>
               </div>
-              <p class="count-note" id="cdNote">Results are counted in votes, not polls — totals post here on election night.</p>
+              <div class="book-row" style="margin-top:18px">
+                <div class="book">
+                  <h3>Chapter 3 — The Ledger and the Light</h3>
+                  <p>The extended cut — the books behind the case come due. Published October 17, 2026.</p>
+                </div>
+                <div class="book">
+                  <h3>The series continues</h3>
+                  <p>New chapters of Make It or Break It are in the works — follow this page for release dates.</p>
+                </div>
+              </div>
             </div>
 
-            <div class="watch-card reveal">
-              <p class="sec-kicker">The Decision the City Is Watching</p>
-              <h2>The Mayor&rsquo;s race decides District 4&rsquo;s calendar</h2>
-              <p>On November 3, 2026, Los Angeles elects its next Mayor — and <strong>Nithya Raman, District 4&rsquo;s current council member, is running for that office</strong>. Her result is the fork in the road for every neighborhood in this district, from Los Feliz to Sherman Oaks. What happens to the District 4 seat depends entirely on how that race ends.</p>
+            <div class="reveal" style="margin-top:56px">
+              <p class="sec-kicker">Horror Mystery &middot; Coming March 2027</p>
+              <h2>Called 7</h2>
+              <p>Joshua Byrd and Kerry Lewis — a couple down on their luck — find a chest marked only with the number 7. What&rsquo;s inside was never meant to be opened. A horror mystery series, coming March 2027.</p>
             </div>
 
-            <div class="branch-grid">
-              <article class="branch reveal">
-                <p class="b-tag">If Raman Wins</p>
-                <h3>The seat opens — and a special election follows</h3>
-                <p>If Councilmember Raman wins the Mayor&rsquo;s race, she leaves the council when she takes the Mayor&rsquo;s office in <strong>December 2026</strong> — and District 4&rsquo;s seat opens with her. Under <strong>Los Angeles City Charter &sect;409</strong>, a vacant council seat is filled by a special election, which would follow in <strong>spring 2027</strong>. The district would choose its next council member years ahead of the regular schedule.</p>
-              </article>
-              <article class="branch reveal">
-                <p class="b-tag">If She Doesn&rsquo;t</p>
-                <h3>The regular cycle applies</h3>
-                <p>If the Mayor&rsquo;s race goes another way, District 4 stays on the city&rsquo;s regular election calendar: a primary in <strong>March 2028</strong> and a general election that November, when the District 4 seat is next scheduled to be decided. Either way, the dates below are the ones to watch.</p>
-              </article>
-            </div>
-
-            <div class="cycle-head reveal">
-              <p class="sec-kicker">The Regular Cycle</p>
-              <h2>The 2028 calendar</h2>
-              <p>If District 4 runs on its regular schedule, these are the fixed points — plus one milestone that has already passed.</p>
-            </div>
-            <div class="date-grid">
-              <article class="date-card reveal">
-                <p class="d-tag">Milestone &middot; Reached</p>
-                <h3>Fundraising window opened</h3>
-                <p>The Los Angeles City Ethics Commission opened the 2028 fundraising window on <strong>September 8, 2026</strong>. The 2028 cycle is officially underway.</p>
-                <p class="d-days">September 8, 2026</p>
-              </article>
-              <article class="date-card reveal">
-                <p class="d-tag">Primary Election</p>
-                <h3>Tuesday, March 7, 2028</h3>
-                <p>District 4 voters narrow the field. A candidate who wins a majority in the primary takes the seat outright; otherwise the top two advance.</p>
-                <p class="d-days" data-days-to="2028-03-07T00:00:00-08:00">&nbsp;</p>
-              </article>
-              <article class="date-card reveal">
-                <p class="d-tag">General Election</p>
-                <h3>Tuesday, November 7, 2028</h3>
-                <p>Election Day for the District 4 seat on the regular cycle — the decision the whole calendar builds toward.</p>
-                <p class="d-days" data-days-to="2028-11-07T00:00:00-08:00">&nbsp;</p>
-              </article>
+            <div class="reveal" style="margin-top:56px">
+              <p class="sec-kicker">A Dark Pulse Original Series &middot; Begins January 15, 2027</p>
+              <h2>Jerking Death 1</h2>
+              <p>The next series from the Dark Pulse line — Jerking Death 1 begins January 15, 2027.</p>
             </div>
           </div>
         </section>
+      </div>
 
-        <section class="block closing">
-          <div class="wrap reveal">
-            <h2>Watching the seat. Watching the dates.</h2>
-            <p>However November goes, District 4&rsquo;s future gets decided on a schedule anyone can follow. This tracker follows it — in votes, not polls.</p>
-            <a class="btn btn-gold" href="#voice" data-nav="voice">Add your voice
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+      <!-- ================= CITY COUNCIL MEETINGS ================= -->
+      <div class="view" id="view-council">
+        <section class="page-head">
+          <div class="wrap">
+            <p class="sec-kicker">City Hall &middot; Open Meetings</p>
+            <h1>Los Angeles City Council Meetings</h1>
+            <p>When the Council meets, what&rsquo;s on the table, and how to watch or speak — taken from the Los Angeles City Clerk&rsquo;s official calendar and published agendas.</p>
+          </div>
+        </section>
+
+        <section class="block">
+          <div class="wrap">
+            <div class="mtg-next reveal">
+              <p class="sec-kicker" style="color:var(--gold-bright);margin-bottom:6px">Next Meeting</p>
+              <p class="mtg-when">Tuesday, October 27, 2026 &middot; 10:00 AM</p>
+              <p>John Ferraro Council Chamber, Room 340 &middot; City Hall, 200 North Spring Street, Los Angeles (entrance on Main Street). Watch live on Cable Channel 35, at <a href="https://clerk.lacity.gov/calendar" style="color:var(--gold-bright)">clerk.lacity.gov/calendar</a>, or on YouTube.</p>
+            </div>
+
+            <div class="reveal" style="margin-top:48px">
+              <p class="sec-kicker">On the Table</p>
+              <h2>The headline item for October 27</h2>
+              <p>The full agenda for October 27 posts on the City Clerk&rsquo;s calendar by Saturday morning, October 24. One major decision is already scheduled:</p>
+              <div class="mtg-grid">
+                <div class="mtg-card">
+                  <span class="cf">Council File 26-1394</span>
+                  <h3>LAPD streetlight cameras — veto decision</h3>
+                  <p>The Council decides whether to veto the Police Commission&rsquo;s approval of the Axon &ldquo;Lightpost&rdquo; pilot — license-plate-reader cameras mounted on city streetlights, a no-cost 3-month pilot. The Public Safety Committee voted 3&ndash;2 to recommend a veto, and October 27 is the last day the Council can act. Expect a full debate on surveillance, privacy, and public safety.</p>
+                </div>
+                <div class="mtg-card">
+                  <span class="cf">How Agendas Work</span>
+                  <h3>Read the full agenda yourself</h3>
+                  <p>Every Council agenda is public and posted at least 72 hours before the meeting. Read the October 27 agenda the moment it posts — and every past agenda — on the City Clerk&rsquo;s calendar at <a href="https://clerk.lacity.gov/calendar">clerk.lacity.gov/calendar</a>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal" style="margin-top:48px">
+              <p class="sec-kicker">Last Meeting &middot; Friday, October 23, 2026</p>
+              <h2>What the Council took up most recently</h2>
+              <div class="mtg-grid">
+                <div class="mtg-card">
+                  <span class="cf">Council File 25-1538</span>
+                  <h3>Citywide Parks Needs Assessment</h3>
+                  <p>The 2025 assessment of park needs across Los Angeles — the Recreation and Parks Board&rsquo;s report on what the city&rsquo;s parks need, noted and filed.</p>
+                </div>
+                <div class="mtg-card">
+                  <span class="cf">Council File 26-1426</span>
+                  <h3>Fatal Crash Rapid Response Program</h3>
+                  <p>A motion to establish a Programmatic Fatal Crash Rapid Response Program — a faster, organized city response after fatal collisions, headed to the Transportation Committee.</p>
+                </div>
+                <div class="mtg-card">
+                  <span class="cf">Council File 17-1098-S1</span>
+                  <h3>City succession planning</h3>
+                  <p>Preparing for retirements and turnover across the city workforce — the Personnel Department&rsquo;s succession-planning report, noted and filed.</p>
+                </div>
+                <div class="mtg-card">
+                  <span class="cf">Council File 26-0600-S82</span>
+                  <h3>Inspector hiring qualifications</h3>
+                  <p>Alternative qualifications for Housing Inspector and Building Inspector candidates — widening the hiring pipeline for the inspectors the city is short on.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal" style="margin-top:48px">
+              <p class="sec-kicker">Coming Up</p>
+              <h2>Regular meeting schedule</h2>
+              <p>The Council meets regularly on <strong>Tuesdays, Wednesdays, and Fridays at 10:00 AM</strong> in Room 340. Upcoming sessions on that schedule:</p>
+              <ul class="mtg-list" style="margin-top:10px">
+                <li><span class="mtg-d">Tuesday, October 27, 2026</span><span class="mtg-t">10:00 AM</span></li>
+                <li><span class="mtg-d">Wednesday, October 28, 2026</span><span class="mtg-t">10:00 AM</span></li>
+                <li><span class="mtg-d">Friday, October 30, 2026</span><span class="mtg-t">10:00 AM</span></li>
+                <li><span class="mtg-d">Wednesday, November 4, 2026</span><span class="mtg-t">10:00 AM</span></li>
+                <li><span class="mtg-d">Friday, November 6, 2026</span><span class="mtg-t">10:00 AM</span></li>
+              </ul>
+              <p style="margin-top:14px">Meeting dates and agendas can change — always confirm on the City Clerk&rsquo;s calendar before heading downtown.</p>
+            </div>
+
+            <div class="reveal" style="margin-top:48px">
+              <p class="sec-kicker">Your Turn</p>
+              <h2>How to speak at a meeting</h2>
+              <div class="mtg-grid">
+                <div class="mtg-card">
+                  <h3>In person</h3>
+                  <p>Come to the John Ferraro Council Chamber, Room 340 at City Hall, and register at the speaker kiosks inside or outside the chamber.</p>
+                </div>
+                <div class="mtg-card">
+                  <h3>By phone</h3>
+                  <p>Call <strong>833-435-1820</strong>, enter Meeting ID <strong>165 917 6148</strong>, press # twice, then *9 to request to speak and *6 to unmute when you are called.</p>
+                </div>
+                <div class="mtg-card">
+                  <h3>In writing</h3>
+                  <p>Submit a public comment any time at <a href="https://LACouncilComment.com">LACouncilComment.com</a> — reference the Council File number so your comment lands on the right item.</p>
+                </div>
+                <div class="mtg-card">
+                  <h3>Listen only</h3>
+                  <p>Live audio by phone: Metro (213) 621-CITY &middot; Valley (818) 904-9450 &middot; Westside (310) 471-CITY &middot; San Pedro (310) 547-CITY.</p>
+                </div>
+              </div>
+              <p style="margin-top:18px;font-size:14.5px;color:#5a6a80">Meeting information on this page is summarized from Los Angeles City Clerk publications and was last updated October 23, 2026. Spanish interpretation is available at all Council meetings; other languages on request. This page is not an official City website — the official source is <a href="https://clerk.lacity.gov/calendar">clerk.lacity.gov</a>.</p>
+            </div>
           </div>
         </section>
       </div>
@@ -994,7 +1084,7 @@
           <div class="wrap">
             <p class="sec-kicker">Public Comments</p>
             <h1>Your Voice</h1>
-            <p>District 4 is nine neighborhoods and thousands of kitchen-table conversations. This board is one of them: say what your street needs, in your name, from your neighborhood — and read what your neighbors are saying.</p>
+            <p>Los Angeles is hundreds of neighborhoods and thousands of kitchen-table conversations. This board is one of them: say what your street needs, in your name, from your neighborhood — and read what your neighbors are saying.</p>
           </div>
         </section>
 
@@ -1058,24 +1148,24 @@
             <ul class="foot-links">
               <li><a href="#home" data-nav="home">Home</a></li>
               <li><a href="#about" data-nav="about">About Dr. Lewis</a></li>
-              <li><a href="#issues" data-nav="issues">The Issues in District 4</a></li>
-              <li><a href="#tracker" data-nav="tracker">Election Tracker</a></li>
+              <li><a href="#issues" data-nav="issues">The Issues</a></li>
+              <li><a href="#books" data-nav="books">Books</a></li>
+              <li><a href="#council" data-nav="council">City Council Meetings</a></li>
               <li><a href="#voice" data-nav="voice">Your Voice — Public Comments</a></li>
             </ul>
           </div>
           <div>
-            <h4>District 4</h4>
-            <ul class="foot-areas">
-              <li>Los Feliz &amp; Silver Lake</li>
-              <li>Griffith Park &amp; Hollywood Hills</li>
-              <li>Sherman Oaks &amp; Studio City</li>
-              <li>Encino, Koreatown &amp; Van Nuys</li>
+            <h4>More</h4>
+            <ul class="foot-links">
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="mailto:info@drkerryblewis.org">info@drkerryblewis.org</a></li>
+              <li>GayMail — gaymail.eu.org<br />Launching January 1, 2027</li>
             </ul>
           </div>
         </div>
         <div class="foot-bottom">
-          <p class="disclaimer">Personal website of Dr. Kerry B. Lewis. Not an official City of Los Angeles website.</p>
-          <p>&copy; 2026 Dr. Kerry B. Lewis &middot; Los Angeles, California</p>
+          <p class="disclaimer"><strong>Legal Notice:</strong> This is the personal website of Dr. Kerry B. Lewis. It is not an official website of the City of Los Angeles, the Los Angeles City Council, or any government agency. Content on this site is provided for general information only and does not constitute legal, financial, or professional advice. City Council meeting information is summarized from official Los Angeles City Clerk publications and may change without notice — always confirm dates, times, and agendas with the City Clerk at clerk.lacity.org. GayMail (gaymail.eu.org) is a forthcoming email service; no accounts are offered until its announced launch. All original writing on this site — including Make It or Break It, Called 7, and Jerking Death — is the copyrighted work of Dr. Kerry B. Lewis and may not be reproduced without permission.</p>
+          <p>&copy; 2026 Dr. Kerry B. Lewis &middot; Los Angeles, California &middot; All rights reserved.</p>
           <p class="credits">Photography: Hollywood Sign at sunrise via Griffith Observatory (Cameron Venti). Silver Lake street via Travel Dealz. Portrait courtesy of Dr. Lewis.</p>
         </div>
       </div>
@@ -1083,7 +1173,7 @@
 
     <script>
       (function () {
-        var views = { home: document.getElementById('view-home'), about: document.getElementById('view-about'), issues: document.getElementById('view-issues'), tracker: document.getElementById('view-tracker'), voice: document.getElementById('view-voice') };
+        var views = { home: document.getElementById('view-home'), about: document.getElementById('view-about'), issues: document.getElementById('view-issues'), books: document.getElementById('view-books'), council: document.getElementById('view-council'), voice: document.getElementById('view-voice') };
         var mainNav = document.getElementById('mainNav');
         var toggle = document.getElementById('navToggle');
         var pendingAnchor = null;
