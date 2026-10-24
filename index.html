@@ -449,23 +449,6 @@
       .press-item h3 a:hover{text-decoration:underline}
       .press-item p{font-size:15.5px;margin:0;color:#3c4a5e}
       @media (max-width:640px){.press-item{grid-template-columns:1fr}}
-      .tv-wrap2{max-width:860px;margin:0 auto}
-      .tv-frame{background:linear-gradient(180deg,#111c33,#0a1120);border:1px solid #2a3a58;border-radius:24px;padding:16px 16px 10px;box-shadow:0 30px 60px rgba(6,17,38,.35)}
-      .tv-screen{position:relative;padding-top:56.25%;background:#000;border-radius:10px;overflow:hidden}
-      .tv-screen iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-      .tv-brand{display:flex;justify-content:space-between;align-items:center;padding:10px 6px 4px;color:#dbe4f2}
-      .tv-brand .tv-logo{font-weight:900;letter-spacing:.28em;font-size:15px}
-      .tv-brand .tv-logo b{color:var(--gold)}
-      .tv-live{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:800;letter-spacing:.18em;color:#ffb3ab}
-      .tv-live i{width:9px;height:9px;border-radius:50%;background:#ff4b3e;display:inline-block;box-shadow:0 0 10px #ff4b3e}
-      .tv-stand{width:150px;height:16px;background:#0a1120;margin:0 auto;border-radius:0 0 12px 12px}
-      .tv-channels{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
-      .tv-ch{font:inherit;font-size:14.5px;font-weight:700;padding:10px 18px;border-radius:999px;border:1.5px solid var(--navy-900);background:var(--navy-900);color:#fff;cursor:pointer}
-      .tv-ch:hover{background:var(--navy-950)}
-      .tv-ch.active{background:var(--gold);border-color:var(--gold);color:var(--navy-950)}
-      .tv-ch.linkout{background:#fff;color:var(--navy-900);text-decoration:none}
-      .tv-ch.linkout:hover{background:#eef2f8}
-      .tv-note{text-align:center;color:#5a6a80;font-size:14px;margin-top:16px}
       .lat-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 44px}
       .lat-sec h3{font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:30px 0 6px}
       .lat-item{padding:12px 2px;border-bottom:1px solid var(--line)}
@@ -589,35 +572,6 @@
                 <li>Koreatown</li>
                 <li>Van Nuys</li>
               </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="block" id="lewis-tv" style="padding-top:56px">
-          <div class="wrap">
-            <div class="sec-head reveal">
-              <p class="sec-kicker">Lewis TV</p>
-              <h2>Lewis TV — Los Angeles, live</h2>
-              <p>Local California news and breaking news, one tap away. Pick a channel — the stations&rsquo; own free live streams play right here.</p>
-            </div>
-            <div class="tv-wrap2 reveal">
-              <div class="tv-frame">
-                <div class="tv-screen">
-                  <iframe id="lewisTvScreen" src="https://www.youtube-nocookie.com/embed/live_stream?channel=UCinjnmQEwCddOudyCC1v7qA" title="Lewis TV — live local news" allow="accelerometer; autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-                </div>
-                <div class="tv-brand"><span class="tv-logo">LEWIS <b>TV</b></span><span class="tv-live"><i></i>LIVE &middot; LOS ANGELES</span></div>
-              </div>
-              <div class="tv-stand"></div>
-              <div class="tv-channels">
-                <button type="button" class="tv-ch active" onclick="lewisChannel(this,'https://www.youtube-nocookie.com/embed/live_stream?channel=UCinjnmQEwCddOudyCC1v7qA','https://ktla.com','KTLA 5')">KTLA 5</button>
-                <button type="button" class="tv-ch" onclick="lewisChannel(this,'https://www.youtube-nocookie.com/embed/live_stream?channel=UCkH1uDkyuO9sVjSqdqBygOg','https://www.cbsnews.com/losangeles/','KCAL News')">KCAL News</button>
-                <button type="button" class="tv-ch" onclick="lewisChannel(this,'https://www.youtube-nocookie.com/embed/live_stream?channel=UCSWoppsVL0TLxFQ2qP_DLqQ','https://www.nbcla.com','NBC4')">NBC4</button>
-                <button type="button" class="tv-ch" onclick="lewisChannel(this,'https://www.youtube-nocookie.com/embed/live_stream?channel=UCHfF8wFnipMeDpJf8OmMxDg','https://www.foxla.com','FOX 11')">FOX 11</button>
-                <a class="tv-ch linkout" href="https://www.youtube.com/@abc7/live" target="_blank" rel="noopener">ABC7 &#8599;</a>
-                <a class="tv-ch linkout" href="https://www.pbssocal.org/live" target="_blank" rel="noopener">PBS SoCal &#8599;</a>
-                <a class="tv-ch linkout" href="https://www.lacity.gov/tv" target="_blank" rel="noopener">CityView 35 &#8599;</a>
-              </div>
-              <p class="tv-note">Streams are each station&rsquo;s own free public broadcast. If a channel is off-air or won&rsquo;t play here, watch on the station&rsquo;s site: <a id="lewisTvFallback" href="https://ktla.com" target="_blank" rel="noopener">KTLA 5 official live page</a>.</p>
             </div>
           </div>
         </section>
@@ -1586,15 +1540,6 @@
 
     <script>
       (function () {
-        function lewisChannel(btn, src, fb, name) {
-          var f = document.getElementById('lewisTvScreen');
-          if (f) f.src = src;
-          var chs = document.querySelectorAll('.tv-ch');
-          for (var i = 0; i < chs.length; i++) chs[i].classList.remove('active');
-          if (btn) btn.classList.add('active');
-          var a = document.getElementById('lewisTvFallback');
-          if (a) { a.href = fb; a.textContent = name + ' official live page'; }
-        }
         (function () {
           var target = new Date('2026-11-03T09:00:00-08:00').getTime();
           function set(id, v) { var e = document.getElementById(id); if (e) e.textContent = (v < 10 ? '0' : '') + v; }
