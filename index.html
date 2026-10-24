@@ -544,7 +544,35 @@
       #view-home .wh-carousel{display:none}
       #view-home .block.mission,#view-home #home-pillars,#view-home .band,#view-home #home-meet{display:none}
 </style>
-  </head>
+  <style>
+      /* Universal Studios-inspired theme — style only. No Universal logo, branding, or affiliation. Applies to all pages/views. */
+      :root{
+        --paper:#04101f; --surface:#0a1e33; --surface-2:#0d2a4a;
+        --ink:#f2f6fb; --ink-2:#c3d2e2; --ink-3:#8fa3b8;
+        --line:#1e3a5c; --line-strong:#2c5280;
+        --gold:#ffc72c; --gold-bright:#ffd84d; --gold-soft:#2a2416;
+        --navy-900:#071a2e; --navy-800:#0e2c50;
+        --shadow:0 18px 44px rgba(0,0,0,.45);
+      }
+      body{ background:linear-gradient(180deg,#04101f 0%,#071e38 55%,#04101f 100%); color:#f2f6fb; }
+      h1,h2,h3{ font-weight:900; letter-spacing:-.01em; }
+      .site-head, header.site-head{ background:#04101f; border-bottom:4px solid #0077c8; }
+      .brand-mark{ background:#0077c8; color:#fff; }
+      a{ color:#4db2ff; }
+      .btn, .btn-navy{ background:#0077c8 !important; border-color:#0077c8 !important; color:#fff !important; }
+      .btn-download{ background:#e4002b !important; border-color:#e4002b !important; color:#fff !important; }
+      .book-categories button{ background:#0d2a4a; color:#fff; border:2px solid #0077c8; border-radius:999px; }
+      .page-head{ background:linear-gradient(135deg,#071e38,#0d2a4a); border-bottom:4px solid #ffc72c; }
+      .page-head h1, .book-hero-title{ color:#fff; text-shadow:0 4px 0 rgba(0,0,0,.35); }
+      .sec-kicker{ color:#ffc72c !important; }
+      .book-card, .watch-rail, .mtg-card, article{ background:#0a1e33 !important; border:1px solid #1e3a5c !important; border-radius:16px; }
+      #view-books, #view-books .page-head, #view-books .block{ background:#04101f !important; }
+      #view-books h1, #view-books h2, #view-books h3{ color:#fff; }
+      #view-books p{ color:#c3d2e2; }
+      .ticker{ border-bottom:3px solid #0077c8 !important; }
+      .ticker-label{ background:#e4002b !important; }
+    </style>
+</head>
   <body>
     <div class="ticker" role="region" aria-label="Fox News headlines">
       <span class="ticker-label"><strong>FOX NEWS</strong><span class="tl-sub">Updated Daily</span></span>
