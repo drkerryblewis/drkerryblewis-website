@@ -589,6 +589,15 @@
         box-shadow:0 8px 22px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.35) !important;
       }
     </style>
+<style>
+      /* Blog/chapter cards: dark card + white lettering so titles and body text are readable on the dark theme */
+      .chapter{ background:#0a1e33 !important; border-color:#1e3a5c !important; }
+      .chapter summary{ color:#fff !important; }
+      .chapter summary .ch-title{ color:#fff !important; }
+      .chapter .chapter-body p, .chapter .chapter-body li{ color:#e9edf2 !important; }
+      .chapter .chapter-body h3, .chapter .chapter-body h4{ color:#fff !important; }
+      .chapter .chapter-body a{ color:#4db2ff !important; }
+    </style>
 </head>
   <body>
     <div class="ticker" role="region" aria-label="Fox News headlines">
@@ -908,7 +917,7 @@
           <div class="wrap">
             <p class="sec-kicker">About</p>
             <h1>About Dr. Kerry B. Lewis</h1>
-            <p>Entrepreneur, publisher, and author — a Southerner by birth who built his life and his work in Los Angeles, and who knows its homelessness crisis from the inside.</p>
+            <p>Entrepreneur, publisher, and author — a Southerner by birth who built his life and his work in Los Angeles, and who believes nobody is beyond a second chance, because he needed one himself, and got one.</p>
           </div>
         </section>
 
@@ -953,11 +962,54 @@
                   </div>
                   <div class="book">
                     <h3>Called 7</h3>
-                    <p>A horror mystery series — a couple down on their luck finds a chest marked only with the number 7. Coming March 2027.</p>
+                    <p>A horror mystery series — a couple down on their luck finds a chest marked only with the number 7. Chapter 1 drops October 25, 2026.</p>
+                  </div>
+                  <div class="book">
+                    <h3>DEAD END</h3>
+                    <p>His first full book — horror with a laugh in it, inspired by true events on the streets of Hollywood. Releasing 2027.</p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section class="block">
+          <div class="wrap">
+            <div style="background:linear-gradient(135deg,#0d2a4a,#071e38);border:1px solid #1e3a5c;border-left:5px solid #ffc72c;border-radius:16px;padding:32px 30px;">
+              <p class="sec-kicker" style="color:#ffc72c;">A note to you, from Kerry</p>
+              <h2 style="color:#fff;">If you only know the headlines, you don't know me yet.</h2>
+              <p style="color:#e9edf2;">I grew up in the South, I served young people in ministry, I built businesses with my own hands, and I have also had seasons where I had almost nothing at all. Every one of those chapters taught me the same thing: people are more than their worst day, and a city is more than its worst street.</p>
+              <p style="color:#e9edf2;">I write because stories are how we remember that. I build because a job, a home, and a second chance are worth more than a speech about them. And I put my name on all of it, plainly, because I am not asking anyone to trust a brand. I am asking you to know a person.</p>
+              <p style="color:#fff;font-weight:800;margin-bottom:0;">— Dr. Kerry B. Lewis</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="block">
+          <div class="wrap">
+            <div class="sec-head reveal">
+              <p class="sec-kicker">What he carries with him</p>
+              <h2 style="color:#fff;">The beliefs behind the work</h2>
+            </div>
+            <div class="venture-grid">
+              <div class="venture" style="background:#0a1e33;border:1px solid #1e3a5c;border-radius:16px;padding:22px;">
+                <p class="v-type">Second chances</p>
+                <h3 style="color:#fff;">Nobody is finished yet</h3>
+                <p style="color:#c3d2e2;">He got one, and he builds for people who are still waiting for theirs — animals in a rescue, readers finding a story, neighbors finding their footing.</p>
+              </div>
+              <div class="venture" style="background:#0a1e33;border:1px solid #1e3a5c;border-radius:16px;padding:22px;">
+                <p class="v-type">People over politics</p>
+                <h3 style="color:#fff;">Facts over feelings</h3>
+                <p style="color:#c3d2e2;">What works matters more than what sounds good, and a plan matters more than a slogan.</p>
+              </div>
+              <div class="venture" style="background:#0a1e33;border:1px solid #1e3a5c;border-radius:16px;padding:22px;">
+                <p class="v-type">Home, in every sense</p>
+                <h3 style="color:#fff;">Los Angeles, shared</h3>
+                <p style="color:#c3d2e2;">He shares his life in Los Angeles with his partner, Joshua, and the work he does here — for people, for animals, for readers — is rooted in this city.</p>
+              </div>
+            </div>
+            <p style="color:#c3d2e2;margin-top:22px;">What's next: <strong style="color:#fff;">GayMail</strong>, his own email service, launches January 1, 2027, and <strong style="color:#fff;">DEAD END</strong>, his first full book, follows in 2027.</p>
           </div>
         </section>
 
@@ -1013,23 +1065,15 @@
               <li>
                 <span class="t-year">2027</span>
                 <div>
-                  <h3><i>Called 7</i> arrives</h3>
-                  <p>His horror mystery series <i>Called 7</i> is set for release in March 2027.</p>
+                  <h3><i>Called 7</i> begins</h3>
+                  <p>Chapter 1 of his horror mystery series <i>Called 7</i> drops October 25, 2026, and <i>DEAD END</i>, his first full book, follows in 2027.</p>
                 </div>
               </li>
             </ol>
           </div>
         </section>
 
-        <section class="block closing">
-          <div class="wrap reveal">
-            <h2>&ldquo;I answer to voters, not party bosses.&rdquo;</h2>
-            <p>See the problems Los Angeles is living with — and the step-by-step plan Kerry Lewis lays out to clean them up.</p>
-            <a class="btn btn-gold" href="#issues" data-nav="issues">Read the Issues
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </div>
-        </section>
+
       </div>
 
       <!-- ================= ISSUES ================= -->
