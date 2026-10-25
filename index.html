@@ -616,6 +616,21 @@
       .main-nav a{ padding:11px 14px !important; font-size:15.5px !important; white-space:nowrap !important; }
       .site-head .wrap{ gap:28px !important; }
     </style>
+<style>
+      /* Upcoming Events: full-width playbill grid, no straight single column */
+      .watch-layout{ grid-template-columns:1fr !important; }
+      .watch-rail{ position:static !important; }
+      .watch-rail > img{ max-width:720px !important; display:block !important; margin-left:auto !important; margin-right:auto !important; }
+      .watch-agency{ display:grid !important; grid-template-columns:repeat(3, 1fr) !important; gap:16px !important; }
+      .watch-agency h3{ grid-column:1 / -1 !important; margin-bottom:0 !important; }
+      .watch-agency .watch-item{ margin:0 !important; }
+      #ev-slides .ev-slide{ max-width:640px; margin:0 auto; background:#fdf6e3; border:2px solid #c8102e; border-radius:12px; padding:14px 16px; }
+      #ev-slides .ev-date{ display:block; background:#c8102e; color:#fff; font-weight:900; letter-spacing:.12em; text-transform:uppercase; font-size:12px; padding:6px 8px; border-radius:6px; margin-bottom:10px; }
+      #ev-slides .ev-title{ display:block; font-family:Georgia,serif; font-size:19px; font-weight:900; color:#1a1a1a; line-height:1.25; }
+      #ev-slides .ev-venue{ display:block; font-size:13.5px; color:#6b3a3a; margin-top:6px; font-style:italic; }
+      @media (max-width: 900px){ .watch-agency{ grid-template-columns:repeat(2, 1fr) !important; } }
+      @media (max-width: 600px){ .watch-agency{ grid-template-columns:1fr !important; } }
+    </style>
 </head>
   <body>
     <div class="ticker" role="region" aria-label="Fox News headlines">
@@ -1810,6 +1825,12 @@ function whSearch(f){var q=f.q.value.trim();if(!q) return false;var found=false;
             <p>When the Council meets, what&rsquo;s on the table, and how to watch or speak — taken from the Los Angeles City Clerk&rsquo;s official calendar and published agendas.</p>
           </div>
         </section>
+<aside aria-label="Coming November 1, 2026" style="background:linear-gradient(135deg,#0d2a4a,#071e38);border:2px solid #ffc72c;border-radius:16px;padding:22px 26px;margin:0 auto 28px;max-width:1100px;">
+  <p style="margin:0 0 6px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#ffc72c;">Notice &middot; Coming November 1, 2026</p>
+  <h2 style="margin:0 0 8px;color:#fff;">A new Resources tab for all of California is coming</h2>
+  <p style="margin:0;color:#e9edf2;">Starting <strong style="color:#fff;">November 1, 2026</strong>, a separate new <strong style="color:#fff;">Resources tab for all of California</strong> joins this site — resources for the whole state, in one place. City Hall &middot; Open Meetings stays right here, as its own tab, and is not going away.</p>
+</aside>
+
 
         <section class="block">
           <div class="wrap">
