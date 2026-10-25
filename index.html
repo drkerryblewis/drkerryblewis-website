@@ -633,6 +633,26 @@
     </style>
 </head>
   <body>
+    <div id="terms-gate" role="dialog" aria-modal="true" aria-labelledby="terms-gate-title" style="position:fixed;inset:0;z-index:99999;background:rgba(4,16,32,.92);display:flex;align-items:center;justify-content:center;padding:20px;overflow-y:auto;">
+      <div style="background:#0d2a4a;border:2px solid #ffc72c;border-radius:16px;max-width:640px;width:100%;padding:28px 26px;color:#fff;box-shadow:0 20px 60px rgba(0,0,0,.5);">
+        <p style="margin:0 0 8px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#ffc72c;">Before You Continue &middot; Terms of Use &amp; Privacy Notice</p>
+        <h2 id="terms-gate-title" style="margin:0 0 12px;color:#fff;font-size:26px;line-height:1.25;">Welcome to drkerryblewis.org</h2>
+        <div style="color:#e9edf2;font-size:15.5px;line-height:1.6;">
+          <p style="margin:0 0 10px;"><strong style="color:#fff;">By clicking &ldquo;I Accept,&rdquo; you enter into a binding agreement</strong> to these Terms of Use and the site&rsquo;s Privacy Policy. If you do not accept, you may not use this site and you will be taken off it.</p>
+          <p style="margin:0 0 10px;">This is a personal website owned by Dr. Kerry B. Lewis. It is not a government website, and it is not affiliated with, endorsed by, or acting on behalf of any government agency.</p>
+          <p style="margin:0 0 10px;">Content on this site &mdash; including issues, opinions, books, and blog posts &mdash; is personal expression protected by the <strong style="color:#fff;">First Amendment to the Constitution of the United States</strong>. Nothing on this site is legal, medical, financial, or professional advice, and no attorney-client, doctor-patient, or other professional relationship is created by using it.</p>
+          <p style="margin:0 0 10px;"><strong style="color:#fff;">Governing law.</strong> These terms are governed by the laws of the <strong style="color:#fff;">State of California</strong>, without regard to conflict-of-law rules. Any dispute arising from these terms or your use of this site shall be brought exclusively in the state or federal courts located in <strong style="color:#fff;">Los Angeles County, California</strong>, and you consent to the jurisdiction of those courts.</p>
+          <p style="margin:0 0 10px;"><strong style="color:#fff;">California privacy.</strong> Your privacy rights under California law, including the California Consumer Privacy Act, are described in the site&rsquo;s Privacy Policy, which forms part of this agreement.</p>
+          <p style="margin:0;"><strong style="color:#fff;">Other terms.</strong> If any part of these terms is found unenforceable, the rest remains in full effect. These terms may be updated from time to time, and continued use of the site after an update means you accept the updated terms.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:20px;">
+          <button type="button" onclick="klAcceptTerms()" style="flex:1;min-width:180px;background:#1e6fd9;color:#fff;border:none;border-radius:999px;padding:13px 20px;font-size:16px;font-weight:800;cursor:pointer;">I Accept &mdash; Enter Site</button>
+          <button type="button" onclick="klDeclineTerms()" style="flex:1;min-width:180px;background:transparent;color:#fff;border:2px solid #fff;border-radius:999px;padding:13px 20px;font-size:16px;font-weight:800;cursor:pointer;">I Decline &mdash; Leave Site</button>
+        </div>
+        <p style="margin:14px 0 0;font-size:13.5px;color:#c7d2dd;">Links: <a href="/privacy" style="color:#ffc72c;">Privacy Policy</a></p>
+      </div>
+    </div>
+
     <div class="ticker" role="region" aria-label="Fox News headlines">
       <span class="ticker-label"><strong>FOX NEWS</strong><span class="tl-sub">Updated Daily</span></span>
       <div class="ticker-viewport">
@@ -2765,6 +2785,10 @@ function whSearch(f){var q=f.q.value.trim();if(!q) return false;var found=false;
   rail.addEventListener('mouseleave', restart);
   show(0); restart();
 })();
+</script>
+
+<script>
+(function(){try{var a=localStorage.getItem('kl-terms-accepted');if(a==='1'){var g=document.getElementById('terms-gate');if(g){g.style.display='none';}}else{document.body.style.overflow='hidden';}}catch(e){}window.klAcceptTerms=function(){try{localStorage.setItem('kl-terms-accepted','1');}catch(e){}var g=document.getElementById('terms-gate');if(g){g.style.display='none';}document.body.style.overflow='';};window.klDeclineTerms=function(){window.location.href='https://www.google.com';};})();
 </script>
 </body>
 </html>
