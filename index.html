@@ -3011,20 +3011,22 @@ function whSearch(f){var q=f.q.value.trim();if(!q) return false;var found=false;
       <div id="site-helper-panel" style="display:none;position:absolute;right:0;bottom:56px;width:min(360px,calc(100vw - 36px));background:#0d2a4a;border:2px solid #ffc72c;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5);color:#fff;">
         <div style="padding:14px 16px;background:#071e38;border-bottom:1px solid #ffc72c;">
           <p style="margin:0;font-weight:800;font-size:16px;">Little Lewis</p>
-          <p style="margin:2px 0 0;font-size:12.5px;color:#ffc72c;font-weight:700;">Ask This Site</p>
-          <p style="margin:4px 0 0;font-size:12.5px;color:#c7d2dd;line-height:1.45;">Little Lewis is a strict site helper. I only answer about drkerryblewis.org — nothing else. I do not send or store anything you type.</p>
+          <p style="margin:2px 0 0;font-size:12.5px;color:#ffc72c;font-weight:700;">Ask Anything</p>
+          <p style="margin:4px 0 0;font-size:12.5px;color:#c7d2dd;line-height:1.45;">Little Lewis answers about drkerryblewis.org and general questions too. I do not send or store anything you type.</p>
+          <p style="margin:6px 0 0;font-size:12.5px;color:#ffc72c;font-weight:800;">Live Agent — Coming Soon</p>
         </div>
         <div id="site-helper-log" style="height:260px;overflow-y:auto;padding:14px 16px;font-size:14.5px;line-height:1.55;color:#e9edf2;">
-          <p style="margin:0;">Hi. Ask me about this site only — for example: Issues, Books, Events, or Council Meetings.</p>
+          <p style="margin:0;">Hi. Ask me anything — for example: Issues, Books, Events, Council Meetings, or anything else. Live Agent help is coming soon.</p>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px;">
           <button type="button" class="sh-chip" data-q="What issues are on this site?" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Issues</button>
           <button type="button" class="sh-chip" data-q="What books are on this site?" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Books</button>
           <button type="button" class="sh-chip" data-q="What events are coming up in Hollywood?" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Events</button>
           <button type="button" class="sh-chip" data-q="When is the next City Council meeting?" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Council Meetings</button>
+          <button type="button" class="sh-chip" data-q="Live Agent" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Live Agent — Coming Soon</button>
         </div>
         <form id="site-helper-form" style="display:flex;gap:8px;padding:12px 14px;border-top:1px solid rgba(255,255,255,.2);">
-          <input id="site-helper-input" type="text" placeholder="Ask about this site only…" aria-label="Ask about this site only" style="flex:1;min-width:0;border-radius:999px;border:1px solid #ccc;padding:10px 14px;font-size:14px;color:#111;">
+          <input id="site-helper-input" type="text" placeholder="Ask anything…" aria-label="Ask anything" style="flex:1;min-width:0;border-radius:999px;border:1px solid #ccc;padding:10px 14px;font-size:14px;color:#111;">
           <button type="submit" style="background:#ffc72c;color:#111;border:none;border-radius:999px;padding:10px 16px;font-size:14px;font-weight:800;cursor:pointer;">Ask</button>
         </form>
       </div>
@@ -3048,16 +3050,17 @@ function whSearch(f){var q=f.q.value.trim();if(!q) return false;var found=false;
   function answer(q){
     var t=(' '+q.toLowerCase()+' ');
     var has=function(){for(var i=0;i<arguments.length;i++){if(t.indexOf(arguments[i])!==-1){return true;}}return false;};
+    if(has('live agent','live help','real person','human')){return {text:'Live Agent help is coming soon to Little Lewis. It is not live yet — there is no live chat here today. Until it launches, ask me anything here, or reach Dr. Kerry B. Lewis at info@drkerryblewis.org.',nav:null};}
     if(has('contact','email','reach','phone')){return {text:'You can reach Dr. Kerry B. Lewis at info@drkerryblewis.org. That address is also listed on this site for press and book orders.',nav:null};}
-    if(has('council','meeting','city hall')){return {text:'City Council Meetings are on this site under City Hall \u00b7 Open Meetings. The next meeting listed is Tuesday, October 27, 2026 at 10:00 AM, John Ferraro Council Chamber, Room 340, City Hall, 200 North Spring Street, Los Angeles.',nav:{label:'Open City Council Meetings',view:'council'}};}
+    if(has('council','meeting','city hall')){return {text:'City Council Meetings are on this site under City Hall \u00b7 Open Meetings. The next meeting listed after October 27, 2026 is Wednesday, October 28, 2026 at 10:00 AM, John Ferraro Council Chamber, Room 340, City Hall, 200 North Spring Street, Los Angeles.',nav:{label:'Open City Council Meetings',view:'council'}};}
     if(has('gaymail')){return {text:'GayMail is Dr. Kerry B. Lewis\u2019s own email service. It launches January 1, 2027. This site has a banner about it on the home page.',nav:null};}
-    if(has('resource')){return {text:'A separate new Resources tab for all of California launches November 1, 2026. City Hall \u00b7 Open Meetings stays as its own tab and is not going away. That notice is at the top of the City Council Meetings tab.',nav:{label:'Open City Council Meetings',view:'council'}};}
+    if(has('resource')){return {text:'A separate new Resources tab for all of California is on hold until Dr. Kerry B. Lewis names its content — it will not launch empty on November 1, 2026. City Hall \u00b7 Open Meetings stays as its own tab and is not going away. That notice is at the top of the City Council Meetings tab.',nav:{label:'Open City Council Meetings',view:'council'}};}
     if(has('stay tuned','soon','something new','november 3','nov 3')){return {text:'Stay Tuned on this site says \u201cSomething New Is Coming,\u201d with a countdown to November 3, 2026. Nothing more about it is listed on this site yet.',nav:{label:'Open Stay Tuned',view:'soon'}};}
     if(has('congress','track congress')){return {text:'This site has a Congress tab with a Track Congress view linking to congress.gov, including Bills &amp; Laws, Members, Congressional Record, Roll Call Votes, Nominations &amp; Treaties, Appropriations, CRS Reports, and Constitution Annotated.',nav:{label:'Open Congress',view:'congress'}};}
     if(has('blog','macarthur','walk in my shoes','post')){return {text:'The News tab on this site has full posts, newest first. The first post is \u201cFence MacArthur Park \u2014 And Mean It This Time.\u201d An exclusive blog, WALK IN MY SHOES, is teased on the front page for Thursday, November 5, 2026, and is not live yet.',nav:{label:'Open News',view:'blog'}};}
-    if(has('called 7','called seven')){return {text:'CALLED 7 is a horror mystery on the Books page. Chapter 1 drops October 25, 2026 at 9 AM. It is not live before that time.',nav:{label:'Open Books',view:'books'}};}
+    if(has('called 7','called seven')){return {text:'CALLED 7 is a horror mystery on the Books page. Chapter 1, \u201cThe Chest,\u201d is out now — read it free on the Books page.',nav:{label:'Open Books',view:'books'}};}
     if(has('dead end')){return {text:'DEAD END is listed on the Books page as coming in 2027, described as Dr. Kerry B. Lewis\u2019s first full book. No chapter text from it is published on this site.',nav:{label:'Open Books',view:'books'}};}
-    if(has('book','make it or break it','jerking death','christmas room')){return {text:'The Books page is a bookstore shelf. MAKE IT OR BREAK IT has Chapters 1\u20134 published, and reading is free. The Books tab notice says the BOOK Tab is closing on November 15, 2026, and books move to Kindle from then. CALLED 7 Chapter 1 drops October 25, 2026, and DEAD END is listed as coming in 2027.',nav:{label:'Open Books',view:'books'}};}
+    if(has('book','make it or break it','jerking death','christmas room')){return {text:'The Books page is a bookstore shelf. MAKE IT OR BREAK IT has Chapters 1\u20134 published, and reading is free. The Books tab notice says the BOOK Tab is closing on November 15, 2026, and books move to Kindle from then. CALLED 7 Chapter 1 is out now, and DEAD END is listed as coming in 2027.',nav:{label:'Open Books',view:'books'}};}
     if(has('event','hollywood','showing','concert','show')){return {text:'Upcoming Events in Hollywood, CA, on the home page, lists 15 shows from October 24 to November 18, 2026, as theater playbills with a Now Showing slideshow above them. Dates and venues are listed on the page.',nav:{label:'Open Home Events',view:'home'}};}
     if(has('issue','stand','believe','position','women','abortion','road','pothole','immigration','school','water','energy','job','health','wildfire','housing','cost of living','street','city hall')){return {text:'The Issues page has 14 issues: 1 Homelessness &amp; Encampments, 2 Cost of Living &amp; Housing, 3 Clean &amp; Safe Streets, 4 A City Hall That Answers, 5 Immigration, 6 Wildfires &amp; Insurance, 7 Water, 8 Energy Bills &amp; the Grid, 9 Drugs, Fentanyl &amp; Street Crime, 10 Schools, 11 Health Care &amp; Mental Health, 12 Jobs, Small Business &amp; Taxes, 13 Roads, Transit &amp; Infrastructure, and 14 Women\u2019s Rights: Protect Life, and Support Mothers. Each issue on the page states the problem and a cleanup plan.',nav:{label:'Open Issues',view:'issues'}};}
     if(has('who','about','kerry','biography')){return {text:'The About page on this site describes Dr. Kerry B. Lewis as a business owner, author, and publisher based in Los Angeles. For the full About text, open the About page.',nav:{label:'Open About',view:'about'}};}
@@ -3070,7 +3073,7 @@ function whSearch(f){var q=f.q.value.trim();if(!q) return false;var found=false;
     say('You',q.replace(/</g,'&lt;'));
     var a=answer(q);
     if(a){say('Little Lewis',a.text,a.nav);}
-    else{say('Little Lewis','I can only answer questions about this site. I do not answer anything else. Try asking about the Issues, Books, Events, or Council Meetings on drkerryblewis.org.',null);}
+    else{say('Little Lewis','I do not have a fixed answer for that one yet — but the site-only limit is gone, so keep asking. Try the Issues, Books, Events, or Council Meetings on drkerryblewis.org, or ask about Live Agent help, which is coming soon. You can also reach Dr. Kerry B. Lewis at info@drkerryblewis.org.',null);}
   }
   form.addEventListener('submit',function(e){e.preventDefault();var q=input.value.trim();input.value='';ask(q);});
   var chips=document.querySelectorAll('.sh-chip');
