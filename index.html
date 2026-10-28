@@ -306,7 +306,7 @@
       }
       .ticker-label .tl-sub{font-weight:600;letter-spacing:.14em;font-size:11.5px;text-transform:uppercase;opacity:.92}
       .ticker-viewport{flex:1 1 auto;overflow:hidden;display:flex;align-items:center}
-      .ticker-track{display:flex;align-items:center;width:max-content;animation:tickmove 75s linear infinite}
+      .ticker-track{display:flex;align-items:center;width:max-content;animation:tickmove 150s linear infinite}
       .ticker:hover .ticker-track{animation-play-state:paused}
       @keyframes tickmove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
       .ticker-item{white-space:nowrap;padding:0 6px}
@@ -1550,6 +1550,7 @@ function whSearch(f){var q=f.q.value.trim();if(!q) return false;var found=false;
 
 <!-- ================= BOOKS ================= -->
       <div class="view" id="view-books">
+        <section id="books-closure-notice" style="background:#0a1e33;border:3px solid #ffc72c;border-radius:16px;padding:22px 0;text-align:center;margin:0 0 24px;"><div class="wrap"><p style="color:#ffc72c;font-weight:800;letter-spacing:2px;margin:0 0 6px;">NOTICE</p><h2 style="color:#ffffff;margin:0 0 8px;">This Books Tab Is Closing on November 1, 2026</h2><p style="color:#e9edf2;margin:0;">For the new Book Store — open 24/7, with free Lewis Card checkout.</p></div></section>
         <section class="page-head">
           <div class="wrap">
             <p class="sec-kicker">The Books</p>
