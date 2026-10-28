@@ -1573,7 +1573,8 @@ function whSearch(f){var q=f.q.value.trim();if(!q) return false;var found=false;
               <p><label>Email<br><input id="lc-email" type="email" style="width:100%;max-width:420px;padding:10px;"></label></p>
               <p><label>Username you want<br><input id="lc-user" type="text" style="width:100%;max-width:420px;padding:10px;"></label></p>
               <p><label><input id="lc-late" type="checkbox"> I understand late books are charged $4.99 per late book, plus applicable tax, once real checkout is live.</label></p>
-              <p><button class="btn btn-navy" onclick="makeLewisCard()">Get My Free Lewis Card</button></p>
+              <p><button type="button" id="lc-btn" class="btn btn-navy" onclick="makeLewisCard()">Get My Free Lewis Card</button></p>
+              <p style="font-size:14px;">Button not working? Email your name, email, and username directly to <a href="mailto:info@drkerryblewis.org?subject=Lewis%20Card%20Signup">info@drkerryblewis.org</a> with "Lewis Card" in the subject — that works even without the button.</p>
               <div id="lc-result" style="display:none;border:3px solid #c00000;border-radius:16px;padding:20px;margin-top:16px;"></div>
             </div>
             <div style="margin-top:22px;">
@@ -1593,6 +1594,7 @@ function whSearch(f){var q=f.q.value.trim();if(!q) return false;var found=false;
           if(!ok){r.style.display='block';r.innerHTML='<p>Please check the late-charge understanding box.</p>';return;}
           var num='LEWIS-'+Math.floor(100000+Math.random()*900000);
           r.style.display='block';
+          if(r.scrollIntoView){r.scrollIntoView();}
           r.innerHTML='<p><strong>Your Lewis Card request</strong></p><p>Name: '+n+'</p><p>Email: '+e+'</p><p>Username: '+u+'</p><p>Card: '+num+'</p><p>Cost: FREE. This is a signup request — your account will be confirmed by email. Real checkout and due-date tracking arrive in Phase 2.</p><p><a href="mailto:info@drkerryblewis.org?subject=Lewis%20Card%20Signup&body='+encodeURIComponent('Name: '+n+'
 Email: '+e+'
 Username: '+u+'
@@ -3128,6 +3130,18 @@ Card: '+num)+ '">Email my card details</a></p>';
   form.addEventListener('submit',function(e){e.preventDefault();var q=input.value.trim();input.value='';ask(q);});
   var chips=document.querySelectorAll('.sh-chip');
   for(var i=0;i<chips.length;i++){chips[i].addEventListener('click',function(){ask(this.getAttribute('data-q'));});}
+})();
+</script>
+<script>
+(function(){
+  var b=document.getElementById('lc-btn');
+  if(!b) return;
+  b.addEventListener('click', function(){
+    try{ if(typeof makeLewisCard==='function'){ makeLewisCard(); } }catch(err){
+      var r=document.getElementById('lc-result');
+      if(r){ r.style.display='block'; r.innerHTML='<p>Sorry, the card builder hit a problem. Please email your name, email, and username to <a href="mailto:info@drkerryblewis.org">info@drkerryblewis.org</a> with "Lewis Card" in the subject.</p>'; }
+    }
+  });
 })();
 </script>
 </body>
