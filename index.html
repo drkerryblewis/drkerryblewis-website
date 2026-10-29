@@ -72,13 +72,37 @@
 
     <div role="region" aria-label="Scrolling announcements" style="overflow:hidden;background:#0a2340;color:#ffffff;padding:10px 0;border-bottom:3px solid #c00000;">
 <div class="ticker-track" style="animation-duration:60s;">
-<span class="ticker-item">DEAD END first 12 chapters out now</span>
-<span class="ticker-item">DEAD END first 12 chapters out now</span>
 </div>
 </div>
 
 <main>
 <div class="view" id="view-home">
+
+<section id="home-slideshow" style="background:#ffffff;color:#111111;padding:0;margin:0;">
+  <div class="slideshow" style="position:relative;max-width:1180px;margin:0 auto;overflow:hidden;">
+    <div class="ss-slide" style="display:block;"><img src="assets/img-001.jpeg" alt="Dr. Kerry B. Lewis in Los Angeles" style="width:100%;height:420px;object-fit:cover;display:block;" /><p style="background:#ffffff;color:#111111;text-align:center;padding:12px;margin:0;font-weight:800;">Welcome to drkerryblewis.org — Dr. Kerry B. Lewis, Los Angeles</p></div>
+    <div class="ss-slide" style="display:none;"><img src="assets/img-003.jpeg" alt="Dr. Kerry B. Lewis above Griffith Park, with the Hollywood Sign and the downtown Los Angeles skyline behind him" style="width:100%;height:420px;object-fit:cover;display:block;" /><p style="background:#ffffff;color:#111111;text-align:center;padding:12px;margin:0;font-weight:800;">Los Angeles, California — Griffith Park</p></div>
+    <div class="ss-slide" style="display:none;"><img src="assets/img-007.jpeg" alt="The Hollywood Sign on the Griffith Park hillside at sunrise" style="width:100%;height:420px;object-fit:cover;display:block;" /><p style="background:#ffffff;color:#111111;text-align:center;padding:12px;margin:0;font-weight:800;">Hollywood — The Hollywood Sign at sunrise</p></div>
+    <div class="ss-slide" style="display:none;"><img src="assets/img-002.jpeg" alt="Selma Avenue Elementary School" style="width:100%;height:420px;object-fit:cover;display:block;" /><p style="background:#ffffff;color:#111111;text-align:center;padding:12px;margin:0;font-weight:800;">Selma Avenue Elementary School — Working With LAUSD</p></div>
+    <div class="ss-slide" style="display:none;"><img src="assets/img-008.jpeg" alt="A palm-lined residential street in Silver Lake at golden hour" style="width:100%;height:420px;object-fit:cover;display:block;" /><p style="background:#ffffff;color:#111111;text-align:center;padding:12px;margin:0;font-weight:800;">Neighborhoods of Los Angeles — Silver Lake</p></div>
+    <div style="text-align:center;padding:10px 0 16px;background:#ffffff;">
+      <button type="button" onclick="ssPrev()" style="background:#0a2340;color:#ffffff;border:none;border-radius:999px;padding:8px 18px;font-weight:800;cursor:pointer;">&#9664; Prev</button>
+      <button type="button" onclick="ssNext()" style="background:#0a2340;color:#ffffff;border:none;border-radius:999px;padding:8px 18px;font-weight:800;cursor:pointer;margin-left:10px;">Next &#9654;</button>
+    </div>
+  </div>
+  <script>
+    var ssIndex = 0;
+    var ssSlides = document.querySelectorAll('#home-slideshow .ss-slide');
+    function ssShow(n) {
+      if (!ssSlides.length) return;
+      ssIndex = (n + ssSlides.length) % ssSlides.length;
+      for (var i = 0; i < ssSlides.length; i++) { ssSlides[i].style.display = (i === ssIndex) ? 'block' : 'none'; }
+    }
+    function ssNext() { ssShow(ssIndex + 1); }
+    function ssPrev() { ssShow(ssIndex - 1); }
+    setInterval(function() { ssShow(ssIndex + 1); }, 5000);
+  </script>
+</section>
 <section class="hero">
           <div class="hero-grid">
             <div class="hero-copy">
