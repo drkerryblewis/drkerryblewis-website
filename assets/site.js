@@ -6,7 +6,7 @@ tourStart();
 var heroEl = document.querySelector('.wh-hero');
 if(heroEl){ heroEl.addEventListener('mouseenter', function(){ if(tourTimer) clearInterval(tourTimer); tourTimer = null; }); heroEl.addEventListener('mouseleave', tourStart); }
 function whSearch(f){var q=f.q.value.trim();if(!q) return false;var found=false;try{found=window.find(q);}catch(e){}document.getElementById('wh-search-msg').textContent=found?'Found — highlighted on this page.':'No match on this page. Try Books, Issues, or Projects.';return false;}
-function wlSubmit(f){var nm=document.getElementById('wl-name').value;var em=document.getElementById('wl-email').value;var un=document.getElementById('wl-user').value;if(!f.adult.checked){document.getElementById('wl-msg').textContent='Please confirm you are 18 or older.';return false;}var subject='Community Sign Up — '+un;var body='Name: '+nm+'\nEmail: '+em+'\nUsername wanted: '+un+'\n18 or older: Yes\n\nPlease sign me up for the Hollywood Chamber Community.';document.getElementById('wl-copy').value=body;document.getElementById('wl-gmail').href='https://mail.google.com/mail/?view=cm&to=info@drkerryblewis.org&su='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);document.getElementById('wl-fallback').style.display='block';document.getElementById('wl-msg').textContent='Thanks — if your email app did not open, use the Gmail link or Copy details below, then send them to info@drkerryblewis.org.';window.location.href='mailto:info@drkerryblewis.org?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);return false;}
+function wlSubmit(f){var nm=document.getElementById('wl-name').value;var em=document.getElementById('wl-email').value;var un=document.getElementById('wl-user').value;if(!f.adult.checked){document.getElementById('wl-msg').textContent='Please confirm you are 18 or older.';return false;}var subject='Community Sign Up — '+un;var body='Name: '+nm+'\nEmail: '+em+'\nUsername wanted: '+un+'\n18 or older: Yes\n\nPlease sign me up for the Hollywood Chamber Community.';document.getElementById('wl-copy').value=body;document.getElementById('wl-gmail').href='https://mail.google.com/mail/?view=cm&to=the Contact Form on this site&su='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);document.getElementById('wl-fallback').style.display='block';document.getElementById('wl-msg').textContent='Thanks — if your email app did not open, use the Gmail link or Copy details below, then send them to the Contact Form on this site.';window.location.href='mailto:the Contact Form on this site?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);return false;}
 
         function makeLewisCard(){
           var n=document.getElementById('lc-name').value.trim();
@@ -19,7 +19,7 @@ function wlSubmit(f){var nm=document.getElementById('wl-name').value;var em=docu
           var num='LEWIS-'+Math.floor(100000+Math.random()*900000);
           r.style.display='block';
           if(r.scrollIntoView){r.scrollIntoView();}
-          r.innerHTML='<p><strong>Your Lewis Card request</strong></p><p>Name: '+n+'</p><p>Email: '+e+'</p><p>Username: '+u+'</p><p>Card: '+num+'</p><p>Cost: FREE. This is a signup request — your account will be confirmed by email. Real checkout and due-date tracking arrive in Phase 2.</p><p><a href="mailto:info@drkerryblewis.org?subject=Lewis%20Card%20Signup&body='+encodeURIComponent('Name: '+n+' | Email: '+e+' | Username: '+u+' | Card: '+num)+ '">Email my card details</a></p>';
+          r.innerHTML='<p><strong>Your Lewis Card request</strong></p><p>Name: '+n+'</p><p>Email: '+e+'</p><p>Username: '+u+'</p><p>Card: '+num+'</p><p>Cost: FREE. This is a signup request — your account will be confirmed by email. Real checkout and due-date tracking arrive in Phase 2.</p><p><a href="mailto:the Contact Form on this site?subject=Lewis%20Card%20Signup&body='+encodeURIComponent('Name: '+n+' | Email: '+e+' | Username: '+u+' | Card: '+num)+ '">Email my card details</a></p>';
         }
         
 
@@ -198,8 +198,8 @@ function wlSubmit(f){var nm=document.getElementById('wl-name').value;var em=docu
   function answer(q){
     var t=(' '+q.toLowerCase()+' ');
     var has=function(){for(var i=0;i<arguments.length;i++){if(t.indexOf(arguments[i])!==-1){return true;}}return false;};
-    if(has('live agent','live help','real person','human')){return {text:'Live Agent help is coming soon to Little Lewis. It is not live yet — there is no live chat here today. Until it launches, ask me anything here, or reach Dr. Kerry B. Lewis at info@drkerryblewis.org.',nav:null};}
-    if(has('contact','email','reach','phone')){return {text:'You can reach Dr. Kerry B. Lewis at info@drkerryblewis.org. That address is also listed on this site for press and book orders.',nav:null};}
+    if(has('live agent','live help','real person','human')){return {text:'Live Agent help is coming soon to Little Lewis. It is not live yet — there is no live chat here today. Until it launches, ask me anything here, or reach Dr. Kerry B. Lewis at the Contact Form on this site.',nav:null};}
+    if(has('contact','email','reach','phone')){return {text:'You can reach Dr. Kerry B. Lewis through the Contact Form on this site. That address is also listed on this site for press and book orders.',nav:null};}
     if(has('council','meeting','city hall')){return {text:'That tab is now the Projects tab, with the Selma Avenue Elementary School Project inside it — a joint-use proposal with LAUSD, early talks only, no agreement and no dates yet.',nav:{label:'Open Projects',view:'council'}};}
     if(has('resource')){return {text:'A separate new Resources tab for all of California is on hold until Dr. Kerry B. Lewis names its content — it will not launch empty on November 1, 2026.',nav:null};}
     if(has('stay tuned','soon','something new','november 3','nov 3')){return {text:'The Stay Tuned tab has been removed from this site. The November 3, 2026 reveal it teased is no longer planned as a site tab.',nav:{label:'Open Home',view:'home'}};}
@@ -212,7 +212,7 @@ function wlSubmit(f){var nm=document.getElementById('wl-name').value;var em=docu
     if(has('issue','stand','believe','position','women','abortion','road','pothole','immigration','school','water','energy','job','health','wildfire','housing','cost of living','street','city hall')){return {text:'The Issues page has 14 issues: 1 Homelessness &amp; Encampments, 2 Cost of Living &amp; Housing, 3 Clean &amp; Safe Streets, 4 A City Hall That Answers, 5 Immigration, 6 Wildfires &amp; Insurance, 7 Water, 8 Energy Bills &amp; the Grid, 9 Drugs, Fentanyl &amp; Street Crime, 10 Schools, 11 Health Care &amp; Mental Health, 12 Jobs, Small Business &amp; Taxes, 13 Roads, Transit &amp; Infrastructure, and 14 Women\u2019s Rights: Protect Life, and Support Mothers. Each issue on the page states the problem and a cleanup plan.',nav:{label:'Open Issues',view:'issues'}};}
     if(has('who','about','kerry','biography')){return {text:'The About page on this site describes Dr. Kerry B. Lewis as a business owner, author, and publisher based in Los Angeles. For the full About text, open the About page.',nav:{label:'Open About',view:'about'}};}
     if(has('term','privacy','accept','gate')){return {text:'Before entering this site, visitors accept its Terms of Use and Privacy Policy. The terms say this is a personal website, not a government website, governed by California law with disputes in Los Angeles County courts. The Privacy Policy is linked in the site footer.',nav:null};}
-    if(has('waitlist','community','join','sign up')){return {text:'This site has a Sign Up section for the Hollywood Chamber Community on the home page. It asks for Name, Email, and Username, with a required 18+ checkbox. No ID is collected at signup, signups are requests for membership that Kerry approves before an account can sign in, and submissions go by email to info@drkerryblewis.org.',nav:{label:'Open Home Waitlist',view:'home'}};}
+    if(has('waitlist','community','join','sign up')){return {text:'This site has a Sign Up section for the Hollywood Chamber Community on the home page. It asks for Name, Email, and Username, with a required 18+ checkbox. No ID is collected at signup, signups are requests for membership that Kerry approves before an account can sign in, and submissions go by email to the Contact Form on this site.',nav:{label:'Open Home Waitlist',view:'home'}};}
     return null;
   }
   function ask(q){
@@ -220,7 +220,7 @@ function wlSubmit(f){var nm=document.getElementById('wl-name').value;var em=docu
     say('You',q.replace(/</g,'&lt;'));
     var a=answer(q);
     if(a){say('Little Lewis',a.text,a.nav);}
-    else{say('Little Lewis','I do not have a fixed answer for that one yet — but the site-only limit is gone, so keep asking. Try the Issues, Books, Events, or Projects on drkerryblewis.org, or ask about Live Agent help, which is coming soon. You can also reach Dr. Kerry B. Lewis at info@drkerryblewis.org.',null);}
+    else{say('Little Lewis','I do not have a fixed answer for that one yet — but the site-only limit is gone, so keep asking. Try the Issues, Books, Events, or Projects on drkerryblewis.org, or ask about Live Agent help, which is coming soon. You can also reach Dr. Kerry B. Lewis at the Contact Form on this site.',null);}
   }
   form.addEventListener('submit',function(e){e.preventDefault();var q=input.value.trim();input.value='';ask(q);});
   var chips=document.querySelectorAll('.sh-chip');
@@ -234,7 +234,7 @@ function wlSubmit(f){var nm=document.getElementById('wl-name').value;var em=docu
   b.addEventListener('click', function(){
     try{ if(typeof makeLewisCard==='function'){ makeLewisCard(); } }catch(err){
       var r=document.getElementById('lc-result');
-      if(r){ r.style.display='block'; r.innerHTML='<p>Sorry, the card builder hit a problem. Please email your name, email, and username to <a href="mailto:info@drkerryblewis.org">info@drkerryblewis.org</a> with "Lewis Card" in the subject.</p>'; }
+      if(r){ r.style.display='block'; r.innerHTML='<p>Sorry, the card builder hit a problem. Please email your name, email, and username to <a href="mailto:the Contact Form on this site">the Contact Form on this site</a> with "Lewis Card" in the subject.</p>'; }
     }
   });
 })();
