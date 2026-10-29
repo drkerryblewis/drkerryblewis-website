@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Issues — Dr. Kerry B. Lewis</title>
+<meta name="description" content="The personal website of Dr. Kerry B. Lewis, business owner, founder of The Treasure Grid Inc., author and publisher, Los Angeles, California.">
+<style>
+:root{--navy:#0f2440;--navy2:#16324f;--charcoal:#23272b;--ink:#1d2126;--muted:#5c636b;--paper:#ffffff;--warm:#f4f1ea;--warm2:#e9e6df;--line:#d8d2c4;--gold:#b9975b;--gold2:#8c7340}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--paper);line-height:1.65}
+body,p,li,td,th,input,textarea,button{font-family:system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+h1,h2,h3,.serif{font-family:Georgia,'Times New Roman',serif;font-weight:600;color:var(--navy)}
+a{color:var(--navy2)}a:hover{color:var(--gold2)}
+.topbar{background:var(--charcoal);color:#e8e2d4;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:9px 20px;text-align:center}
+header{border-bottom:3px double var(--gold);background:#fff;position:sticky;top:0;z-index:50}
+.nav{max-width:1120px;margin:0 auto;padding:16px 20px 12px}.nav .brand{display:block;margin-bottom:12px}nav{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:22px;padding-bottom:4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}nav::-webkit-scrollbar{display:none}
+.brand{font-family:Georgia,serif;font-size:24px;letter-spacing:.04em;color:var(--navy);text-decoration:none}
+.brand small{display:block;font-family:system-ui,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)}
+nav a{margin:0;flex:0 0 auto;white-space:nowrap;text-decoration:none;font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:var(--charcoal);padding-bottom:2px}
+nav a:hover{color:var(--gold2);text-decoration:underline}
+.ticker{background:#a6192e;color:#ffffff;overflow:hidden;white-space:nowrap;padding:10px 0;font-size:14px;letter-spacing:.02em}
+.ticker span{display:inline-block;padding-left:100%;animation:scroll 90s linear infinite}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+@media(prefers-reduced-motion:reduce){.ticker span{animation:none;padding-left:0;white-space:normal}}
+.hero{background:var(--warm);border-bottom:1px solid var(--line)}
+.hero-in{max-width:1120px;margin:0 auto;padding:56px 20px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:52px;line-height:1.08;margin:0 0 8px}
+.hero .rule{width:72px;height:3px;background:var(--gold);margin:18px 0}
+.hero .title{font-size:17px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);font-weight:700}
+.hero p{font-size:17px;color:#333}
+.hero img{width:100%;height:auto;border:1px solid var(--line);display:block}
+.btn{display:inline-block;background:var(--navy);color:#fff!important;text-decoration:none;padding:13px 22px;font-size:15px;letter-spacing:.03em;margin:6px 8px 6px 0}
+.btn.gold{background:var(--gold2)}
+.btn:hover{opacity:.92}
+section{padding:56px 20px}
+.wrap{max-width:1120px;margin:0 auto}
+.kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold2);font-weight:700}
+h2{font-size:34px;margin:8px 0 12px;line-height:1.2}
+h3{font-size:24px;margin:28px 0 6px}
+.lead{font-size:18px;color:#333;max-width:760px}
+hr.gold{border:none;border-top:1px solid var(--gold);margin:32px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px}
+.card{border:1px solid var(--line);padding:24px;background:#fff}
+.card h3{margin-top:0}
+.muted{color:var(--muted);font-size:15px}
+.issue{border-top:1px solid var(--line);padding:28px 0}
+.issue h2,.issue h3{margin:6px 0}
+.book{border:1px solid var(--line);padding:22px;margin:0 0 18px;background:#fff}
+.book h3{margin-top:0}
+.book-sub{color:var(--muted)}
+details.chapter{border:1px solid var(--line);padding:14px 18px;margin:12px 0;background:#fff}
+details.chapter summary{cursor:pointer;font-weight:700;color:var(--navy)}
+details.chapter p{font-size:16px}
+form label{display:block;font-weight:600;margin:12px 0 4px}
+input[type=text],input[type=email],input[type=tel],textarea{width:100%;padding:11px;border:1px solid #b9b2a2;font-size:16px}
+button{cursor:pointer}
+#lc-result,#wl-msg{border:1px solid var(--gold);background:var(--warm);padding:16px;margin-top:16px}
+.notice{border-left:4px solid var(--gold);background:var(--warm);padding:18px 22px;margin:22px 0}
+footer{background:var(--navy);color:#d9dee6;padding:48px 20px}
+footer a{color:#e8d9ae}
+footer h3{color:#fff}
+.foot{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px}
+.disclaimer{font-size:13px;color:#b9c2cf}
+@media(max-width:820px){.hero-in,.grid2,.grid3,.foot{grid-template-columns:1fr}.hero h1{font-size:38px}section{padding:40px 16px}nav{font-size:13px}}
+nav a.active{color:var(--gold2);text-decoration:underline;font-weight:700}
+</style>
+</head>
+<body>
+<div class="topbar">Dr. Kerry B. Lewis &nbsp;·&nbsp; Los Angeles, California &nbsp;·&nbsp; Personal Website — Not a Government Website</div>
+<header><div class="nav">
+<a class="brand" href="index.html">DR. KERRY B. LEWIS<small>Los Angeles, California</small></a>
+<nav aria-label="Main navigation">
+<a href="index.html">Home</a><a href="about.html">About</a><a href="experience.html">Experience</a><a href="issues.html" class="active" aria-current="page">Issues</a><a href="books.html">Books</a><a href="book-store.html">Book Store</a><a href="writing.html">Featured Writing</a><a href="ministries.html">Ministries</a><a href="community.html">Community</a><a href="testimonials.html">Testimonials</a><a href="terms.html">Terms &amp; Privacy</a><a href="contact.html">Contact</a>
+</nav></div></header>
+<div class="ticker" role="note"><span>GayMail launches March 1, 2027 — your name @gaymail.eu.org — Email for everyone. Be you. &nbsp;·&nbsp; Called 7 Chapters 2–4 out now &nbsp;·&nbsp; DEAD END first 12 chapters out now &nbsp;·&nbsp; Little Lewis updated — ask anything, Live Agent coming soon &nbsp;·&nbsp; FRINGE END — Coming Soon &nbsp;·&nbsp; GAY SEX, WILD YEAR 1969 — Volume One — Dropping November 30, 2026 — $9.99 — Adults 18+ only &nbsp;·&nbsp; The Book Store is open — Open 24/7 — Free Lewis Card checkout &nbsp;·&nbsp; HALLOWEEN SERIES — October 31, 2026 &nbsp;·&nbsp; WALK IN MY SHOES — November 5, 2026 &nbsp;·&nbsp; ROPE &amp; HUNG — December 16, 2026 &nbsp;·&nbsp; The Christmas Room 7 — December 25, 2026 &nbsp;·&nbsp; SIMPLE — December 31, 2026 &nbsp;·&nbsp; JERKING DEATH 1 — January 15, 2027 &nbsp;·&nbsp; THE CALL AT 3:33 AM — February 1, 2027 &nbsp;·&nbsp; BAGGS — March 4, 2027 &nbsp;·&nbsp; FAKE — March 12, 2027</span></div>
+
+<section id="issues"><div class="wrap">
+<p class="kicker">Areas of Expertise</p><h2>The Issues — The Plan for Los Angeles</h2>
+<p class="lead">Fourteen issues, in full, exactly as published on the existing site. Each states the problem and a cleanup plan. Issues 1–5 concern Los Angeles; Issues 6–13 are statewide; Issue 14 is Women’s Rights: Protect Life, and Support Mothers.</p>
+<p class="muted">Notice, as published: More issues will be added. This page grows as District 4 speaks — Kerry is still listening across the district, and new issues, each with a full plan, will be added here as they are ready.</p>
+<article class="issue" id="issue-homelessness">
+              <div class="issue-top">
+                <span class="issue-num">1</span>
+                <div>
+                  <h2>Homelessness &amp; Encampments</h2>
+                  <p class="issue-sub">Help that reaches people — and streets that work for everyone.</p>
+                </div>
+              </div>
+              <div class="issue-cols">
+                <div class="problem">
+                  <h3>The Problem</h3>
+                  <p>Encampments sit under freeways, along riverbanks, and at the edges of Griffith Park — while the city&rsquo;s answer too often is a sweep that moves people one block over and calls it progress. Outreach teams lose track of the very people they&rsquo;re trying to help. Couples and families get split up by placements that only take individuals, so they refuse the offer and stay outside. People leaving hospitals and jails with medical needs land on the sidewalk because there is no respite bed to send them to.</p>
+                  <p>Kerry Lewis has been the person on that sidewalk. He knows the system fails at the handoff — between the street, the shelter, and the services that were supposed to connect them.</p>
+                </div>
+                <div class="plan">
+                  <h3>The Cleanup Plan</h3>
+                  <ol>
+                    <li><p><b>Fund medical respite beds in the district.</b> No one should be discharged from a hospital to a sidewalk. Respite beds give people a safe place to recover — and a door into permanent placement.</p></li>
+                    <li><p><b>Keep couples and families together.</b> Make placements that accept partners and families the standard offer, so nobody has to choose between a bed and the person next to them.</p></li>
+                    <li><p><b>Outreach that actually finds people.</b> Consistent teams on consistent routes, building the trust and current information that make a placement stick — not drive-by counts.</p></li>
+                    <li><p><b>Pair every enforcement action with a real bed offer.</b> Clearing an encampment without an available bed is just relocation. The rule: no sweep without a genuine placement behind it.</p></li>
+                    <li><p><b>Measure placements, not clearances.</b> Publish how many people moved indoors and stayed housed — the only number that tells residents whether it&rsquo;s working.</p></li>
+                  </ol>
+                </div>
+              </div>
+            </article>
+<article class="issue" id="issue-housing">
+              <div class="issue-top">
+                <span class="issue-num">2</span>
+                <div>
+                  <h2>Cost of Living &amp; Housing</h2>
+                  <p class="issue-sub">Build faster, cut the red tape, protect the little guy.</p>
+                </div>
+              </div>
+              <div class="issue-cols">
+                <div class="problem">
+                  <h3>The Problem</h3>
+                  <p>Rents in Los Feliz, Silver Lake, and Studio City have climbed past what teachers, servers, and young families earn. New housing takes years to permit, and every month of delay is priced into the rent. Small landlords — the ones who own a duplex or a fourplex and know their tenants by name — get buried under the same paperwork written for giant developers, and sell to corporations instead. Small businesses face the same maze of permits and fees before they can open a door.</p>
+                  <p>As a builder of businesses from nothing, Kerry Lewis knows exactly what red tape and high costs do to working people: they quit, they leave, or they never start.</p>
+                </div>
+                <div class="plan">
+                  <h3>The Cleanup Plan</h3>
+                  <ol>
+                    <li><p><b>Permit deadlines with teeth.</b> Set firm timelines for housing and small-business permits — and when the city misses its own deadline, the application moves forward, not backward.</p></li>
+                    <li><p><b>One front door for small projects.</b> A single, plain-language permitting path for homeowners, small landlords, and neighborhood businesses — no consultant required to decode it.</p></li>
+                    <li><p><b>Protect small landlords.</b> Keep the mom-and-pop owners who provide naturally affordable homes in the game, with fair timelines, clear rules, and help navigating them.</p></li>
+                    <li><p><b>Build where it makes sense.</b> Faster approvals for housing near jobs and transit in the district&rsquo;s commercial corridors — homes people can actually reach work from.</p></li>
+                    <li><p><b>Publish the fee schedule — all of it.</b> Every city fee on a project, in one public place, so residents can see what government adds to the cost of a home.</p></li>
+                  </ol>
+                </div>
+              </div>
+            </article>
+<article class="issue" id="issue-streets">
+              <div class="issue-top">
+                <span class="issue-num">3</span>
+                <div>
+                  <h2>Clean &amp; Safe Streets and Parks</h2>
+                  <p class="issue-sub">311 that answers, lights that work, a park that feels safe.</p>
+                </div>
+              </div>
+              <div class="issue-cols">
+                <div class="problem">
+                  <h3>The Problem</h3>
+                  <p>Residents report a dead streetlight, a shattered sidewalk, or an illegal dump site to 311 — and then hear nothing. Requests close without the work being done, and there is no public clock on how long the city took. In Griffith Park, dark parking areas, overgrown brush, and neglected trailheads leave hikers and families uneasy in the district&rsquo;s greatest asset. Broken basics send a message that nobody is minding the store — and people stop reporting at all.</p>
+                </div>
+                <div class="plan">
+                  <h3>The Cleanup Plan</h3>
+                  <ol>
+                    <li><p><b>311 accountability with a public clock.</b> Track and publish response times by request type and neighborhood — and hold departments to them, in the open.</p></li>
+                    <li><p><b>No silent closures.</b> A request closes only when the work is verified done, and the resident who reported it gets told what happened.</p></li>
+                    <li><p><b>A Griffith Park safety plan.</b> Working lights in lots and trailheads, brush cleared on a schedule, and visible ranger presence at peak hours — safety you can see.</p></li>
+                    <li><p><b>Streetlight and sidewalk repair on a published queue.</b> Worst-first, by reported condition — with the queue itself public, so every street can see where it stands.</p></li>
+                    <li><p><b>Standing neighborhood cleanups.</b> Regular, scheduled cleanups with residents and local groups — trash and dumping handled before they become encampments of garbage.</p></li>
+                  </ol>
+                </div>
+              </div>
+            </article>
+<article class="issue" id="issue-cityhall">
+              <div class="issue-top">
+                <span class="issue-num">4</span>
+                <div>
+                  <h2>A City Hall That Answers</h2>
+                  <p class="issue-sub">Casework with published standards — and follow-through.</p>
+                </div>
+              </div>
+              <div class="issue-cols">
+                <div class="problem">
+                  <h3>The Problem</h3>
+                  <p>For most residents, &ldquo;City Hall&rdquo; means an unanswered email, a phone tree, and a case that disappears. People fighting a billing error, a dangerous tree, or a landlord problem get bounced between departments with no one owning the outcome. When government won&rsquo;t even return a message, people stop believing it can fix anything bigger — and they&rsquo;re not wrong to feel that way.</p>
+                </div>
+                <div class="plan">
+                  <h3>The Cleanup Plan</h3>
+                  <ol>
+                    <li><p><b>Published response standards.</b> Every constituent message acknowledged within two business days, and every case given a named owner and a target date — standards posted publicly, not promised privately.</p></li>
+                    <li><p><b>One case, one owner.</b> A caseworker stays with a resident&rsquo;s problem until it&rsquo;s resolved — no bouncing between departments, no starting over.</p></li>
+                    <li><p><b>A public casework dashboard.</b> Cases opened, cases closed, and average resolution time, published by neighborhood — the office grades itself in the open.</p></li>
+                    <li><p><b>Office hours across the whole district.</b> Regular, rotating hours from Encino to Los Feliz — residents shouldn&rsquo;t need a trip downtown to be heard.</p></li>
+                    <li><p><b>Follow-through reports.</b> When residents raise an issue at a meeting, the answer — what was done, or honestly why not — gets published, not forgotten.</p></li>
+                  </ol>
+                </div>
+              </div>
+            </article>
+<article class="issue" id="issue-immigration">
+              <div class="issue-top">
+                <span class="issue-num">5</span>
+                <div>
+                  <h2>Immigration: A Legal Path, Enforced Laws</h2>
+                  <p class="issue-sub">Keep families. Remove criminals. Make it legal.</p>
+                </div>
+              </div>
+              <div class="issue-cols">
+                <div class="problem">
+                  <h3>The Problem</h3>
+                  <p>Los Angeles runs on immigrant work — the restaurants, construction crews, caregivers, and small businesses of this district. But Washington&rsquo;s gridlock has left millions of people living in the shadows for decades. A shadow population hurts everybody: employers underpay and exploit, legal workers get undercut, victims and witnesses are afraid to call the police, and the city carries the costs while the federal government argues with itself. Chaos is not compassion, and cruelty is not enforcement.</p>
+                  <p>Kerry Lewis is blunt about the limit: City Hall can&rsquo;t hand out green cards, and anyone who promises that is lying. Legalization is Washington&rsquo;s job. The city&rsquo;s job is safety, order, and a system that works for the people who live here — all of them.</p>
+                </div>
+                <div class="plan">
+                  <h3>The Cleanup Plan</h3>
+                  <ol>
+                    <li><p><b>Criminals out, full stop.</b> Violent offenders, gang members, traffickers, and repeat criminals should be removed — and this city should never shield them. Public safety comes before politics.</p></li>
+                    <li><p><b>An earned path to legal status.</b> For people who have been here for years — working, paying taxes, no serious crimes — Congress should offer a hard, honest path: background checks, back taxes and fines paid, English learned. Get legal, stay legal. Not amnesty — earned.</p></li>
+                    <li><p><b>No obstruction, no chaos.</b> The city should not block federal agents doing lawful, targeted work — and local police stay focused on local crime, so victims and witnesses in every neighborhood aren&rsquo;t afraid to come forward.</p></li>
+                    <li><p><b>Punish exploitation.</b> Go after the employers who hire off the books and steal wages. They cheat the immigrant and the legal worker at the same time.</p></li>
+                    <li><p><b>Integration that works.</b> For people here legally: English and civics classes, job credentials, and small-business support through city programs — legal, working, contributing. That&rsquo;s the goal.</p></li>
+                  </ol>
+                </div>
+              </div>
+            </article>
+<article class="issue" id="issue-wildfires">
+              <div class="issue-top"><span class="issue-num">6</span><div><h2>Wildfires &amp; Home Insurance</h2><p class="issue-sub">Prevent the fire first — and make insurance insurable again.</p></div></div>
+              <div class="issue-cols"><div class="problem"><h3>The Problem</h3>
+              <p>California homeowners are paying for a crisis they did not start. Average home insurance premiums rose 84% between 2020 and 2026, and the state&rsquo;s FAIR Plan — the insurer of last resort — went from covering about 2% of single-family homes in late 2020 to 5% by March 2026, with nearly half the homes in the highest fire-risk ZIP codes on it. After the January 2025 Los Angeles fires, hundreds of displaced renter households faced a cutoff of federal rental help in October 2026, still unable to return home or find an affordable place nearby.</p>
+              <p>Kerry&rsquo;s stance: you cannot insure your way out of a fire problem, and you cannot prevent your way out of it with slogans. Do both — clear the fuel, harden the homes, and let insurers price real risk honestly instead of fleeing the state.</p></div>
+              <div class="plan"><h3>The Cleanup Plan</h3><ol>
+              <li><p><b>Prevention before the next fire season.</b> Fund brush clearance, defensible space, and hardening for homes in the hills and canyons of the district — and hold the city to a public clearance schedule residents can check.</p></li>
+              <li><p><b>Rebuilding without the red tape.</b> Fast-track permits for fire survivors rebuilding the same home, with one caseworker per household instead of a maze of departments.</p></li>
+              <li><p><b>Push Sacramento to fix the insurance market.</b> Support honest risk-based pricing and a stronger FAIR Plan backstop, so private insurers come back instead of leaving homeowners with a plan that covers less and costs more.</p></li>
+              <li><p><b>Protect renters too.</b> Displaced renters need bridge help and first-right-to-return protections, not a cutoff date while their building is still rubble.</p></li>
+              </ol></div></div>
+            </article>
+<article class="issue" id="issue-water">
+              <div class="issue-top"><span class="issue-num">7</span><div><h2>Water: Enough for a State That Grows Everything</h2><p class="issue-sub">Store it, move it, stop wasting it — in that order.</p></div></div>
+              <div class="issue-cols"><div class="problem"><h3>The Problem</h3>
+              <p>California swings between flood and drought, and still acts surprised by both. Rain that could be captured runs to the sea, storage projects take decades, and residents get told to cut back while leaks, runoff, and outdated systems waste what we already have. Farmers, cities, and families end up fighting over the same shrinking supply.</p>
+              <p>Kerry&rsquo;s stance: water is not a partisan issue, it is a plumbing issue. A state this big should never be one dry winter away from rationing.</p></div>
+              <div class="plan"><h3>The Cleanup Plan</h3><ol>
+              <li><p><b>Capture stormwater in the city.</b> Expand parkway basins, permeable streets, and groundwater recharge in the district so rain stays here instead of flooding a street and vanishing.</p></li>
+              <li><p><b>Fix the leaks first.</b> Audit and repair the city&rsquo;s oldest water mains — every gallon lost underground is a gallon a family is told to save.</p></li>
+              <li><p><b>Back storage, honestly.</b> Support new surface and groundwater storage statewide, with timelines and costs published, not promised and forgotten.</p></li>
+              <li><p><b>Recycle more water.</b> Expand recycled water for parks, golf courses, and industry so drinking water goes to drinking.</p></li>
+              </ol></div></div>
+            </article>
+<article class="issue" id="issue-energy">
+              <div class="issue-top"><span class="issue-num">8</span><div><h2>Energy Bills &amp; a Grid That Holds</h2><p class="issue-sub">Power people can afford, on a grid that does not fail them.</p></div></div>
+              <div class="issue-cols"><div class="problem"><h3>The Problem</h3>
+              <p>Californians pay some of the highest electricity rates in the country — rates that rose 37% between 2020 and 2025 — and wildfire-related costs alone add an average of $21 to $41 a month to residential bills. Working families get a bill that reads like a second rent, while the grid is still shut off in high winds and strained in heat waves.</p>
+              <p>Kerry&rsquo;s stance: clean energy is fine, but a bill nobody can pay is not progress, and a blackout is not a policy. Affordability and reliability come first, and every new mandate should have to pass both tests.</p></div>
+              <div class="plan"><h3>The Cleanup Plan</h3><ol>
+              <li><p><b>Show the bill, line by line.</b> Push utilities to break out wildfire, transmission, and program costs on every bill, so residents see what they are actually paying for.</p></li>
+              <li><p><b>Cut the wildfire surcharge at the source.</b> Prevention, undergrounding in the worst corridors, and faster hardening reduce the liability that gets passed straight to ratepayers.</p></li>
+              <li><p><b>Keep the lights on.</b> Back reliable baseload and storage alongside solar and wind — no plan that leaves hospitals, seniors, and working families dark in a heat wave.</p></li>
+              <li><p><b>Protect the people who can least pay.</b> Expand and simplify low-income energy assistance, with enrollment at the same counter where people already get city services.</p></li>
+              </ol></div></div>
+            </article>
+<article class="issue" id="issue-drugs">
+              <div class="issue-top"><span class="issue-num">9</span><div><h2>Drugs, Fentanyl &amp; Street Crime</h2><p class="issue-sub">Dealers face consequences. Users get a door out. Nobody gets abandoned.</p></div></div>
+              <div class="issue-cols"><div class="problem"><h3>The Problem</h3>
+              <p>Fentanyl is still killing Californians in large numbers, even as the numbers improve: Los Angeles County recorded 2,298 accidental overdose deaths in 2025, down from a peak of 3,220 in 2022 — progress, but still thousands of funerals a year, hitting the poorest neighborhoods hardest. At the same time, organized retail theft rings strip stores, small shops close, and repeat offenders cycle through a system that neither treats them nor stops them.</p>
+              <p>Kerry&rsquo;s stance: this is not either enforcement or compassion. It is both, aimed at the right people. Go hard on the dealers and the theft rings, and give the person on the street a real bed, real treatment, and a real reason to take it.</p></div>
+              <div class="plan"><h3>The Cleanup Plan</h3><ol>
+              <li><p><b>Break the supply chain.</b> Back joint city, county, and federal work against fentanyl dealers and organized retail theft rings — and against the fences that buy what they steal.</p></li>
+              <li><p><b>Treatment beds, not waiting lists.</b> Fund detox, residential treatment, and mental health beds in the district, with same-day intake when someone is ready — readiness does not wait for a form.</p></li>
+              <li><p><b>Consequences that stick.</b> Repeat theft and dealing should mean real penalties and mandatory treatment, not a citation and a bus ticket back to the same corner.</p></li>
+              <li><p><b>Naloxone everywhere it helps.</b> Put overdose-reversal kits and training in libraries, shelters, and city buildings, so a bystander can save a life before an ambulance arrives.</p></li>
+              </ol></div></div>
+            </article>
+<article class="issue" id="issue-schools">
+              <div class="issue-top"><span class="issue-num">10</span><div><h2>Schools: Reading, Math &amp; Safety First</h2><p class="issue-sub">Teach the basics, keep kids safe, tell parents the truth.</p></div></div>
+              <div class="issue-cols"><div class="problem"><h3>The Problem</h3>
+              <p>Too many California kids leave school behind in reading and math, while the adults in charge argue about everything except the classroom. Parents get forms and slogans instead of honest scores, and schools in the toughest neighborhoods get the least help and the most excuses.</p>
+              <p>Kerry&rsquo;s stance: a school&rsquo;s first job is to teach a child to read, do math, and think clearly — and to keep that child safe while it does it. Everything else is secondary, and parents are partners, not obstacles.</p></div>
+              <div class="plan"><h3>The Cleanup Plan</h3><ol>
+              <li><p><b>Back the basics.</b> Support phonics-based reading and real math instruction, with tutoring for kids who fell behind — measured by scores parents can actually read.</p></li>
+              <li><p><b>Safe routes, safe campuses.</b> Fund safe passages, crossing guards, and campus safety in the district, and coordinate with police on routes kids actually walk.</p></li>
+              <li><p><b>Parents in the room.</b> Require plain-language reporting to families on progress, spending, and safety — no jargon, no hiding behind a dashboard.</p></li>
+              <li><p><b>Skills that pay.</b> Expand career, trade, and arts pathways in city-supported programs, so a diploma leads somewhere real.</p></li>
+              </ol></div></div>
+            </article>
+<article class="issue" id="issue-health">
+              <div class="issue-top"><span class="issue-num">11</span><div><h2>Health Care &amp; Mental Health: Care You Can Actually Get</h2><p class="issue-sub">A bed, a doctor, and a follow-up — not a referral slip to nowhere.</p></div></div>
+              <div class="issue-cols"><div class="problem"><h3>The Problem</h3>
+              <p>People in crisis get a referral, a waiting list, and a bus pass — then land back on the street or in an emergency room. Mental health beds are scarce, clinics are hard to reach without a car or a phone that holds a charge, and people leaving hospitals with nowhere to recover end up right back where they started.</p>
+              <p>Kerry&rsquo;s stance: health care that only exists on paper is not health care. If the system cannot hand a person a bed, a doctor, and a next appointment, it has not done its job.</p></div>
+              <div class="plan"><h3>The Cleanup Plan</h3><ol>
+              <li><p><b>Medical respite, statewide and local.</b> Fund respite beds so nobody is discharged from a hospital to a sidewalk, here or anywhere in California.</p></li>
+              <li><p><b>Mental health beds that exist.</b> Push the county and state to open and staff crisis stabilization and longer-term beds, with published wait times.</p></li>
+              <li><p><b>Care where people are.</b> Support mobile clinics and co-located services at libraries, parks, and community centers in the district.</p></li>
+              <li><p><b>One front door.</b> A single, simple intake that connects health, housing, and benefits — so a person tells their story once, not to five agencies.</p></li>
+              </ol></div></div>
+            </article>
+<article class="issue" id="issue-jobs">
+              <div class="issue-top"><span class="issue-num">12</span><div><h2>Jobs, Small Business &amp; Taxes: Stop Punishing the People Who Build</h2><p class="issue-sub">Let people open, hire, and keep more of what they earn.</p></div></div>
+              <div class="issue-cols"><div class="problem"><h3>The Problem</h3>
+              <p>California has the fifth-largest economy on earth and some of the worst conditions for starting a business in it: high taxes, slow permits, and rules that change faster than a small shop can follow. Owners close, jobs leave, and the city loses the tax base it needs for everything else — then raises fees on whoever is left.</p>
+              <p>Kerry&rsquo;s stance: he built businesses from nothing, and he knows what red tape and high taxes do to working people. Government should be the floor under a business, not the ceiling on top of it.</p></div>
+              <div class="plan"><h3>The Cleanup Plan</h3><ol>
+              <li><p><b>Permits on a clock.</b> Set and publish deadlines for small-business permits in the district — if the city misses its own deadline, the fee is waived.</p></li>
+              <li><p><b>One stop, not ten.</b> A single small-business desk for licenses, inspections, and questions, with help in English and Spanish.</p></li>
+              <li><p><b>Cut the fees that kill startups.</b> Review and reduce the city fees that hit smallest businesses hardest, and report the savings publicly.</p></li>
+              <li><p><b>Fight for a fairer state tax climate.</b> Use the council&rsquo;s voice in Sacramento for lower, simpler taxes on small employers — because a city cannot thrive while the state taxes its builders out.</p></li>
+              </ol></div></div>
+            </article>
+<article class="issue" id="issue-roads">
+              <div class="issue-top"><span class="issue-num">13</span><div><h2>Roads, Transit &amp; Infrastructure: Fix What We Already Own</h2><p class="issue-sub">Fill the pothole before announcing the monument.</p></div></div>
+              <div class="issue-cols"><div class="problem"><h3>The Problem</h3>
+              <p>Streets in the district are patched, re-patched, and still falling apart, while grand projects eat the budget and riders avoid transit they do not feel safe on. Residents pay some of the highest taxes in the country and drive home over roads that look like they belong to a poorer state.</p>
+              <p>Kerry&rsquo;s stance: infrastructure is a promise, not a ribbon-cutting. Maintain what exists, make it safe, and only then build something new.</p></div>
+              <div class="plan"><h3>The Cleanup Plan</h3><ol>
+              <li><p><b>Potholes and paving, on a public list.</b> Publish the district&rsquo;s worst streets and the date each gets fixed — and hold the schedule.</p></li>
+              <li><p><b>Safe transit, actually safe.</b> Push for staffed stations, clean cars, and real enforcement on Metro, so riders — especially women, seniors, and night-shift workers — feel safe using it.</p></li>
+              <li><p><b>Sidewalks and lighting.</b> Repair broken sidewalks and dark stretches first in the neighborhoods that have waited longest.</p></li>
+              <li><p><b>Finish, then start.</b> No new mega-project money until the maintenance backlog is published and shrinking.</p></li>
+              </ol></div></div>
+            </article>
+<article class="issue" id="issue-womens-rights">
+              <div class="issue-top"><span class="issue-num">14</span><div><h2>Women&rsquo;s Rights: Protect Life, and Support Mothers</h2><p class="issue-sub">A child deserves protection. A mother deserves support. Both, not one or the other.</p></div></div>
+              <div class="issue-cols"><div class="problem"><h3>The Problem</h3>
+              <p>Too many women in crisis feel like they have only one choice, because support is missing. A mother facing an unplanned pregnancy can be up against rent she cannot pay, a job with no leave, childcare she cannot afford, and a partner or family offering no help. That is not a free choice. That is pressure.</p>
+              <p>Kerry&rsquo;s stance: every life has value, and every mother deserves real support — not just a slogan, and not just a rule. Protecting life means standing up for the child, and it means standing beside the mother with housing, health care, childcare, and safety, so choosing life is a choice she can actually make.</p>
+              <p>This page is honest about scope: abortion law in California is set at the state level, and a City Council member cannot rewrite it from City Hall. What City Hall can do is fund and connect the support that makes life possible, protect women from violence and coercion, and speak clearly for life at every level of government.</p></div>
+              <div class="plan"><h3>The Cleanup Plan</h3><ol>
+              <li><p><b>Support mothers first.</b> Connect pregnant and new mothers to housing help, health care, childcare, diapers, and job support through city services and trusted nonprofits — one clear front door, not a maze of forms.</p></li>
+              <li><p><b>Protect maternal health.</b> Push for prenatal care, postpartum care, and mental health support that reaches every neighborhood, so no mother is left to face pregnancy and birth alone.</p></li>
+              <li><p><b>Protect women from violence and coercion.</b> Expand shelter, safety planning, and legal help for women facing domestic violence, and make it clear: no woman should ever be pressured into any pregnancy decision by a partner, family, or anyone else.</p></li>
+              <li><p><b>Make adoption a real, supported option.</b> Put clear, honest adoption information and support in front of mothers and families, and back the families who step up to adopt.</p></li>
+              <li><p><b>Speak clearly for life.</b> Advocate at the state and federal level for policies that protect unborn children, while doing the local work above — because a position that only talks and never supports is not a position at all.</p></li>
+              </ol></div></div>
+            </article>
+</div></section>
+
+<footer><div class="foot">
+<div><h3>Dr. Kerry B. Lewis</h3><p>Business Owner | Founder, The Treasure Grid Inc. | Author &amp; Publisher<br>Los Angeles, California</p><p class="disclaimer">This is a personal website. It is not a government website, and it is not affiliated with any news network, government agency, or law firm.</p></div>
+<div><h3>Navigate</h3><p><a href="index.html">Home</a><br><a href="about.html">About</a><br><a href="issues.html">Issues</a><br><a href="books.html">Books</a><br><a href="ministries.html">Ministries</a><br><a href="community.html">Community</a></p></div>
+<div><h3>Contact &amp; Legal</h3><p>Email: <a href="mailto:info@drkerryblewis.org">info@drkerryblewis.org</a><br><a href="/privacy">Privacy Policy</a><br><a href="terms.html">Terms of Use</a></p><p class="disclaimer">© 2026 Dr. Kerry B. Lewis. All dates on this page are unchanged from the existing site.</p></div>
+</div></footer>
+
+</body>
+</html>
