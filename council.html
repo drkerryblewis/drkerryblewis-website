@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="The personal website of Dr. Kerry B. Lewis of Los Angeles — his story, his books, his plan for Los Angeles, and what City Hall is working on." />
+    <link rel="icon" href="data:," />
+    <title>Dr. Kerry B. Lewis — Los Angeles</title>
+    <link rel="stylesheet" href="assets/site.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+  
+
+
+
+
+
+
+
+</head>
+    <body data-page="council">
+
+    <div id="terms-gate" role="dialog" aria-modal="true" aria-labelledby="terms-gate-title" style="position:fixed;inset:0;z-index:99999;background:rgba(4,16,32,.92);display:flex;align-items:center;justify-content:center;padding:20px;overflow-y:auto;">
+      <div style="background:#0d2a4a;border:2px solid #ffc72c;border-radius:16px;max-width:640px;width:100%;padding:28px 26px;color:#fff;box-shadow:0 20px 60px rgba(0,0,0,.5);">
+        <p style="margin:0 0 8px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#ffc72c;">Before You Continue &middot; Terms of Use &amp; Privacy Notice</p>
+        <h2 id="terms-gate-title" style="margin:0 0 12px;color:#fff;font-size:26px;line-height:1.25;">Welcome to drkerryblewis.org</h2>
+        <div style="color:#e9edf2;font-size:15.5px;line-height:1.6;">
+          <p style="margin:0 0 10px;"><strong style="color:#fff;">By clicking &ldquo;I Accept,&rdquo; you enter into a binding agreement</strong> to these Terms of Use and the site&rsquo;s Privacy Policy. If you do not accept, you may not use this site and you will be taken off it.</p>
+          <p style="margin:0 0 10px;">This is a personal website owned by Dr. Kerry B. Lewis. It is not a government website, and it is not affiliated with, endorsed by, or acting on behalf of any government agency.</p>
+          <p style="margin:0 0 10px;">Content on this site &mdash; including issues, opinions, books, and blog posts &mdash; is personal expression protected by the <strong style="color:#fff;">First Amendment to the Constitution of the United States</strong>. Nothing on this site is legal, medical, financial, or professional advice, and no attorney-client, doctor-patient, or other professional relationship is created by using it.</p>
+          <p style="margin:0 0 10px;"><strong style="color:#fff;">Governing law.</strong> These terms are governed by the laws of the <strong style="color:#fff;">State of California</strong>, without regard to conflict-of-law rules. Any dispute arising from these terms or your use of this site shall be brought exclusively in the state or federal courts located in <strong style="color:#fff;">Los Angeles County, California</strong>, and you consent to the jurisdiction of those courts.</p>
+          <p style="margin:0 0 10px;"><strong style="color:#fff;">California privacy.</strong> Your privacy rights under California law, including the California Consumer Privacy Act, are described in the site&rsquo;s Privacy Policy, which forms part of this agreement.</p>
+          <p style="margin:0;"><strong style="color:#fff;">Other terms.</strong> If any part of these terms is found unenforceable, the rest remains in full effect. These terms may be updated from time to time, and continued use of the site after an update means you accept the updated terms.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:20px;">
+          <button type="button" onclick="klAcceptTerms()" style="flex:1;min-width:180px;background:#1e6fd9;color:#fff;border:none;border-radius:999px;padding:13px 20px;font-size:16px;font-weight:800;cursor:pointer;">I Accept &mdash; Enter Site</button>
+          <button type="button" onclick="klDeclineTerms()" style="flex:1;min-width:180px;background:transparent;color:#fff;border:2px solid #fff;border-radius:999px;padding:13px 20px;font-size:16px;font-weight:800;cursor:pointer;">I Decline &mdash; Leave Site</button>
+        </div>
+        <p style="margin:14px 0 0;font-size:13.5px;color:#c7d2dd;">Links: <a href="/privacy" style="color:#ffc72c;">Privacy Policy</a></p>
+      </div>
+    </div>
+
+    <div class="ticker" role="region" aria-label="Updated and upcoming releases for the site">
+      <span class="ticker-label"><strong>UPDATED &amp; UPCOMING</strong><span class="tl-sub">Releases for the Site</span></span>
+      <div class="ticker-viewport">
+        <div class="ticker-track" id="tickerTrack">
+          <span class="ticker-item">Little Lewis updated — ask anything, Live Agent coming soon</span>
+          <span class="ticker-item">FRINGE END — Coming Soon to the Books tab</span>
+          <span class="ticker-item">GAY SEX, WILD YEAR 1969 — Volume One — Dropping November 30, 2026 — $9.99 — Adults 18+ only</span>
+          <span class="ticker-item">The Book Store is open — Open 24/7 — Free Lewis Card checkout</span>
+          
+          <span class="ticker-item">HALLOWEEN SERIES — October 31, 2026</span>
+          <span class="ticker-item">WALK IN MY SHOES — November 5, 2026</span>
+          <span class="ticker-item">ROPE & HUNG — December 16, 2026</span>
+          <span class="ticker-item">The Christmas Room 7 — December 25, 2026</span>
+          <span class="ticker-item">SIMPLE — December 31, 2026</span>
+          <span class="ticker-item">JERKING DEATH 1 — January 15, 2027</span>
+          <span class="ticker-item">THE CALL AT 3:33 AM — February 1, 2027</span>
+          <span class="ticker-item">BAGGS — March 4, 2027</span>
+          <span class="ticker-item">FAKE — March 12, 2027</span>
+          <span class="ticker-item">Little Lewis updated — ask anything, Live Agent coming soon</span>
+          <span class="ticker-item">FRINGE END — Coming Soon to the Books tab</span>
+          <span class="ticker-item">GAY SEX, WILD YEAR 1969 — Volume One — Dropping November 30, 2026 — $9.99 — Adults 18+ only</span>
+          <span class="ticker-item">The Book Store is open — Open 24/7 — Free Lewis Card checkout</span>
+          
+          <span class="ticker-item">HALLOWEEN SERIES — October 31, 2026</span>
+          <span class="ticker-item">WALK IN MY SHOES — November 5, 2026</span>
+          <span class="ticker-item">ROPE & HUNG — December 16, 2026</span>
+          <span class="ticker-item">The Christmas Room 7 — December 25, 2026</span>
+          <span class="ticker-item">SIMPLE — December 31, 2026</span>
+          <span class="ticker-item">JERKING DEATH 1 — January 15, 2027</span>
+          <span class="ticker-item">THE CALL AT 3:33 AM — February 1, 2027</span>
+          <span class="ticker-item">BAGGS — March 4, 2027</span>
+          <span class="ticker-item">FAKE — March 12, 2027</span>
+        </div>
+      </div>
+      <span class="ticker-date">Updated and upcoming releases for the site</span>
+    </div>
+
+    <header class="site-head">
+      <div class="wrap">
+        <a class="brand" href="index.html" data-nav="home" aria-label="Dr. Kerry B. Lewis — home">
+          <span class="brand-mark">KL</span>
+          <span>
+            <span class="brand-name">Dr. Kerry B. Lewis</span>
+            <span class="brand-sub" style="display:block">Los Angeles, California</span>
+          </span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Main">
+          <a href="index.html" data-nav="home">Home</a>
+          <a href="about.html" data-nav="about">About</a>
+          <a href="issues.html" data-nav="issues">Issues</a>
+          <a href="books.html" data-nav="books">Book Store</a>
+                    <a href="ministries.html" data-nav="ministries">Lewis Ministries</a>
+          <a href="council.html" data-nav="council">City Council Meetings</a>
+          <a href="congress.html" data-nav="congress">Congress</a>
+                    <a href="index.html#waitlist" data-nav="home" data-anchor="waitlist">Sign Up</a>
+        </nav>
+      </div>
+    </header>
+
+    <div role="region" aria-label="Scrolling announcements" style="overflow:hidden;background:#0a2340;color:#ffffff;padding:10px 0;border-bottom:3px solid #c00000;">
+<div class="ticker-track" style="animation-duration:60s;">
+<span class="ticker-item">Called 7 Chapters 2–4 out now</span>
+<span class="ticker-item">DEAD END first 12 chapters out now</span>
+<span class="ticker-item">Called 7 Chapters 2–4 out now</span>
+<span class="ticker-item">DEAD END first 12 chapters out now</span>
+</div>
+</div>
+
+<main>
+<div class="view" id="view-council">
+        <section class="page-head">
+          <div class="wrap">
+            <p class="sec-kicker">City Hall &middot; Open Meetings</p>
+            <h1>Los Angeles City Council Meetings</h1>
+            <p>When the Council meets, what&rsquo;s on the table, and how to watch or speak — taken from the Los Angeles City Clerk&rsquo;s official calendar and published agendas.</p>
+          </div>
+        </section>
+<aside aria-label="Resources tab on hold" style="background:linear-gradient(135deg,#0d2a4a,#071e38);border:2px solid #ffc72c;border-radius:16px;padding:22px 26px;margin:0 auto 28px;max-width:1100px;">
+  <p style="margin:0 0 6px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#ffc72c;">Notice &middot; On Hold</p>
+  <h2 style="margin:0 0 8px;color:#fff;">A separate Resources tab for all of California is on hold</h2>
+  <p style="margin:0;color:#e9edf2;">A separate Resources tab for all of California is on hold until its content is named — it will not launch empty on November 1. City Hall &middot; Open Meetings stays right here, as its own tab, and is not going away.</p>
+</aside>
+
+
+        <section class="block">
+          <div class="wrap">
+            <div class="mtg-next reveal">
+              <p class="sec-kicker" style="color:var(--gold-bright);margin-bottom:6px">Next Meeting</p>
+              <p class="mtg-when">Tuesday, October 27, 2026 &middot; 10:00 AM</p>
+              <p>John Ferraro Council Chamber, Room 340 &middot; City Hall, 200 North Spring Street, Los Angeles (entrance on Main Street). Watch live on Cable Channel 35, at <a href="https://lms.lacity.gov/meetings" style="color:var(--gold-bright)">lms.lacity.gov/meetings</a>, or on YouTube.</p>
+            </div>
+
+            <div class="reveal" style="margin-top:48px">
+              <p class="sec-kicker">On the Table</p>
+              <h2>The headline item for October 27</h2>
+              <p>The full agenda for October 27 posts on the City Clerk&rsquo;s calendar by Saturday morning, October 24. One major decision is already scheduled:</p>
+              <div class="mtg-grid">
+                <div class="mtg-card">
+                  <span class="cf">Council File 26-1394</span>
+                  <h3>LAPD streetlight cameras — veto decision</h3>
+                  <p>The Council decides whether to veto the Police Commission&rsquo;s approval of the Axon &ldquo;Lightpost&rdquo; pilot — license-plate-reader cameras mounted on city streetlights, a no-cost 3-month pilot. The Public Safety Committee voted 3&ndash;2 to recommend a veto, and October 27 is the last day the Council can act. Expect a full debate on surveillance, privacy, and public safety.</p>
+                </div>
+                <div class="mtg-card">
+                  <span class="cf">How Agendas Work</span>
+                  <h3>Read the full agenda yourself</h3>
+                  <p>Every Council agenda is public and posted at least 72 hours before the meeting. Read the October 27 agenda — and every past agenda — in the City Clerk&rsquo;s new Legislative Management System at <a href="https://lms.lacity.gov/meetings">lms.lacity.gov/meetings</a>.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal" style="margin-top:48px">
+              <p class="sec-kicker">Last Meeting &middot; Friday, October 23, 2026</p>
+              <h2>What the Council took up most recently</h2>
+              <div class="mtg-grid">
+                <div class="mtg-card">
+                  <span class="cf">Council File 25-1538</span>
+                  <h3>Citywide Parks Needs Assessment</h3>
+                  <p>The 2025 assessment of park needs across Los Angeles — the Recreation and Parks Board&rsquo;s report on what the city&rsquo;s parks need, noted and filed.</p>
+                </div>
+                <div class="mtg-card">
+                  <span class="cf">Council File 26-1426</span>
+                  <h3>Fatal Crash Rapid Response Program</h3>
+                  <p>A motion to establish a Programmatic Fatal Crash Rapid Response Program — a faster, organized city response after fatal collisions, headed to the Transportation Committee.</p>
+                </div>
+                <div class="mtg-card">
+                  <span class="cf">Council File 17-1098-S1</span>
+                  <h3>City succession planning</h3>
+                  <p>Preparing for retirements and turnover across the city workforce — the Personnel Department&rsquo;s succession-planning report, noted and filed.</p>
+                </div>
+                <div class="mtg-card">
+                  <span class="cf">Council File 26-0600-S82</span>
+                  <h3>Inspector hiring qualifications</h3>
+                  <p>Alternative qualifications for Housing Inspector and Building Inspector candidates — widening the hiring pipeline for the inspectors the city is short on.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal" style="margin-top:48px">
+              <p class="sec-kicker">Coming Up</p>
+              <h2>Regular meeting schedule</h2>
+              <p>The Council meets regularly on <strong>Tuesdays, Wednesdays, and Fridays at 10:00 AM</strong> in Room 340. Upcoming sessions on that schedule:</p>
+              <ul class="mtg-list" style="margin-top:10px">
+                <li><span class="mtg-d">Tuesday, October 27, 2026</span><span class="mtg-t">10:00 AM</span></li>
+                <li><span class="mtg-d">Wednesday, October 28, 2026</span><span class="mtg-t">10:00 AM</span></li>
+                <li><span class="mtg-d">Friday, October 30, 2026</span><span class="mtg-t">10:00 AM</span></li>
+                <li><span class="mtg-d">Wednesday, November 4, 2026</span><span class="mtg-t">10:00 AM</span></li>
+                <li><span class="mtg-d">Friday, November 6, 2026</span><span class="mtg-t">10:00 AM</span></li>
+              </ul>
+              <p style="margin-top:14px">Meeting dates and agendas can change — always confirm on the City Clerk&rsquo;s calendar before heading downtown.</p>
+            </div>
+
+            <div class="reveal" style="margin-top:48px">
+              <p class="sec-kicker">Your Turn</p>
+              <h2>How to speak at a meeting</h2>
+              <div class="mtg-grid">
+                <div class="mtg-card">
+                  <h3>In person</h3>
+                  <p>Come to the John Ferraro Council Chamber, Room 340 at City Hall, and register at the speaker kiosks inside or outside the chamber.</p>
+                </div>
+                <div class="mtg-card">
+                  <h3>By phone</h3>
+                  <p>Call <strong>833-435-1820</strong>, enter Meeting ID <strong>165 917 6148</strong>, press # twice, then *9 to request to speak and *6 to unmute when you are called.</p>
+                </div>
+                <div class="mtg-card">
+                  <h3>In writing</h3>
+                  <p>Submit a public comment any time at <a href="https://lms.lacity.gov/comment">lms.lacity.gov/comment</a> — reference the Council File number so your comment lands on the right item.</p>
+                </div>
+                <div class="mtg-card">
+                  <h3>Listen only</h3>
+                  <p>Live audio by phone: Metro (213) 621-CITY &middot; Valley (818) 904-9450 &middot; Westside (310) 471-CITY &middot; San Pedro (310) 547-CITY.</p>
+                </div>
+              </div>
+              <p style="margin-top:18px;font-size:14.5px;color:#5a6a80">Meeting information on this page is summarized from Los Angeles City Clerk publications and was last updated October 26, 2026. Spanish interpretation is available at all Council meetings; other languages on request. This page is not an official City website — the official source is <a href="https://lms.lacity.gov">lms.lacity.gov</a>.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+</main>
+
+
+    <footer>
+      <div class="wrap">
+        <div class="foot-grid">
+          <div class="foot-brand">
+            <span class="brand-name">Dr. Kerry B. Lewis</span>
+            <p>Business owner, publisher, and author — Los Angeles, California.</p>
+            <p class="serif-i" style="color:var(--gold-bright);font-size:17px">&ldquo;End failed leadership. Fix homelessness. Lower the cost of living.&rdquo;</p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul class="foot-links">
+              <li><a href="index.html" data-nav="home">Home</a></li>
+              <li><a href="about.html" data-nav="about">About Dr. Lewis</a></li>
+              <li><a href="issues.html" data-nav="issues">Issues</a></li>
+              <li><a href="books.html" data-nav="books">Book Store</a></li>
+              <li><a href="council.html" data-nav="council">City Council Meetings</a></li>
+              <li><a href="congress.html" data-nav="congress">Congress.gov</a></li>
+              
+        <li><a href="ministries.html" data-nav="ministries">Lewis Ministries</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>More</h4>
+            <ul class="foot-links">
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="mailto:info@drkerryblewis.org">info@drkerryblewis.org</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <p class="disclaimer"><strong>Legal Notice:</strong> This is the personal website of Dr. Kerry B. Lewis. It is not an official website of the City of Los Angeles, the Los Angeles City Council, or any government agency. Content on this site is provided for general information only and does not constitute legal, financial, or professional advice. City Council meeting information is summarized from official Los Angeles City Clerk publications and may change without notice — always confirm dates, times, and agendas with the City Clerk at clerk.lacity.org. All original writing on this site — including Make It or Break It, Called 7, and Jerking Death — is the copyrighted work of Dr. Kerry B. Lewis and may not be reproduced without permission.</p>
+          <p>&copy; 2026 Dr. Kerry B. Lewis &middot; Los Angeles, California &middot; All rights reserved.</p>
+          <p class="credits">Photography: Hollywood Sign at sunrise via Griffith Observatory (Cameron Venti). Silver Lake street via Travel Dealz. Portrait courtesy of Dr. Lewis.</p>
+        </div>
+      </div>
+    </footer>
+
+    
+  
+
+
+
+    <div id="site-helper" style="position:fixed;right:18px;bottom:18px;z-index:9998;font-family:inherit;">
+      <button type="button" id="site-helper-btn" aria-label="Ask Little Lewis" style="background:#1e6fd9;color:#fff;border:2px solid #ffc72c;border-radius:999px;padding:12px 20px;font-size:15px;font-weight:800;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.35);">Ask Little Lewis</button>
+      <div id="site-helper-panel" style="display:none;position:absolute;right:0;bottom:56px;width:min(360px,calc(100vw - 36px));background:#0d2a4a;border:2px solid #ffc72c;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5);color:#fff;">
+        <div style="padding:14px 16px;background:#071e38;border-bottom:1px solid #ffc72c;">
+          <p style="margin:0;font-weight:800;font-size:16px;">Little Lewis</p>
+          <p style="margin:2px 0 0;font-size:12.5px;color:#ffc72c;font-weight:700;">Ask Anything</p>
+          <p style="margin:4px 0 0;font-size:12.5px;color:#c7d2dd;line-height:1.45;">Little Lewis answers about drkerryblewis.org and general questions too. I do not send or store anything you type.</p>
+          <p style="margin:6px 0 0;font-size:12.5px;color:#ffc72c;font-weight:800;">Live Agent — Coming Soon</p>
+        </div>
+        <div id="site-helper-log" style="height:260px;overflow-y:auto;padding:14px 16px;font-size:14.5px;line-height:1.55;color:#e9edf2;">
+          <p style="margin:0;">Hi. Ask me anything — for example: Issues, Books, Events, Council Meetings, or anything else. Live Agent help is coming soon.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px;">
+          <button type="button" class="sh-chip" data-q="What issues are on this site?" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Issues</button>
+          <button type="button" class="sh-chip" data-q="What books are on this site?" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Books</button>
+          <button type="button" class="sh-chip" data-q="What events are coming up in Hollywood?" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Events</button>
+          <button type="button" class="sh-chip" data-q="When is the next City Council meeting?" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Council Meetings</button>
+          <button type="button" class="sh-chip" data-q="Live Agent" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Live Agent — Coming Soon</button>
+        </div>
+        <form id="site-helper-form" style="display:flex;gap:8px;padding:12px 14px;border-top:1px solid rgba(255,255,255,.2);">
+          <input id="site-helper-input" type="text" placeholder="Ask anything…" aria-label="Ask anything" style="flex:1;min-width:0;border-radius:999px;border:1px solid #ccc;padding:10px 14px;font-size:14px;color:#111;">
+          <button type="submit" style="background:#ffc72c;color:#111;border:none;border-radius:999px;padding:10px 16px;font-size:14px;font-weight:800;cursor:pointer;">Ask</button>
+        </form>
+      </div>
+    </div>
+
+
+
+    <script src="assets/site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="The personal website of Dr. Kerry B. Lewis of Los Angeles — his story, his books, his plan for Los Angeles, and what City Hall is working on." />
+    <link rel="icon" href="data:," />
+    <title>Dr. Kerry B. Lewis — Los Angeles</title>
+    <link rel="stylesheet" href="assets/site.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+  
+
+
+
+
+
+
+
+</head>
+    <body data-page="about">
+
+    <div id="terms-gate" role="dialog" aria-modal="true" aria-labelledby="terms-gate-title" style="position:fixed;inset:0;z-index:99999;background:rgba(4,16,32,.92);display:flex;align-items:center;justify-content:center;padding:20px;overflow-y:auto;">
+      <div style="background:#0d2a4a;border:2px solid #ffc72c;border-radius:16px;max-width:640px;width:100%;padding:28px 26px;color:#fff;box-shadow:0 20px 60px rgba(0,0,0,.5);">
+        <p style="margin:0 0 8px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:#ffc72c;">Before You Continue &middot; Terms of Use &amp; Privacy Notice</p>
+        <h2 id="terms-gate-title" style="margin:0 0 12px;color:#fff;font-size:26px;line-height:1.25;">Welcome to drkerryblewis.org</h2>
+        <div style="color:#e9edf2;font-size:15.5px;line-height:1.6;">
+          <p style="margin:0 0 10px;"><strong style="color:#fff;">By clicking &ldquo;I Accept,&rdquo; you enter into a binding agreement</strong> to these Terms of Use and the site&rsquo;s Privacy Policy. If you do not accept, you may not use this site and you will be taken off it.</p>
+          <p style="margin:0 0 10px;">This is a personal website owned by Dr. Kerry B. Lewis. It is not a government website, and it is not affiliated with, endorsed by, or acting on behalf of any government agency.</p>
+          <p style="margin:0 0 10px;">Content on this site &mdash; including issues, opinions, books, and blog posts &mdash; is personal expression protected by the <strong style="color:#fff;">First Amendment to the Constitution of the United States</strong>. Nothing on this site is legal, medical, financial, or professional advice, and no attorney-client, doctor-patient, or other professional relationship is created by using it.</p>
+          <p style="margin:0 0 10px;"><strong style="color:#fff;">Governing law.</strong> These terms are governed by the laws of the <strong style="color:#fff;">State of California</strong>, without regard to conflict-of-law rules. Any dispute arising from these terms or your use of this site shall be brought exclusively in the state or federal courts located in <strong style="color:#fff;">Los Angeles County, California</strong>, and you consent to the jurisdiction of those courts.</p>
+          <p style="margin:0 0 10px;"><strong style="color:#fff;">California privacy.</strong> Your privacy rights under California law, including the California Consumer Privacy Act, are described in the site&rsquo;s Privacy Policy, which forms part of this agreement.</p>
+          <p style="margin:0;"><strong style="color:#fff;">Other terms.</strong> If any part of these terms is found unenforceable, the rest remains in full effect. These terms may be updated from time to time, and continued use of the site after an update means you accept the updated terms.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:20px;">
+          <button type="button" onclick="klAcceptTerms()" style="flex:1;min-width:180px;background:#1e6fd9;color:#fff;border:none;border-radius:999px;padding:13px 20px;font-size:16px;font-weight:800;cursor:pointer;">I Accept &mdash; Enter Site</button>
+          <button type="button" onclick="klDeclineTerms()" style="flex:1;min-width:180px;background:transparent;color:#fff;border:2px solid #fff;border-radius:999px;padding:13px 20px;font-size:16px;font-weight:800;cursor:pointer;">I Decline &mdash; Leave Site</button>
+        </div>
+        <p style="margin:14px 0 0;font-size:13.5px;color:#c7d2dd;">Links: <a href="/privacy" style="color:#ffc72c;">Privacy Policy</a></p>
+      </div>
+    </div>
+
+    <div class="ticker" role="region" aria-label="Updated and upcoming releases for the site">
+      <span class="ticker-label"><strong>UPDATED &amp; UPCOMING</strong><span class="tl-sub">Releases for the Site</span></span>
+      <div class="ticker-viewport">
+        <div class="ticker-track" id="tickerTrack">
+          <span class="ticker-item">Little Lewis updated — ask anything, Live Agent coming soon</span>
+          <span class="ticker-item">FRINGE END — Coming Soon to the Books tab</span>
+          <span class="ticker-item">GAY SEX, WILD YEAR 1969 — Volume One — Dropping November 30, 2026 — $9.99 — Adults 18+ only</span>
+          <span class="ticker-item">The Book Store is open — Open 24/7 — Free Lewis Card checkout</span>
+          
+          <span class="ticker-item">HALLOWEEN SERIES — October 31, 2026</span>
+          <span class="ticker-item">WALK IN MY SHOES — November 5, 2026</span>
+          <span class="ticker-item">ROPE & HUNG — December 16, 2026</span>
+          <span class="ticker-item">The Christmas Room 7 — December 25, 2026</span>
+          <span class="ticker-item">SIMPLE — December 31, 2026</span>
+          <span class="ticker-item">JERKING DEATH 1 — January 15, 2027</span>
+          <span class="ticker-item">THE CALL AT 3:33 AM — February 1, 2027</span>
+          <span class="ticker-item">BAGGS — March 4, 2027</span>
+          <span class="ticker-item">FAKE — March 12, 2027</span>
+          <span class="ticker-item">Little Lewis updated — ask anything, Live Agent coming soon</span>
+          <span class="ticker-item">FRINGE END — Coming Soon to the Books tab</span>
+          <span class="ticker-item">GAY SEX, WILD YEAR 1969 — Volume One — Dropping November 30, 2026 — $9.99 — Adults 18+ only</span>
+          <span class="ticker-item">The Book Store is open — Open 24/7 — Free Lewis Card checkout</span>
+          
+          <span class="ticker-item">HALLOWEEN SERIES — October 31, 2026</span>
+          <span class="ticker-item">WALK IN MY SHOES — November 5, 2026</span>
+          <span class="ticker-item">ROPE & HUNG — December 16, 2026</span>
+          <span class="ticker-item">The Christmas Room 7 — December 25, 2026</span>
+          <span class="ticker-item">SIMPLE — December 31, 2026</span>
+          <span class="ticker-item">JERKING DEATH 1 — January 15, 2027</span>
+          <span class="ticker-item">THE CALL AT 3:33 AM — February 1, 2027</span>
+          <span class="ticker-item">BAGGS — March 4, 2027</span>
+          <span class="ticker-item">FAKE — March 12, 2027</span>
+        </div>
+      </div>
+      <span class="ticker-date">Updated and upcoming releases for the site</span>
+    </div>
+
+    <header class="site-head">
+      <div class="wrap">
+        <a class="brand" href="index.html" data-nav="home" aria-label="Dr. Kerry B. Lewis — home">
+          <span class="brand-mark">KL</span>
+          <span>
+            <span class="brand-name">Dr. Kerry B. Lewis</span>
+            <span class="brand-sub" style="display:block">Los Angeles, California</span>
+          </span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Main">
+          <a href="index.html" data-nav="home">Home</a>
+          <a href="about.html" data-nav="about">About</a>
+          <a href="issues.html" data-nav="issues">Issues</a>
+          <a href="books.html" data-nav="books">Book Store</a>
+                    <a href="ministries.html" data-nav="ministries">Lewis Ministries</a>
+          <a href="council.html" data-nav="council">City Council Meetings</a>
+          <a href="congress.html" data-nav="congress">Congress</a>
+                    <a href="index.html#waitlist" data-nav="home" data-anchor="waitlist">Sign Up</a>
+        </nav>
+      </div>
+    </header>
+
+    <div role="region" aria-label="Scrolling announcements" style="overflow:hidden;background:#0a2340;color:#ffffff;padding:10px 0;border-bottom:3px solid #c00000;">
+<div class="ticker-track" style="animation-duration:60s;">
+<span class="ticker-item">Called 7 Chapters 2–4 out now</span>
+<span class="ticker-item">DEAD END first 12 chapters out now</span>
+<span class="ticker-item">Called 7 Chapters 2–4 out now</span>
+<span class="ticker-item">DEAD END first 12 chapters out now</span>
+</div>
+</div>
+
+<main>
+<div class="view" id="view-about">
+        <section class="page-head">
+          <div class="wrap">
+            <p class="sec-kicker">About</p>
+            <h1>About Dr. Kerry B. Lewis</h1>
+            <p>Entrepreneur, publisher, and author — a Southerner by birth who built his life and his work in Los Angeles, and who believes nobody is beyond a second chance, because he needed one himself, and got one.</p>
+          </div>
+        </section>
+
+        <section class="block">
+          <div class="wrap">
+            <div class="about-grid">
+              <figure class="about-photo" style="margin:0">
+                <img src="assets/img-003.jpeg" alt="Portrait of Dr. Kerry B. Lewis in Griffith Park with the Hollywood Sign behind him" />
+                <figcaption>Dr. Kerry B. Lewis in Griffith Park, Los Angeles.</figcaption>
+              </figure>
+              <div class="about-body">
+                <h2>From Griffin to Los Angeles</h2>
+                <p>Dr. Kerry B. Lewis was born on <strong>June 5, 1991, in Griffin, Georgia</strong>, and raised in <strong>Daytona Beach, Florida</strong>. Before business, there was ministry: from <strong>2011 to 2013 he served as a youth pastor in Savannah, Georgia</strong> — work that put him face to face with families living on the edge, and shaped everything that came after.</p>
+                <p>He went on to earn a <strong>Master&rsquo;s in Business and Finance</strong> and an <strong>Honorary Doctorate in Divinity</strong>, and attended the <strong>University of Phoenix</strong>. He also knows the other side of the American economy firsthand: <strong>he has been homeless himself</strong>. It is the experience he cites most — the reason he says he doesn&rsquo;t need a briefing book to understand the streets.</p>
+                <p>Today he lives in Los Angeles, where he runs businesses, publishes news, and writes fiction.</p>
+
+                <h2>What he has built</h2>
+                <div class="venture-grid">
+                  <div class="venture">
+                    <p class="v-type">Business</p>
+                    <h3>Rover Pet Stores Inc.</h3>
+                    <p>Founder and owner of the pet retail company — a small business built from the ground up, the hard way.</p>
+                  </div>
+                  <div class="venture">
+                    <p class="v-type">Rescue</p>
+                    <h3>Rover Exotic Rescue LLC</h3>
+                    <p>Owner of the exotic animal rescue — care and second chances for animals with nowhere else to go.</p>
+                  </div>
+                  <div class="venture">
+                    <p class="v-type">Media</p>
+                    <h3>Edgewater Gazette Inc. &amp; Griffin News 5 LLC</h3>
+                    <p>Owner and publisher of Edgewater Gazette Inc., and founder of Griffin News 5 LLC — independent local news, published under his own name.</p>
+                  </div>
+                </div>
+
+                <h2>The writing</h2>
+                <p>Off the clock, Kerry writes the stories the headlines leave out — crime, survival, and the thin line between the two.</p>
+                <div class="book-row">
+                  <div class="book">
+                    <h3>Make It or Break It</h3>
+                    <p><i>The Adventures into Crime &amp; Law</i> — his noir crime-thriller series following detective Rylan Cross through the underbelly of Orlando.</p>
+                  </div>
+                  <div class="book">
+                    <h3>Called 7</h3>
+                    <p>A horror mystery series — a couple down on their luck finds a chest marked only with the number 7. Chapters 1–4 out now.</p>
+                  </div>
+                  <div class="book">
+                    <h3>DEAD END</h3>
+                    <p>His first full book — horror with a laugh in it, inspired by true events on the streets of Hollywood. Releasing 2027.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block">
+          <div class="wrap">
+            <div style="background:linear-gradient(135deg,#0d2a4a,#071e38);border:1px solid #1e3a5c;border-left:5px solid #ffc72c;border-radius:16px;padding:32px 30px;">
+              <p class="sec-kicker" style="color:#ffc72c;">A note to you, from Kerry</p>
+              <h2 style="color:#fff;">If you only know the headlines, you don't know me yet.</h2>
+              <p style="color:#e9edf2;">I grew up in the South, I served young people in ministry, I built businesses with my own hands, and I have also had seasons where I had almost nothing at all. Every one of those chapters taught me the same thing: people are more than their worst day, and a city is more than its worst street.</p>
+              <p style="color:#e9edf2;">I write because stories are how we remember that. I build because a job, a home, and a second chance are worth more than a speech about them. And I put my name on all of it, plainly, because I am not asking anyone to trust a brand. I am asking you to know a person.</p>
+              <p style="color:#fff;font-weight:800;margin-bottom:0;">— Dr. Kerry B. Lewis</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="block">
+          <div class="wrap">
+            <div class="sec-head reveal">
+              <p class="sec-kicker">What he carries with him</p>
+              <h2 style="color:#fff;">The beliefs behind the work</h2>
+            </div>
+            <div class="venture-grid">
+              <div class="venture" style="background:#0a1e33;border:1px solid #1e3a5c;border-radius:16px;padding:22px;">
+                <p class="v-type">Second chances</p>
+                <h3 style="color:#fff;">Nobody is finished yet</h3>
+                <p style="color:#c3d2e2;">He got one, and he builds for people who are still waiting for theirs — animals in a rescue, readers finding a story, neighbors finding their footing.</p>
+              </div>
+              <div class="venture" style="background:#0a1e33;border:1px solid #1e3a5c;border-radius:16px;padding:22px;">
+                <p class="v-type">People over politics</p>
+                <h3 style="color:#fff;">Facts over feelings</h3>
+                <p style="color:#c3d2e2;">What works matters more than what sounds good, and a plan matters more than a slogan.</p>
+              </div>
+              <div class="venture" style="background:#0a1e33;border:1px solid #1e3a5c;border-radius:16px;padding:22px;">
+                <p class="v-type">Home, in every sense</p>
+                <h3 style="color:#fff;">Los Angeles, shared</h3>
+                <p style="color:#c3d2e2;">He shares his life in Los Angeles with his partner, Joshua, and the work he does here — for people, for animals, for readers — is rooted in this city.</p>
+              </div>
+            </div>
+            <p style="color:#c3d2e2;margin-top:22px;">What's next: <strong style="color:#fff;">DEAD END</strong>, his first full book, follows in 2027.</p>
+          </div>
+        </section>
+
+        <section class="block tight" style="background:var(--surface);border-top:1px solid var(--line)">
+          <div class="wrap">
+            <div class="sec-head reveal">
+              <p class="sec-kicker">The Road Here</p>
+              <h2>A life in chapters</h2>
+            </div>
+            <ol class="timeline reveal">
+              <li>
+                <span class="t-year">1991</span>
+                <div>
+                  <h3>Born in Griffin, Georgia</h3>
+                  <p>Kerry B. Lewis is born on June 5, 1991, in Griffin, Georgia, and raised in Daytona Beach, Florida.</p>
+                </div>
+              </li>
+              <li>
+                <span class="t-year">2011&ndash;13</span>
+                <div>
+                  <h3>Youth pastor, Savannah</h3>
+                  <p>Serves as a youth pastor in Savannah, Georgia — ministry work with young people and struggling families.</p>
+                </div>
+              </li>
+              <li>
+                <span class="t-year">Studies</span>
+                <div>
+                  <h3>Degrees in business and divinity</h3>
+                  <p>Earns a Master&rsquo;s in Business and Finance and an Honorary Doctorate in Divinity; attends the University of Phoenix.</p>
+                </div>
+              </li>
+              <li>
+                <span class="t-year">The streets</span>
+                <div>
+                  <h3>Homeless — and back</h3>
+                  <p>Experiences homelessness himself. The years he calls his real education in how the system treats the people at the bottom of it.</p>
+                </div>
+              </li>
+              <li>
+                <span class="t-year">Builder</span>
+                <div>
+                  <h3>Businesses from nothing</h3>
+                  <p>Founds Rover Pet Stores Inc. and Rover Exotic Rescue LLC, and publishes through Edgewater Gazette Inc. and Griffin News 5 LLC.</p>
+                </div>
+              </li>
+              <li>
+                <span class="t-year">2026</span>
+                <div>
+                  <h3><i>Make It or Break It</i> published</h3>
+                  <p>His crime-fiction series <i>Make It or Break It: The Adventures into Crime &amp; Law</i> reaches readers, with detective Rylan Cross.</p>
+                </div>
+              </li>
+              <li>
+                <span class="t-year">2027</span>
+                <div>
+                  <h3><i>Called 7</i> begins</h3>
+                  <p>Chapter 1 of his horror mystery series <i>Called 7</i> drops October 25, 2026, and <i>DEAD END</i>, his first full book, follows in 2027.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+
+      </div>
+
+      <!-- ================= ISSUES ================= -->
+      
+</main>
+
+
+    <footer>
+      <div class="wrap">
+        <div class="foot-grid">
+          <div class="foot-brand">
+            <span class="brand-name">Dr. Kerry B. Lewis</span>
+            <p>Business owner, publisher, and author — Los Angeles, California.</p>
+            <p class="serif-i" style="color:var(--gold-bright);font-size:17px">&ldquo;End failed leadership. Fix homelessness. Lower the cost of living.&rdquo;</p>
+          </div>
+          <div>
+            <h4>Explore</h4>
+            <ul class="foot-links">
+              <li><a href="index.html" data-nav="home">Home</a></li>
+              <li><a href="about.html" data-nav="about">About Dr. Lewis</a></li>
+              <li><a href="issues.html" data-nav="issues">Issues</a></li>
+              <li><a href="books.html" data-nav="books">Book Store</a></li>
+              <li><a href="council.html" data-nav="council">City Council Meetings</a></li>
+              <li><a href="congress.html" data-nav="congress">Congress.gov</a></li>
+              
+        <li><a href="ministries.html" data-nav="ministries">Lewis Ministries</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>More</h4>
+            <ul class="foot-links">
+              <li><a href="/privacy">Privacy Policy</a></li>
+              <li><a href="mailto:info@drkerryblewis.org">info@drkerryblewis.org</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <p class="disclaimer"><strong>Legal Notice:</strong> This is the personal website of Dr. Kerry B. Lewis. It is not an official website of the City of Los Angeles, the Los Angeles City Council, or any government agency. Content on this site is provided for general information only and does not constitute legal, financial, or professional advice. City Council meeting information is summarized from official Los Angeles City Clerk publications and may change without notice — always confirm dates, times, and agendas with the City Clerk at clerk.lacity.org. All original writing on this site — including Make It or Break It, Called 7, and Jerking Death — is the copyrighted work of Dr. Kerry B. Lewis and may not be reproduced without permission.</p>
+          <p>&copy; 2026 Dr. Kerry B. Lewis &middot; Los Angeles, California &middot; All rights reserved.</p>
+          <p class="credits">Photography: Hollywood Sign at sunrise via Griffith Observatory (Cameron Venti). Silver Lake street via Travel Dealz. Portrait courtesy of Dr. Lewis.</p>
+        </div>
+      </div>
+    </footer>
+
+    
+  
+
+
+
+    <div id="site-helper" style="position:fixed;right:18px;bottom:18px;z-index:9998;font-family:inherit;">
+      <button type="button" id="site-helper-btn" aria-label="Ask Little Lewis" style="background:#1e6fd9;color:#fff;border:2px solid #ffc72c;border-radius:999px;padding:12px 20px;font-size:15px;font-weight:800;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.35);">Ask Little Lewis</button>
+      <div id="site-helper-panel" style="display:none;position:absolute;right:0;bottom:56px;width:min(360px,calc(100vw - 36px));background:#0d2a4a;border:2px solid #ffc72c;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5);color:#fff;">
+        <div style="padding:14px 16px;background:#071e38;border-bottom:1px solid #ffc72c;">
+          <p style="margin:0;font-weight:800;font-size:16px;">Little Lewis</p>
+          <p style="margin:2px 0 0;font-size:12.5px;color:#ffc72c;font-weight:700;">Ask Anything</p>
+          <p style="margin:4px 0 0;font-size:12.5px;color:#c7d2dd;line-height:1.45;">Little Lewis answers about drkerryblewis.org and general questions too. I do not send or store anything you type.</p>
+          <p style="margin:6px 0 0;font-size:12.5px;color:#ffc72c;font-weight:800;">Live Agent — Coming Soon</p>
+        </div>
+        <div id="site-helper-log" style="height:260px;overflow-y:auto;padding:14px 16px;font-size:14.5px;line-height:1.55;color:#e9edf2;">
+          <p style="margin:0;">Hi. Ask me anything — for example: Issues, Books, Events, Council Meetings, or anything else. Live Agent help is coming soon.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px;">
+          <button type="button" class="sh-chip" data-q="What issues are on this site?" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Issues</button>
+          <button type="button" class="sh-chip" data-q="What books are on this site?" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Books</button>
+          <button type="button" class="sh-chip" data-q="What events are coming up in Hollywood?" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Events</button>
+          <button type="button" class="sh-chip" data-q="When is the next City Council meeting?" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Council Meetings</button>
+          <button type="button" class="sh-chip" data-q="Live Agent" style="background:transparent;color:#ffc72c;border:1px solid #ffc72c;border-radius:999px;padding:5px 11px;font-size:12.5px;font-weight:700;cursor:pointer;">Live Agent — Coming Soon</button>
+        </div>
+        <form id="site-helper-form" style="display:flex;gap:8px;padding:12px 14px;border-top:1px solid rgba(255,255,255,.2);">
+          <input id="site-helper-input" type="text" placeholder="Ask anything…" aria-label="Ask anything" style="flex:1;min-width:0;border-radius:999px;border:1px solid #ccc;padding:10px 14px;font-size:14px;color:#111;">
+          <button type="submit" style="background:#ffc72c;color:#111;border:none;border-radius:999px;padding:10px 16px;font-size:14px;font-weight:800;cursor:pointer;">Ask</button>
+        </form>
+      </div>
+    </div>
+
+
+
+    <script src="assets/site.js"></script>
+  </body>
+</html>
