@@ -5,19 +5,19 @@
         --navy-900:#0a2340;
         --navy-800:#0e2c50;
         --navy-700:#143a66;
-        --gold:#c19a3d;
-        --gold-bright:#d9b45c;
+        --gold:#8a6a1f;
+        --gold-bright:#f0cd7a;
         --gold-soft:#f3e9d2;
         --paper:#fbfaf7;
         --surface:#ffffff;
         --surface-2:#f2efe7;
         --ink:#17222e;
-        --ink-2:#42505e;
-        --ink-3:#68778a;
+        --ink-2:#2e3a47;
+        --ink-3:#4a5a6b;
         --line:#ddd6c6;
         --line-strong:#c9c0aa;
         --on-navy:#eef2f7;
-        --on-navy-2:#b9c7d8;
+        --on-navy-2:#d3dce8;
         --shadow:0 18px 44px rgba(7,26,46,.14);
         --radius:10px;
       }
@@ -27,8 +27,8 @@
           --surface:#101e2e;
           --surface-2:#0d1a29;
           --ink:#e9edf2;
-          --ink-2:#b6c1cd;
-          --ink-3:#8b9aab;
+          --ink-2:#c9d3de;
+          --ink-3:#a7b4c2;
           --line:#26374a;
           --line-strong:#38506c;
           --gold-soft:#2a2416;
@@ -269,7 +269,7 @@
       .foot-areas{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:15.5px}
       .foot-bottom{border-top:1px solid rgba(255,255,255,.12);padding:22px 0 30px;font-size:13.5px;display:grid;gap:8px}
       .foot-bottom .disclaimer{color:#d8e0ea;font-weight:600}
-      .foot-bottom .credits{color:var(--ink-3);color:#7e8fa5}
+      .foot-bottom .credits{color:var(--ink-3);color:#aab8c9}
 
       /* Reveal */
       .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
@@ -430,12 +430,12 @@
       .press-list{margin-top:8px}
       .press-item{display:grid;grid-template-columns:118px 1fr;gap:8px 22px;padding:18px 4px;border-bottom:1px solid var(--line)}
       .press-item:last-child{border-bottom:none}
-      .press-item .p-date{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#5a6a80;padding-top:3px}
+      .press-item .p-date{font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);padding-top:3px}
       .press-item .p-src{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
       .press-item h3{font-size:19px;margin:0 0 4px}
-      .press-item h3 a{color:var(--navy-950);text-decoration:none}
+      .press-item h3 a{color:var(--ink);text-decoration:none}
       .press-item h3 a:hover{text-decoration:underline}
-      .press-item p{font-size:15.5px;margin:0;color:#3c4a5e}
+      .press-item p{font-size:15.5px;margin:0;color:var(--ink-2)}
       @media (max-width:640px){.press-item{grid-template-columns:1fr}}
       .lat-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 44px}
       .lat-sec h3{font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin:30px 0 6px}
@@ -527,7 +527,7 @@
       /* Universal Studios-inspired theme — style only. No Universal logo, branding, or affiliation. Applies to all pages/views. */
       :root{
         --paper:#04101f; --surface:#0a1e33; --surface-2:#0d2a4a;
-        --ink:#f2f6fb; --ink-2:#c3d2e2; --ink-3:#8fa3b8;
+        --ink:#ffffff; --ink-2:#dbe6f2; --ink-3:#b0c0d2;
         --line:#1e3a5c; --line-strong:#2c5280;
         --gold:#ffc72c; --gold-bright:#ffd84d; --gold-soft:#2a2416;
         --navy-900:#071a2e; --navy-800:#0e2c50;
