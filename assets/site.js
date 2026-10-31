@@ -5,7 +5,7 @@ function tourStart(){ if(tourTimer) clearInterval(tourTimer); tourTimer = setInt
 tourStart();
 var heroEl = document.querySelector('.wh-hero');
 if(heroEl){ heroEl.addEventListener('mouseenter', function(){ if(tourTimer) clearInterval(tourTimer); tourTimer = null; }); heroEl.addEventListener('mouseleave', tourStart); }
-function whSearch(f){var q=f.q.value.trim();if(!q) return false;var found=false;try{found=window.find(q);}catch(e){}document.getElementById('wh-search-msg').textContent=found?'Found — highlighted on this page.':'No match on this page. Try Books, Issues, or Projects.';return false;}
+function whSearch(f){var q=f.q.value.trim();if(!q) return false;var found=false;try{found=window.find(q);}catch(e){}document.getElementById('wh-search-msg').textContent=found?'Found — highlighted on this page.':'No match on this page. Try About, Events, or Projects.';return false;}
 function wlSubmit(f){var nm=document.getElementById('wl-name').value;var em=document.getElementById('wl-email').value;var un=document.getElementById('wl-user').value;if(!f.adult.checked){document.getElementById('wl-msg').textContent='Please confirm you are 18 or older.';return false;}var subject='Community Sign Up — '+un;var body='Name: '+nm+'\nEmail: '+em+'\nUsername wanted: '+un+'\n18 or older: Yes\n\nPlease sign me up for the Hollywood Chamber Community.';document.getElementById('wl-copy').value=body;document.getElementById('wl-gmail').href='https://mail.google.com/mail/?view=cm&to=the Contact Form on this site&su='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);document.getElementById('wl-fallback').style.display='block';document.getElementById('wl-msg').textContent='Thanks — if your email app did not open, use the Gmail link or Copy details below, then send them to the Contact Form on this site.';window.location.href='mailto:the Contact Form on this site?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);return false;}
 
         function makeLewisCard(){
@@ -68,26 +68,6 @@ function wlSubmit(f){var nm=document.getElementById('wl-name').value;var em=docu
         var tickerTrack = document.getElementById('tickerTrack');
         if (tickerTrack) { tickerTrack.innerHTML += tickerTrack.innerHTML; }
 
-        // Election countdown — polls close 8:00 PM Pacific, Tuesday Nov 3, 2026
-        var cdD = document.getElementById('cdDays'), cdH = document.getElementById('cdHours'),
-            cdM = document.getElementById('cdMins'), cdS = document.getElementById('cdSecs'),
-            cdNote = document.getElementById('cdNote');
-        function pad2(n) { return (n < 10 ? '0' : '') + n; }
-        function tickCountdown() {
-          var diff = new Date('2026-11-03T20:00:00-08:00').getTime() - Date.now();
-          if (diff <= 0) {
-            cdD.textContent = '0'; cdH.textContent = '00'; cdM.textContent = '00'; cdS.textContent = '00';
-            if (cdNote) { cdNote.textContent = 'Election Day is here. Results are counted in votes, not polls — totals post here on election night.'; }
-            return false;
-          }
-          var d = Math.floor(diff / 86400000); diff -= d * 86400000;
-          var h = Math.floor(diff / 3600000); diff -= h * 3600000;
-          var m = Math.floor(diff / 60000); diff -= m * 60000;
-          var s = Math.floor(diff / 1000);
-          cdD.textContent = d; cdH.textContent = pad2(h); cdM.textContent = pad2(m); cdS.textContent = pad2(s);
-          return true;
-        }
-        if (cdD && tickCountdown()) { setInterval(tickCountdown, 1000); }
 
         // Days-remaining labels on the 2028 cycle cards
         Array.prototype.forEach.call(document.querySelectorAll('[data-days-to]'), function (el) {
@@ -200,16 +180,16 @@ function wlSubmit(f){var nm=document.getElementById('wl-name').value;var em=docu
     var has=function(){for(var i=0;i<arguments.length;i++){if(t.indexOf(arguments[i])!==-1){return true;}}return false;};
     if(has('live agent','live help','real person','human')){return {text:'Live Agent help is coming soon to Little Lewis. It is not live yet — there is no live chat here today. Until it launches, ask me anything here, or reach Dr. Kerry B. Lewis at the Contact Form on this site.',nav:null};}
     if(has('contact','email','reach','phone')){return {text:'You can reach Dr. Kerry B. Lewis through the Contact Form on this site. That address is also listed on this site for press and book orders.',nav:null};}
-    if(has('council','meeting','city hall')){return {text:'That tab is now the Projects tab, with the Selma Avenue Elementary School Project inside it — a joint-use proposal with LAUSD, early talks only, no agreement and no dates yet.',nav:{label:'Open Projects',view:'council'}};}
+    if(has('council','meeting')){return {text:'That tab is now the Projects tab, with the Selma Avenue Elementary School Project inside it — a joint-use proposal with LAUSD, early talks only, no agreement and no dates yet.',nav:{label:'Open Projects',view:'council'}};}
     if(has('resource')){return {text:'A separate new Resources tab for all of California is on hold until Dr. Kerry B. Lewis names its content — it will not launch empty on November 1, 2026.',nav:null};}
     if(has('stay tuned','soon','something new','november 3','nov 3')){return {text:'The Stay Tuned tab has been removed from this site. The November 3, 2026 reveal it teased is no longer planned as a site tab.',nav:{label:'Open Home',view:'home'}};}
-    if(has('congress','track congress')){return {text:'This site has a Congress tab with a Track Congress view linking to congress.gov, including Bills &amp; Laws, Members, Congressional Record, Roll Call Votes, Nominations &amp; Treaties, Appropriations, CRS Reports, and Constitution Annotated.',nav:{label:'Open Congress',view:'congress'}};}
+    if(has('congress','track congress')){return {text:'The Congress page has been removed from this site.',nav:null};}
     if(has('blog','macarthur','walk in my shoes','post')){return {text:'The News page closed on October 28, 2026, and the Lewis Idol page has been removed. Previous News posts are paused and are not currently on the site. An exclusive blog, WALK IN MY SHOES, is teased on the front page for Thursday, November 5, 2026, and is not live yet.',nav:{label:'Open Home',view:'home'}};}
-    if(has('called 7','called seven')){return {text:'CALLED 7 is a horror mystery on the Books page. Chapters 1–4 are out now — read them free on the Books page.',nav:{label:'Open Books',view:'books'}};}
-    if(has('dead end')){return {text:'DEAD END is listed on the Books page as coming in 2027, described as Dr. Kerry B. Lewis\u2019s first full book. No chapter text from it is published on this site.',nav:{label:'Open Books',view:'books'}};}
-    if(has('book','make it or break it','jerking death','christmas room')){return {text:'The Books page is a bookstore shelf. MAKE IT OR BREAK IT has Chapters 1\u20134 published, and reading is free. The Books tab notice says the BOOK Tab is closing on November 15, 2026, and books move to Kindle from then. CALLED 7 Chapters 1–4 are out now, and DEAD END is listed as coming in 2027.',nav:{label:'Open Books',view:'books'}};}
+    if(has('called 7','called seven')){return {text:'CALLED 7 is a horror mystery on the Books page. Chapters 1–4 are out now — read them free on the Books page.',nav:null};}
+    if(has('dead end')){return {text:'DEAD END is listed on the Books page as coming in 2027, described as Dr. Kerry B. Lewis\u2019s first full book. No chapter text from it is published on this site.',nav:null};}
+    if(has('book','make it or break it','jerking death','christmas room')){return {text:'The Books page is a bookstore shelf. MAKE IT OR BREAK IT has Chapters 1\u20134 published, and reading is free. The Books tab notice says the BOOK Tab is closing on November 15, 2026, and books move to Kindle from then. CALLED 7 Chapters 1–4 are out now, and DEAD END is listed as coming in 2027.',nav:null};}
     if(has('event','hollywood','showing','concert','show')){return {text:'Upcoming Events in Hollywood, CA, on the home page, lists 15 shows from October 24 to November 18, 2026, as theater playbills with a Now Showing slideshow above them. Dates and venues are listed on the page.',nav:{label:'Open Home Events',view:'home'}};}
-    if(has('issue','stand','believe','position','women','abortion','road','pothole','immigration','school','water','energy','job','health','wildfire','housing','cost of living','street','city hall')){return {text:'The Issues page has 14 issues: 1 Homelessness &amp; Encampments, 2 Cost of Living &amp; Housing, 3 Clean &amp; Safe Streets, 4 A City Hall That Answers, 5 Immigration, 6 Wildfires &amp; Insurance, 7 Water, 8 Energy Bills &amp; the Grid, 9 Drugs, Fentanyl &amp; Street Crime, 10 Schools, 11 Health Care &amp; Mental Health, 12 Jobs, Small Business &amp; Taxes, 13 Roads, Transit &amp; Infrastructure, and 14 Women\u2019s Rights: Protect Life, and Support Mothers. Each issue on the page states the problem and a cleanup plan.',nav:{label:'Open Issues',view:'issues'}};}
+    if(has('issue','issues')){return {text:'The Issues page has been removed from this site.',nav:null};}
     if(has('who','about','kerry','biography')){return {text:'The About page on this site describes Dr. Kerry B. Lewis as a business owner, author, and publisher based in Los Angeles. For the full About text, open the About page.',nav:{label:'Open About',view:'about'}};}
     if(has('term','privacy','accept','gate')){return {text:'Before entering this site, visitors accept its Terms of Use and Privacy Policy. The terms say this is a personal website, not a government website, governed by California law with disputes in Los Angeles County courts. The Privacy Policy is linked in the site footer.',nav:null};}
     if(has('waitlist','community','join','sign up')){return {text:'This site has a Sign Up section for the Hollywood Chamber Community on the home page. It asks for Name, Email, and Username, with a required 18+ checkbox. No ID is collected at signup, signups are requests for membership that Kerry approves before an account can sign in, and submissions go by email to the Contact Form on this site.',nav:{label:'Open Home Waitlist',view:'home'}};}
@@ -220,7 +200,7 @@ function wlSubmit(f){var nm=document.getElementById('wl-name').value;var em=docu
     say('You',q.replace(/</g,'&lt;'));
     var a=answer(q);
     if(a){say('Little Lewis',a.text,a.nav);}
-    else{say('Little Lewis','I do not have a fixed answer for that one yet — but the site-only limit is gone, so keep asking. Try the Issues, Books, Events, or Projects on drkerryblewis.org, or ask about Live Agent help, which is coming soon. You can also reach Dr. Kerry B. Lewis at the Contact Form on this site.',null);}
+    else{say('Little Lewis','I do not have a fixed answer for that one yet — but the site-only limit is gone, so keep asking. Try the About, Events, or Projects pages on drkerryblewis.org, or ask about Live Agent help, which is coming soon. You can also reach Dr. Kerry B. Lewis at the Contact Form on this site.',null);}
   }
   form.addEventListener('submit',function(e){e.preventDefault();var q=input.value.trim();input.value='';ask(q);});
   var chips=document.querySelectorAll('.sh-chip');
